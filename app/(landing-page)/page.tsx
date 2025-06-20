@@ -1,5 +1,9 @@
-import Image from "next/image";
+import { HeroSection } from "@/components/hero-section";
 
 export default function Home() {
-  return <div className="h-screen w-screen bg-secondary ">xdd</div>;
+  return (
+    <div className="w-screen">
+      <HeroSection />
+    </div>
+  );
 }
