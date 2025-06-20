@@ -42,21 +42,42 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@theme {
+  --color-gray-*: initial;
+  --color-gray-50: var(--rem-met-gray-1);
+  --color-gray-100: var(--rem-met-gray-1);
+  --color-gray-200: var(--rem-met-gray-2);
+  --color-gray-300: var(--rem-met-gray-3);
+  --color-gray-400: var(--rem-met-gray-4);
+  --color-gray-500: var(--rem-met-gray-4);
+  --color-gray-600: var(--rem-met-gray-5);
+  --color-gray-700: var(--rem-met-gray-5);
+  --color-gray-800: var(--rem-met-gray-6);
+  --color-gray-900: var(--rem-met-gray-6);
+  --color-gray-950: var(--rem-met-gray-6);
+}
+
+@theme {
+  --color-brand-blue-100: var(--rem-met-blue-1);
+  --color-brand-blue-200: var(--rem-met-blue-2);
+  --color-brand-blue-300: var(--rem-met-blue-3);
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
 
   /* Brand Colors */
-  --rem-met-gray-1: #1e1e1e;
-  --rem-met-gray-2: #292829;
-  --rem-met-gray-3: #4b4b4b;
+  --rem-met-gray-1: #f0f1f0;
+  --rem-met-gray-2: #e6e6e6;
+  --rem-met-gray-3: #d0d0d0;
   --rem-met-gray-4: #bfbdbd;
-  --rem-met-gray-5: #d0d0d0;
-  --rem-met-gray-6: #e6e6e6;
-  --rem-met-gray-7: #f0f1f0;
+  --rem-met-gray-5: #4b4b4b;
+  --rem-met-gray-6: #292829;
 
   --rem-met-blue-1: #425ba9;
+  --rem-met-blue-2: #354aa4;
   --rem-met-blue-2: #2a3a74;
   --rem-met-blue-3: #080c1c;
   /* End Brand Colors */
@@ -65,7 +86,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: var(--rem-met-blue-1);
+  --primary: var(--rem-met-blue-2);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);

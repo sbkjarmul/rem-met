@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import Attribution from "@/components/attribution";
 
 const ttOctosquares = localFont({
   src: [
@@ -40,6 +42,8 @@ export default function RootLayout({
       <body className={`antialiased dark bg-background text-foreground`}>
         <Header />
         <main>{children}</main>
+        <Footer />
+        <Attribution />
       </body>
     </html>
   );
