@@ -5,6 +5,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Attribution from "@/components/attribution";
+import pl from "@/locales/pl";
 
 const ttOctosquares = localFont({
   src: [
@@ -28,8 +29,8 @@ const ttOctosquares = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "REM-MET",
-  description: "Polski Producent Wygrodzeń Bezpieczeństwa",
+  title: pl.title,
+  description: pl.description,
 };
 
 export default function RootLayout({
@@ -38,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${ttOctosquares.variable}`}>
+    <html lang="pl" className={`${ttOctosquares.variable}`}>
       <body className="relative antialiased dark bg-background text-foreground">
         <Header />
         <main>{children}</main>
