@@ -1,32 +1,28 @@
 import * as React from "react";
 import Image from "next/image";
 
-import { Container } from "@/components/ui/container";
 import { AccentText } from "@/components/ui/accent-text";
 import { Button } from "@/components/ui/button";
-import { AspectRatio } from "./ui/aspect-ratio";
-import { cn } from "@/lib/utils";
-import useTranslation from "@/hooks/useTranslation";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import useTranslations from "@/hooks/useTranslations";
 
-const HeroSection = () => {
-  const t = useTranslation();
+export const HeroSection = () => {
+  const t = useTranslations();
 
   return (
     <section className="relative pt-20 md:pt-40 bg-black min-h-screen flex flex-col justify-end">
-      <div className="max-w-4xl mx-auto text-center z-1">
-        <AccentText>{t.heroSection.accent}</AccentText>
+      <div className="max-w-4xl mx-auto text-center z-10">
+        <AccentText>{t("heroAccent")}</AccentText>
         <h1 className="mt-4 text-4xl md:text-5xl font-medium uppercase">
-          {t.heroSection.title}
+          {t("heroTitle")}
         </h1>
-        <p className="mt-6 text-lg text-gray-500">
-          {t.heroSection.description}
-        </p>
+        <p className="mt-6 text-lg text-gray-500">{t("description")}</p>
         <div className="mt-10 flex justify-center gap-4">
-          <Button variant="outline">{t.heroSection.primaryButton}</Button>
-          <Button>{t.heroSection.secondaryButton}</Button>
+          <Button variant="outline">{t("primaryButton")}</Button>
+          <Button>{t("secondaryButton")}</Button>
         </div>
       </div>
-      <AspectRatio ratio={7 / 2} className="w-full">
+      <AspectRatio ratio={7 / 2} className="w-full mt-20">
         <Image
           src="/images/rem-met-hero-section-background.png"
           alt="Hero section background"
@@ -45,5 +41,3 @@ const HeroSection = () => {
     </section>
   );
 };
-
-export { HeroSection };

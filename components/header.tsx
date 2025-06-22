@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import useTranslation from "@/hooks/useTranslation";
+import useTranslations from "@/hooks/useTranslations";
 
 const Logo = () => {
   return (
@@ -36,29 +36,29 @@ const Logo = () => {
 };
 
 const AppNavigationMenu = () => {
-  const t = useTranslation();
+  const t = useTranslations();
 
   return (
     <NavigationMenu>
       <NavigationMenuList className="h-[100px]">
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-            {t.header.home}
+            {t("home")}
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-            {t.header.about}
+            {t("about")}
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-            {t.header.services}
+            {t("services")}
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
-            {t.header.contact}
+            {t("contact")}
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -67,14 +67,14 @@ const AppNavigationMenu = () => {
 };
 
 const Header = () => {
-  const t = useTranslation();
+  const t = useTranslations();
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/40">
       <Container>
         <div className="flex h-[100px] items-center justify-between">
           <Logo />
           <AppNavigationMenu />
-          <Button size="lg">{t.heroSection.primaryButton}</Button>
+          <Button size="lg">{t("headerButton")}</Button>
         </div>
       </Container>
     </header>
