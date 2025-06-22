@@ -8,7 +8,7 @@ const AccentText = ({ className, children, ...props }: AccentTextProps) => {
   return (
     <p
       className={cn(
-        "self-stretch text-center font-medium leading-7 text-gray-400 uppercase",
+        "self-stretch font-medium leading-7 text-gray-400 uppercase",
         className
       )}
       {...props}

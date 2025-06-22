@@ -61,6 +61,7 @@
   --color-brand-blue-100: var(--rem-met-blue-1);
   --color-brand-blue-200: var(--rem-met-blue-2);
   --color-brand-blue-300: var(--rem-met-blue-3);
+  --color-brand-blue-400: var(--rem-met-blue-4);
 }
 
 :root {
@@ -78,8 +79,8 @@
 
   --rem-met-blue-1: #425ba9;
   --rem-met-blue-2: #354aa4;
-  --rem-met-blue-2: #2a3a74;
-  --rem-met-blue-3: #080c1c;
+  --rem-met-blue-3: #2a3a74;
+  --rem-met-blue-4: #080c1c;
   /* End Brand Colors */
 
   --card: oklch(1 0 0);

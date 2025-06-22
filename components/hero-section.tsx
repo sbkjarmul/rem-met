@@ -30,7 +30,7 @@ export const HeroSection = () => {
           className="object-cover"
         />
       </AspectRatio>
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-brand-blue-300 z-0">
+      <div className="absolute top-0 left-0 w-full h-1/2  z-0">
         <Image
           src="/images/rem-met-hero-section-light.svg"
           alt="Hero section background"

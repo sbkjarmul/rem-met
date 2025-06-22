@@ -41,6 +41,17 @@ export default {
     primaryButton: "Zobacz ofertę",
     secondaryButton: "Zamów projekt",
   },
+  // About Us Section
+  aboutUs: {
+    aboutUsAccent: "To jest REM-MET",
+    aboutUsTitle: "Producent wygrodzeń przemysłowych z Polski",
+    description:
+      "Specjalizujemy się w projektowaniu i produkcji wygrodzeń przemysłowych, dostosowanych do potrzeb Twojego zakładu. Nasze produkty łączą funkcjonalność, trwałość oraz zgodność z normami bezpieczeństwa.",
+    feature1: "Jakość i Wytrzymałość",
+    feature2: "Gwarancja bezpieczeństwa",
+    feature3: "Pełne wsparcie",
+    feature4: "Indywidualne podejście",
+  },
   // Zod Validation
   validation: {
     required: "To pole jest wymagane",
