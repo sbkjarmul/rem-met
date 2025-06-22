@@ -36,7 +36,7 @@ const Logo = () => {
 };
 
 const AppNavigationMenu = () => {
-  const t = useTranslations();
+  const t = useTranslations("header");
 
   return (
     <NavigationMenu>
@@ -67,7 +67,7 @@ const AppNavigationMenu = () => {
 };
 
 const Header = () => {
-  const t = useTranslations();
+  const t = useTranslations("header");
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/40">
       <Container>

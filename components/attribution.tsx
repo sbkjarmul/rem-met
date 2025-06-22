@@ -3,7 +3,7 @@ import useTranslations from "@/hooks/useTranslations";
 import { Container } from "./ui/container";
 
 const Attribution = () => {
-  const t = useTranslations();
+  const t = useTranslations("footer");
 
   return (
     <div className="bg-primary text-sm text-white py-4 text-end">

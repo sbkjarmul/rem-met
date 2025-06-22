@@ -7,7 +7,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import useTranslations from "@/hooks/useTranslations";
 
 export const HeroSection = () => {
-  const t = useTranslations();
+  const t = useTranslations("hero");
 
   return (
     <section className="relative pt-20 md:pt-40 bg-black min-h-screen flex flex-col justify-end">

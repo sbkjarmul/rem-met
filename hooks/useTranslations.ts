@@ -1,9 +1,12 @@
 import pl from "@/locales/pl";
 
-const useTranslations = () => {
-  const t = (key: string) => pl[key];
+const useTranslations = (section?: string) => {
+  if (section) {
+    const t = (key: string) => pl[section][key];
+    return t;
+  }
 
-  return t;
+  return (key: string) => pl[key];
 };
 
 export default useTranslations;

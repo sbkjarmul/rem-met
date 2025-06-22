@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 
 const Logo = () => {
-  const t = useTranslations();
+  const t = useTranslations("footer");
 
   return (
     <div>
@@ -33,7 +33,7 @@ const FooterLink = ({
 );
 
 const NewBadge = () => {
-  const t = useTranslations();
+  const t = useTranslations("footer");
   return (
     <span className="ml-2 inline-block bg-brand-blue-100 text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
       {t("new")}
@@ -46,7 +46,7 @@ const FooterHeader = ({ children }: { children: React.ReactNode }) => (
 );
 
 const Footer = () => {
-  const t = useTranslations();
+  const t = useTranslations("footer");
 
   return (
     <footer className="bg-white text-gray-900 py-12 px-4 md:px-6">
