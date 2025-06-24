@@ -60,4 +60,38 @@ export default {
     minLength: "Minimalna długość to {min}",
     maxLength: "Maksymalna długość to {max}",
   },
+  // Quality Section
+  quality: {
+    accent: "Wytrzymałość i Jakość",
+    title: "Niezawodna ochrona dla pracowników i sprzętu.",
+    "feature1.title": "Wysoka wytrzymałość stali",
+    "feature1.description":
+      "Wygrodzenia REM-MET wykonane są z stali konstrukcyjnej o podwyższonej wytrzymałości, co zapewnia odporność na obciążenia i uszkodzenia mechaniczne.",
+    "feature2.title": "Odporność na degradację",
+    "feature2.description":
+      "Zastosowanie wysokiej jakości powłok lakierniczych sprawia, że wygrodzenia REM-MET zachowują swoje właściwości estetyczne i użytkowe przez długi czas, nie ulegając degradacji.",
+    "feature3.title": "Ochrona środowiska",
+    "feature3.description":
+      "W procesie produkcji dbamy o ograniczenie odpadów oraz zużycia energii, stosując technologie, które przyczyniają się do ochrony środowiska.",
+  },
+  // Full Support Section
+  fullSupport: {
+    accent: "Pełne Wsparcie",
+    title: `Skup się na biznesie. \n My zajmiemy się resztą!"`,
+    description1:
+      "Zapewniamy kompleksową usługę i wsparcie na każdym etapie realizacji.",
+    description2:
+      "Dbamy o ergonomię, bezpieczeństwo i niezawodność rozwiązań, które dostarczamy – od analizy potrzeb po montaż.",
+    "feature1.title": "Analiza",
+    "feature1.description":
+      "Analizujemy Twoje potrzeby i dopasowujemy odpowiednie rozwiązanie",
+    "feature2.title": "Projekt",
+    "feature2.description":
+      "Wykonujemy indywidualny projekt dostosowany do Twoich potrzeb",
+    "feature3.title": "Produkcja",
+    "feature3.description":
+      "Tworzymy produkt dopasowany do specyfik i struktury danego zakładu",
+    "feature4.title": "Dostawa i montaź",
+    "feature4.description": "Przywieziemy i zamontujemy produkt za Ciebie!",
+  },
 };
