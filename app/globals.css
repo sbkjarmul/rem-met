@@ -64,6 +64,32 @@
   --color-brand-blue-400: var(--rem-met-blue-4);
 }
 
+@theme {
+  --animate-blink: blink 2s ease-in-out infinite;
+
+  @keyframes blink {
+    0% {
+      background-color: var(--rem-met-blue-0);
+    }
+
+    100% {
+      background-color: var(--rem-met-blue-2);
+    }
+  }
+
+  --animate-blink-border: blink-border 2s ease-in-out infinite;
+
+  @keyframes blink-border {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
 :root {
   --radius: 0rem; /* It was 0.625rem by default */
   --background: oklch(1 0 0);

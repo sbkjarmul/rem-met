@@ -77,7 +77,7 @@ export default {
   // Full Support Section
   fullSupport: {
     accent: "Pełne Wsparcie",
-    title: `Skup się na biznesie. \n My zajmiemy się resztą!"`,
+    title: `Skup się na biznesie. \n My zajmiemy się resztą!`,
     description1:
       "Zapewniamy kompleksową usługę i wsparcie na każdym etapie realizacji.",
     description2:
