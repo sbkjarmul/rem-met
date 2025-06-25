@@ -5,90 +5,77 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
 } from "@/components/ui/carousel";
 
-import { useProductCarousel } from "../hooks/useProductCarousel";
+import { useProductCarousel } from "../hooks/use-product-carousel";
 import { products } from "../constants";
+import { AccentText } from "@/components/ui/accent-text";
+import { DotIndicator } from "./dot-indicator";
 
-const ProductCarouselDesktop = () => {
-  const { current, setApi, count } = useProductCarousel();
+const ProductCarouselMobile = () => {
+  const { current, setApi, api } = useProductCarousel();
 
   return (
-    <div className="ml-20 flex flex-col lg:flex-row gap-16 w-full">
-      <div className="flex flex-col justify-center w-1/3">
-        <div className="flex flex-col gap-2">
-          <h2 className="text-xl uppercase text-brand-blue-200">
-            {products[current - 1].title}
+    <div className="flex flex-col gap-6 w-full items-center justify-center">
+      <div className="flex flex-col gap-4 items-center mx-4">
+        <div className="flex flex-col gap-0 items-center">
+          <AccentText className="text-brand-blue-200 text-center">
+            Nasze produkty
+          </AccentText>
+          <h2 className="text-2xl font-medium text-gray-900">
+            Wygrodzenia przemysłowe
           </h2>
-          <h1 className="text-[92px] font-bold leading-none text-brand-blue-300 mb-4">
-            {products[current - 1].name}
-          </h1>
         </div>
-        <p className="text-[20px] text-gray-600">
-          {products[current - 1].description}
+        <p className="text-gray-600 text-center">
+          Wybierz wygrodzenia bezpieczeństwa dostosowane do Twoich potrzeb!
         </p>
-        <Button className="mt-8 w-full max-w-xs">
-          {products[current - 1].cta}
-        </Button>
       </div>
 
-      <div className="relative flex-1 flex flex-col items-center h-full">
+      <div className="relative flex-1 flex flex-col items-center w-full">
         <Carousel
           setApi={setApi}
           opts={{
             align: "center",
+            loop: true,
+            dragFree: true,
           }}
           orientation="horizontal"
           className="w-full h-full flex flex-col items-center justify-center"
         >
-          <CarouselContent className="h-full">
-            <CarouselItem
-              key={"falcon"}
-              className={`md:basis-4/5 flex flex-col items-center justify-center`}
-            >
-              <Image
-                src={"/images/products/rem-met-falcon-hero.png"}
-                alt={`Wygrodzenie REM-MET FALCON`}
-                width={1920}
-                height={1080}
-              />
-            </CarouselItem>
-            <CarouselItem
-              key={"rhino"}
-              className={`md:basis-4/5 flex flex-col items-center justify-center`}
-            >
-              <Image
-                src={"/images/products/rem-met-rhino-hero.png"}
-                alt={`Wygrodzenie REM-MET RHINO`}
-                width={1920}
-                height={1080}
-              />
-            </CarouselItem>
-            <CarouselItem
-              key={"gecko"}
-              className={`md:basis-4/5 flex flex-col items-start justify-center`}
-            >
-              <Image
-                src={"/images/products/rem-met-gecko-hero.png"}
-                alt={`Wygrodzenie REM-MET GECKO`}
-                width={1920}
-                height={1080}
-              />
-            </CarouselItem>
+          <CarouselContent className="h-full w-screen m-0">
+            {products.map((product) => (
+              <CarouselItem
+                key={product.id}
+                className={`basis-3/5 flex flex-col items-center justify-center relative aspect-video`}
+              >
+                <Image
+                  src={product.image}
+                  alt={`Wygrodzenie REM-MET ${product.name}`}
+                  fill
+                  className="object-cover"
+                />
+              </CarouselItem>
+            ))}
           </CarouselContent>
-          <div className="absolute bottom-0 left-0 flex gap-2">
-            <div className="text-gray-100 text-base">
-              0{current} / 0{count}
-            </div>
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
         </Carousel>
+      </div>
+
+      <DotIndicator api={api} />
+
+      <div className="flex flex-col justify-center items-center w-full gap-4 mx-4">
+        <div className="flex flex-col gap-0">
+          <h2 className="text-xl uppercase text-gray-600 text-center">
+            {products[current - 1].title}
+          </h2>
+          <h1 className="text-6xl text-center font-bold leading-none text-brand-blue-200 mb-4">
+            {products[current - 1].name}
+          </h1>
+        </div>
+
+        <Button className="w-full max-w-xs">{products[current - 1].cta}</Button>
       </div>
     </div>
   );
 };
 
-export default ProductCarouselDesktop;
+export default ProductCarouselMobile;

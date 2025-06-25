@@ -147,5 +147,5 @@ export const useProductCarousel = () => {
       .on("slideFocus", tweenScale);
   }, [api, tweenOpacity, tweenScale]);
 
-  return { current, setApi, count };
+  return { current, setApi, count, api };
 };
