@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,11 +7,9 @@ import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import useTranslations from "@/hooks/useTranslations";
@@ -68,8 +68,22 @@ const AppNavigationMenu = () => {
 
 const Header = () => {
   const t = useTranslations("header");
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-border/40">
+    <header
+      className={`fixed top-0 z-50 w-full border-b border-border/40 transition-colors duration-300 ${
+        scrolled ? "bg-brand-blue-400 backdrop-blur" : ""
+      }`}
+    >
       <Container>
         <div className="flex h-[100px] items-center justify-between">
           <Logo />
