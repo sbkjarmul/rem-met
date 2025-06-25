@@ -1,29 +1,26 @@
-export const products = [
+export const getProducts = (t: (key: string) => string) => [
   {
     id: "1",
-    name: "FALCON",
+    name: t("falcon.name"),
     image: "/images/products/rem-met-falcon-hero.png",
-    title: "Wygrodzenia siatkowe",
-    description:
-      "Siatkowe wygrodzenia zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
-    cta: "Wybierz FALCON",
+    title: t("falcon.title"),
+    description: t("falcon.description"),
+    cta: t("falcon.cta"),
   },
   {
     id: "2",
-    name: "RHINO",
+    name: t("rhino.name"),
     image: "/images/products/rem-met-rhino-hero.png",
-    title: "Wygrodzenia metalowe",
-    description:
-      "Wygrodzenia metalowe zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
-    cta: "Wybierz RHINO",
+    title: t("rhino.title"),
+    description: t("rhino.description"),
+    cta: t("rhino.cta"),
   },
   {
     id: "3",
-    name: "GECKO",
+    name: t("gecko.name"),
     image: "/images/products/rem-met-gecko-hero.png",
-    title: "Wygrodzenia poliwęglanowe",
-    description:
-      "Transparentne wygrodzenia zapewniające maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. Doskonałe do nowoczesnych zakładów przemysłowych.",
-    cta: "Wybierz GECKO",
+    title: t("gecko.title"),
+    description: t("gecko.description"),
+    cta: t("gecko.cta"),
   },
 ];

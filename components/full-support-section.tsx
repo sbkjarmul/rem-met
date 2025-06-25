@@ -104,7 +104,7 @@ const PlanTimeline = ({ activeStep }: PlanTimelineProps) => {
   );
 };
 
-export const FullSupportSection = () => {
+const FullSupportSection = () => {
   const t = useTranslations("fullSupport");
 
   const steps = [
@@ -166,3 +166,5 @@ export const FullSupportSection = () => {
     </section>
   );
 };
+
+export default FullSupportSection;

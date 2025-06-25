@@ -102,4 +102,32 @@ export default {
       "Jesteśmy gotowi odpowiedzieć na Twoje pytania i przygotować indywidualną ofertę. Skontaktuj się z nami, aby dowiedzieć się więcej o naszych rozwiązaniach.",
     button: "Wyślij zapytanie",
   },
+  // Our Products Section
+  ourProductsSection: {
+    accent: "Nasze produkty",
+    title: "Wygrodzenia przemysłowe",
+    description:
+      "Wybierz wygrodzenia bezpieczeństwa dostosowane do Twoich potrzeb!",
+    // Falcon
+    "falcon.name": "FALCON",
+    "falcon.title": "Wygrodzenia siatkowe",
+    "falcon.description":
+      "Siatkowe wygrodzenia zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
+    "falcon.cta": "Wybierz FALCON",
+    "falcon.alt": "Wygrodzenie REM-MET FALCON",
+    // Rhino
+    "rhino.name": "RHINO",
+    "rhino.title": "Wygrodzenia metalowe",
+    "rhino.description":
+      "Wygrodzenia metalowe zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+    "rhino.cta": "Wybierz RHINO",
+    "rhino.alt": "Wygrodzenie REM-MET RHINO",
+    // Gecko
+    "gecko.name": "GECKO",
+    "gecko.title": "Wygrodzenia poliwęglanowe",
+    "gecko.description":
+      "Transparentne wygrodzenia zapewniające maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. Doskonałe do nowoczesnych zakładów przemysłowych.",
+    "gecko.cta": "Wybierz GECKO",
+    "gecko.alt": "Wygrodzenie REM-MET GECKO",
+  },
 };

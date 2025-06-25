@@ -58,7 +58,7 @@ const QualityItem = ({ title, description, icon }: QualityItemProps) => {
   );
 };
 
-export const QualitySection = () => {
+const QualitySection = () => {
   const t = useTranslations("quality");
 
   return (
@@ -105,3 +105,5 @@ export const QualitySection = () => {
     </section>
   );
 };
+
+export default QualitySection;

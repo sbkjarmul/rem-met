@@ -13,7 +13,7 @@ import {
   UserIcon,
 } from "@/components/icons";
 
-export const AboutUsSection = () => {
+const AboutUsSection = () => {
   const t = useTranslations("aboutUs");
 
   return (
@@ -55,3 +55,5 @@ export const AboutUsSection = () => {
     </section>
   );
 };
+
+export default AboutUsSection;

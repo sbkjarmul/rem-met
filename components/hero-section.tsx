@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import useTranslations from "@/hooks/useTranslations";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   const t = useTranslations("hero");
 
   return (
@@ -41,3 +41,5 @@ export const HeroSection = () => {
     </section>
   );
 };
+
+export default HeroSection;

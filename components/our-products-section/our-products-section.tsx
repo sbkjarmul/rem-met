@@ -3,7 +3,7 @@
 import ProductCarouselDesktop from "./components/product-carousel-desktop";
 import ProductCarouselMobile from "./components/product-carousel-mobile";
 
-export const OurProductsSection = () => {
+const OurProductsSection = () => {
   return (
     <section className="w-full bg-gray-200 min-h-screen flex flex-col items-center justify-center">
       <div className="hidden lg:flex">
@@ -16,3 +16,5 @@ export const OurProductsSection = () => {
     </section>
   );
 };
+
+export default OurProductsSection;

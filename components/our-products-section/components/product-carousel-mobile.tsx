@@ -8,12 +8,17 @@ import {
 } from "@/components/ui/carousel";
 
 import { useProductCarousel } from "../hooks/use-product-carousel";
-import { products } from "../constants";
 import { AccentText } from "@/components/ui/accent-text";
+import useTranslations from "@/hooks/useTranslations";
+
 import { DotIndicator } from "./dot-indicator";
+import { getProducts } from "../constants";
 
 const ProductCarouselMobile = () => {
   const { current, setApi, api } = useProductCarousel();
+
+  const t = useTranslations("ourProductsSection");
+  const products = getProducts(t);
 
   return (
     <div className="flex flex-col gap-6 w-full items-center justify-center">

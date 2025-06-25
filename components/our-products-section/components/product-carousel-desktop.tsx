@@ -9,18 +9,22 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import useTranslations from "@/hooks/useTranslations";
 
 import { useProductCarousel } from "../hooks/use-product-carousel";
-import { products } from "../constants";
+import { getProducts } from "../constants";
 
 const ProductCarouselDesktop = () => {
   const { current, setApi, count } = useProductCarousel();
+
+  const t = useTranslations("ourProductsSection");
+  const products = getProducts(t);
 
   return (
     <div className="ml-20 flex flex-col lg:flex-row gap-10 w-full">
       <div className="flex flex-col justify-start w-1/3 h-full gap-8">
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl uppercase text-brand-blue-200">
+          <h3 className="text-4xl uppercase font-medium text-gray-700">
             {products[current - 1].title}
           </h3>
           <h2 className="text-[92px] font-bold leading-none text-brand-blue-300">
