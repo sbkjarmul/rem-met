@@ -97,10 +97,10 @@ export default {
   // Contact Section
   contactSection: {
     accent: "Skontaktuj się z nami",
-    title: "Porozmawiajmy o Twoim projekcie",
+    title: "Potrzebujesz systemu bezpieczeństwa?",
     description:
-      "Jesteśmy gotowi odpowiedzieć na Twoje pytania i przygotować indywidualną ofertę. Skontaktuj się z nami, aby dowiedzieć się więcej o naszych rozwiązaniach.",
-    button: "Wyślij zapytanie",
+      "Wypełnij formularz i otrzymaj indywidualną ofertę lub dowiedz się więcej o naszych rozwiązaniach.",
+    button: "Uzyskaj DARMOWĄ wycenę",
   },
   // Our Products Section
   ourProductsSection: {
