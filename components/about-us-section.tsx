@@ -18,15 +18,17 @@ export const AboutUsSection = () => {
 
   return (
     <section className="relative bg-white h-fit min-h-[800px] flex flex-col justify-center items-start">
-      <Container className="flex flex-col lg:flex-row gap-10 items-center">
-        <div className="max-w-4xl text-start z-10">
-          <AccentText className="text-brand-blue-100">
-            {t("aboutUsAccent")}
-          </AccentText>
-          <h2 className="mt-4 text-4xl md:text-4xl font-medium text-gray-900">
-            {t("aboutUsTitle")}
-          </h2>
-          <p className="mt-6 text-lg text-gray-700">{t("description")}</p>
+      <Container className="flex flex-col gap-16 items-center">
+        <div className="flex flex-col max-w-4xl text-center z-10 gap-8">
+          <div className="flex flex-col gap-2">
+            <AccentText className="text-brand-blue-100">
+              {t("aboutUsAccent")}
+            </AccentText>
+            <h2 className="text-4xl md:text-4xl font-medium text-gray-800">
+              {t("aboutUsTitle")}
+            </h2>
+          </div>
+          <p className="text-lg text-gray-500">{t("description")}</p>
         </div>
         <div className="grid grid-cols-[260px_260px] grid-rows-[80px_80px] gap-x-0 gap-y-4">
           <FeatureCard
