@@ -6,9 +6,10 @@ export default {
   header: {
     home: "Strona główna",
     about: "O nas",
-    services: "Usługi",
+    offer: "Oferta",
     contact: "Kontakt",
     headerButton: "Darmowa wycena",
+    "megaMenu.title": "Systemy wygrodzeń REM-MET",
   },
   // Footer
   footer: {
