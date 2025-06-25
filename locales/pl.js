@@ -94,4 +94,12 @@ export default {
     "feature4.title": "Dostawa i montaź",
     "feature4.description": "Przywieziemy i zamontujemy produkt za Ciebie!",
   },
+  // Contact Section
+  contactSection: {
+    accent: "Skontaktuj się z nami",
+    title: "Porozmawiajmy o Twoim projekcie",
+    description:
+      "Jesteśmy gotowi odpowiedzieć na Twoje pytania i przygotować indywidualną ofertę. Skontaktuj się z nami, aby dowiedzieć się więcej o naszych rozwiązaniach.",
+    button: "Wyślij zapytanie",
+  },
 };
