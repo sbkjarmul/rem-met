@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
-import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button";
 import {
   Carousel,
   CarouselContent,

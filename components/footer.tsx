@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container } from "@/components/ui/container";
+import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 
 const Logo = () => {

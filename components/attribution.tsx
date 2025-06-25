@@ -1,6 +1,6 @@
 import useTranslations from "@/hooks/useTranslations";
 
-import { Container } from "./ui/container";
+import Container from "./ui/container";
 
 const Attribution = () => {
   const t = useTranslations("footer");

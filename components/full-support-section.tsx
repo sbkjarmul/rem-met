@@ -6,7 +6,7 @@ import Image from "next/image";
 import useTranslations from "@/hooks/useTranslations";
 
 import { AccentText } from "@/components/ui/accent-text";
-import { Container } from "@/components/ui/container";
+import Container from "@/components/ui/container";
 import { VerticalTimeline } from "@/components/ui/vertical-timeline";
 
 import { cn } from "@/lib/utils";

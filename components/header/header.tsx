@@ -1,0 +1,70 @@
+"use client";
+
+import * as React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Container from "@/components/ui/container";
+import Button from "@/components/ui/button";
+
+import useTranslations from "@/hooks/useTranslations";
+import MegaMenu from "./components/mega-menu";
+import MobileMenu from "./components/mobile-menu";
+
+const Logo = () => {
+  return (
+    <Link href="/">
+      <Image
+        src="/images/rem-met-logo-light-mode.png"
+        alt="REM-MET Logo"
+        width={160}
+        height={40}
+        className="block dark:hidden"
+      />
+      <Image
+        src="/images/rem-met-logo-dark-mode.png"
+        alt="REM-MET Logo"
+        width={160}
+        height={40}
+        className="hidden dark:block"
+      />
+    </Link>
+  );
+};
+
+const Header = () => {
+  const t = useTranslations("header");
+  const [scrolled, setScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={`fixed top-0 z-50 w-full border-b border-border/40 transition-colors duration-300 ${
+        scrolled ? "bg-brand-blue-400 backdrop-blur" : "bg-transparent"
+      }`}
+    >
+      <Container className="px-8">
+        <div className="flex h-[100px] items-center justify-between">
+          <Logo />
+          <div className="hidden lg:flex">
+            <MegaMenu />
+          </div>
+          <Button size="lg" className="hidden lg:block">
+            {t("headerButton")}
+          </Button>
+          <div className="lg:hidden">
+            <MobileMenu />
+          </div>
+        </div>
+      </Container>
+    </header>
+  );
+};
+
+export { Header };

@@ -4,18 +4,12 @@ import Image from "next/image";
 import useTranslations from "@/hooks/useTranslations";
 
 import { AccentText } from "@/components/ui/accent-text";
-import { Button } from "@/components/ui/button";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Container } from "@/components/ui/container";
-import { FeatureCard } from "@/components/ui/feature-card";
+import Container from "@/components/ui/container";
 
 import {
-  ClenchedFistIcon,
   ProgressIcon,
   RecycleIcon,
   SecurityTimeIcon,
-  ToolIcon,
-  UserIcon,
 } from "@/components/icons";
 
 const IconWrapper = ({ children }: { children: React.ReactNode }) => {

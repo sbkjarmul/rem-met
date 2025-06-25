@@ -1,79 +1,17 @@
-"use client";
-
-import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Container } from "@/components/ui/container";
-import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuItem,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import useTranslations from "@/hooks/useTranslations";
-import NextLink from "next/link";
 
-type NavigationMenuProductCardProps = {
-  title: string;
-  name: string;
-  imageSrc: string;
-  imageAlt: string;
-  buttonText: string;
-};
+import NavigationMenuProductCard from "./mega-menu-product-card";
 
-const NavigationMenuProductCard = ({
-  title,
-  name,
-  imageSrc,
-  imageAlt,
-  buttonText,
-}: NavigationMenuProductCardProps) => {
-  return (
-    <div className="flex h-full w-full flex-col justify-center items-center hover:bg-muted/50 p-6 min-w-full">
-      <div className="flex flex-col items-center">
-        <p className="text-muted-foreground text-sm leading-tight">{title}</p>
-        <div className="text-2xl font-medium">{name}</div>
-      </div>
-      <div className="relative aspect-video w-full">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-contain" />
-      </div>
-      <Button className="w-full">
-        <NextLink href="/" className="w-full">
-          {buttonText}
-        </NextLink>
-      </Button>
-    </div>
-  );
-};
-
-const Logo = () => {
-  return (
-    <Link href="/">
-      <Image
-        src="/images/rem-met-logo-light-mode.png"
-        alt="REM-MET Logo"
-        width={160}
-        height={40}
-        className="block dark:hidden"
-      />
-      <Image
-        src="/images/rem-met-logo-dark-mode.png"
-        alt="REM-MET Logo"
-        width={160}
-        height={40}
-        className="hidden dark:block"
-      />
-    </Link>
-  );
-};
-
-const AppNavigationMenu = () => {
+const MegaMenu = () => {
   const t = useTranslations("header");
   const tOurProducts = useTranslations("ourProductsSection");
 
@@ -109,6 +47,7 @@ const AppNavigationMenu = () => {
                       imageSrc="/images/products/rem-met-falcon-hero.png"
                       imageAlt={tOurProducts("falcon.alt")}
                       buttonText={tOurProducts("falcon.cta")}
+                      path="/falcon"
                     />
                   </NavigationMenuLink>
                 </li>
@@ -120,6 +59,7 @@ const AppNavigationMenu = () => {
                       imageSrc="/images/products/rem-met-rhino-hero.png"
                       imageAlt={tOurProducts("rhino.alt")}
                       buttonText={tOurProducts("rhino.cta")}
+                      path="/rhino"
                     />
                   </NavigationMenuLink>
                 </li>
@@ -131,6 +71,7 @@ const AppNavigationMenu = () => {
                       imageSrc="/images/products/rem-met-gecko-hero.png"
                       imageAlt={tOurProducts("gecko.alt")}
                       buttonText={tOurProducts("gecko.cta")}
+                      path="/gecko"
                     />
                   </NavigationMenuLink>
                 </li>
@@ -151,33 +92,4 @@ const AppNavigationMenu = () => {
   );
 };
 
-const Header = () => {
-  const t = useTranslations("header");
-  const [scrolled, setScrolled] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <header
-      className={`fixed top-0 z-50 w-full border-b border-border/40 transition-colors duration-300 ${
-        scrolled ? "bg-brand-blue-400 backdrop-blur" : ""
-      }`}
-    >
-      <Container>
-        <div className="flex h-[100px] items-center justify-between">
-          <Logo />
-          <AppNavigationMenu />
-          <Button size="lg">{t("headerButton")}</Button>
-        </div>
-      </Container>
-    </header>
-  );
-};
-
-export { Header };
+export default MegaMenu;

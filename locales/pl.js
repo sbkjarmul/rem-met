@@ -9,7 +9,11 @@ export default {
     offer: "Oferta",
     contact: "Kontakt",
     headerButton: "Darmowa wycena",
+    // Mega Menu
     "megaMenu.title": "Systemy wygrodzeń REM-MET",
+    // Mobile Menu
+    "mobileMenu.cta": "Uzyskaj darmową wycenę",
+    "mobileMenu.question": "Jestes zainteresowany?",
   },
   // Footer
   footer: {

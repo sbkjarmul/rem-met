@@ -3,7 +3,7 @@ import * as React from "react";
 import useTranslations from "@/hooks/useTranslations";
 
 import { AccentText } from "@/components/ui/accent-text";
-import { Container } from "@/components/ui/container";
+import Container from "@/components/ui/container";
 import { FeatureCard } from "@/components/ui/feature-card";
 
 import {
