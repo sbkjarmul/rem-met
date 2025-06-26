@@ -32,7 +32,7 @@ const MegaMenu = () => {
           <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
             {t("offer")}
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-brand-blue-400 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
+          <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
             <div className="flex flex-col gap-4 w-full p-10">
               <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
                 {t("megaMenu.title")}

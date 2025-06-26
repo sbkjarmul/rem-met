@@ -40,12 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${ttOctosquares.variable}`}>
-      <body className="relative dark bg-background text-foreground">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <Attribution />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

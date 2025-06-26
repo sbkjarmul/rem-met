@@ -109,7 +109,7 @@ export default {
     "accent.product": "Kontakt",
     "title.product": "Zainteresowany?",
     "description.product":
-      "Wypełnij formularz kontaktowy, a przygotujemy dla Ciebie bezpłatną wycenę.",
+      "Wypełnij formularz kontaktowy, aby otrzymać bezpłatną wycenę.",
     "button.product": "Skontaktuj się",
   },
   // Our Products Section

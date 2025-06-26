@@ -45,8 +45,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full border-b border-border/40 transition-colors duration-300 ${
-        scrolled ? "bg-brand-blue-400 backdrop-blur" : "bg-transparent"
+      className={`fixed top-0 z-50 w-full border-b dark:border-gray-700 border-gray-300 transition-colors duration-300 ${
+        scrolled ? "dark:bg-brand-blue-400 bg-gray-100" : "bg-transparent"
       }`}
     >
       <Container className="px-8">

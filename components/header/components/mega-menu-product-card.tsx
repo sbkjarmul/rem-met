@@ -20,7 +20,7 @@ const MegaMenuProductCard = ({
   path,
 }: MegaMenuProductCardProps) => {
   return (
-    <div className="flex h-full w-full flex-col justify-center items-center hover:bg-muted/50 p-6 min-w-full">
+    <div className="flex h-full w-full flex-col justify-center items-center dark:hover:bg-gray-800 hover:bg-white p-6 min-w-full">
       <div className="flex flex-col items-center">
         <p className="text-muted-foreground text-sm leading-tight">{title}</p>
         <div className="text-2xl font-medium">{name}</div>
