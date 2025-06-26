@@ -161,5 +161,10 @@ export default {
     "feature3.title": "Zgodność",
     "feature3.description":
       "GECKO spełnia wymogi normy EN ISO 14120 oraz Dyrektywy Maszynowej 2006/42/WE, zapewniając najwyższy poziom zgodności z przepisami BHP.",
+    // Gecko Versions Section
+    versions: "wersje",
+    3: "Trzy",
+    levels: "poziomy ochrony",
+    "versions.alt": "Trzy wersje wygrodzeń GECKO",
   },
 };

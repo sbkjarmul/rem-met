@@ -1,11 +1,13 @@
-import GeckoHeroSection from "../(landing-page)/components/gecko-hero-section";
-import GeckoDetailsSection from "../(landing-page)/components/gecko-details-section";
+import GeckoHeroSection from "./components/gecko-hero-section";
+import GeckoDetailsSection from "./components/gecko-details-section";
+import GeckoVersionsSection from "./components/gecko-versions-section";
 
 export default function GeckoPage() {
   return (
     <div>
       <GeckoHeroSection />
       <GeckoDetailsSection />
+      <GeckoVersionsSection />
     </div>
   );
 }
