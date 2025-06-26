@@ -3,6 +3,38 @@ import Image from "next/image";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 
+interface GeckoVersionCardProps {
+  name: string;
+  version: string;
+  description: string;
+  imageUrl: string;
+}
+
+const GeckoVersionCard = ({
+  name,
+  version,
+  description,
+  imageUrl,
+}: GeckoVersionCardProps) => {
+  return (
+    <div className="flex flex-col gap-8 w-full bg-gray-100 p-10 justify-center items-center">
+      <h3 className="text-4xl flex items-center gap-2">
+        <span className="text-gray-600 font-medium">{name}</span>
+        <span className="text-gray-500 font-normal">{version}</span>
+      </h3>
+      <p className="text-gray-500 text-center text-sm">{description}</p>
+      <div className="relative w-full aspect-square">
+        <Image
+          src={imageUrl}
+          alt={`${name} ${version}. ${description}`}
+          fill
+          className="object-contain"
+        />
+      </div>
+    </div>
+  );
+};
+
 export default function GeckoDetailsSection() {
   const t = useTranslations("gecko");
 
@@ -27,6 +59,26 @@ export default function GeckoDetailsSection() {
           </div>
         </div>
       </Container>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr] w-full gap-[1px] bg-gray-300 border border-gray-300">
+        <GeckoVersionCard
+          name={t("name")}
+          version={t("vision.name")}
+          description={t("vision.description")}
+          imageUrl="/images/products/rem-met-gecko-vision-panel.png"
+        />
+        <GeckoVersionCard
+          name={t("name")}
+          version={t("solid.name")}
+          description={t("solid.description")}
+          imageUrl="/images/products/rem-met-gecko-solid-panel.png"
+        />
+        <GeckoVersionCard
+          name={t("name")}
+          version={t("air.name")}
+          description={t("air.description")}
+          imageUrl="/images/products/rem-met-gecko-air-panel.png"
+        />
+      </div>
     </section>
   );
 }

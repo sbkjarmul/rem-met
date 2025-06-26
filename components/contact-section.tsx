@@ -4,13 +4,57 @@ import useTranslations from "@/hooks/useTranslations";
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
 
-const ContactSection = () => {
+interface ContactSectionProps {
+  variant: "product" | "default";
+}
+
+const ContactSection = ({ variant }: ContactSectionProps) => {
   const t = useTranslations("contactSection");
 
+  const styles = {
+    product: {
+      background: "bg-brand-blue-200",
+      button: "secondary",
+      description: "text-gray-300",
+      title: "text-gray-100",
+      accent: "text-gray-300",
+      text: {
+        accent: t("accent.product"),
+        description: t("description.product"),
+        title: t("title.product"),
+      },
+    },
+    default: {
+      background: "bg-gray-900",
+      button: "default",
+      description: "text-gray-400",
+      title: "text-gray-100",
+      accent: "text-brand-blue-100",
+      text: {
+        accent: t("accent"),
+        description: t("description"),
+        title: t("title"),
+      },
+    },
+  };
+
+  const currentStyle = variant === "product" ? styles.product : styles.default;
+
+  const bgColor = currentStyle.background;
+  const buttonVariant = currentStyle.button as "default" | "secondary";
+  const descriptionColor = currentStyle.description;
+  const titleColor = currentStyle.title;
+  const accentColor = currentStyle.accent;
+  const accentText = currentStyle.text.accent;
+  const description = currentStyle.text.description;
+  const title = currentStyle.text.title;
+
   return (
-    <section className="relative bg-gray-900 gap-4 h-fit min-h-[400px] flex justify-center items-center py-20 px-10">
+    <section
+      className={`relative ${bgColor} ${descriptionColor} gap-4 h-fit min-h-[400px] flex justify-center items-center py-20 px-10`}
+    >
       <Image
-        className="z-0 hidden md:block"
+        className="z-0 hidden md:block select-none"
         src="/icons/rem-met-triple-stars-icon.svg"
         alt="REM-MET Triple Stars Icon"
         width={200}
@@ -18,15 +62,15 @@ const ContactSection = () => {
       />
       <div className="flex flex-col items-center gap-8 text-center max-w-2xl z-1">
         <div className="flex flex-col items-center gap-2">
-          <AccentText className="text-brand-blue-100">{t("accent")}</AccentText>
-          <h2 className="text-4xl font-medium text-gray-100">{t("title")}</h2>
+          <AccentText className={accentColor}>{accentText}</AccentText>
+          <h2 className={`text-4xl font-medium  ${titleColor}`}>{title}</h2>
         </div>
-        <p className="text-lg text-gray-400">{t("description")}</p>
-        <Button>{t("button")}</Button>
+        <p className="text-lg">{description}</p>
+        <Button variant={buttonVariant}>{t("button")}</Button>
       </div>
 
       <Image
-        className="scale-x-[-1] z-0 hidden md:block"
+        className="scale-x-[-1] z-0 hidden md:block select-none"
         src="/icons/rem-met-triple-stars-icon.svg"
         alt="REM-MET Triple Stars Icon"
         width={200}

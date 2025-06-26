@@ -1,6 +1,9 @@
 import GeckoHeroSection from "./components/gecko-hero-section";
 import GeckoDetailsSection from "./components/gecko-details-section";
 import GeckoVersionsSection from "./components/gecko-versions-section";
+import GeckoSpecificationSection from "./components/gecko-specification-section";
+import ColorsSection from "@/components/colors-section";
+import ContactSection from "@/components/contact-section";
 
 export default function GeckoPage() {
   return (
@@ -8,6 +11,9 @@ export default function GeckoPage() {
       <GeckoHeroSection />
       <GeckoDetailsSection />
       <GeckoVersionsSection />
+      <GeckoSpecificationSection />
+      <ColorsSection />
+      <ContactSection variant="product" />
     </div>
   );
 }
