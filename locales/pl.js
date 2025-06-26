@@ -135,4 +135,12 @@ export default {
     "gecko.cta": "Wybierz GECKO",
     "gecko.alt": "Wygrodzenie REM-MET GECKO",
   },
+  // Gecko Hero Section
+  gecko: {
+    accent: "Nowoczesność i przejrzystość",
+    title: "Wygrodzenia poliwęglanowe",
+    alt: "Wygrodzenie REM-MET GECKO",
+    lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
+    nameAlt: "GECKO",
+  },
 };

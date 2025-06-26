@@ -13,6 +13,7 @@ import useTranslations from "@/hooks/useTranslations";
 
 import { useProductCarousel } from "../hooks/use-product-carousel";
 import { getProducts } from "../constants";
+import Link from "next/link";
 
 const ProductCarouselDesktop = () => {
   const { current, setApi, count } = useProductCarousel();
@@ -34,7 +35,12 @@ const ProductCarouselDesktop = () => {
         <p className="text-[20px] text-gray-600 leading-tight h-32">
           {products[current - 1].description}
         </p>
-        <Button className="w-full">{products[current - 1].cta}</Button>
+
+        <Button className="w-full">
+          <Link href={products[current - 1].path}>
+            {products[current - 1].cta}
+          </Link>
+        </Button>
       </div>
 
       <div className="relative flex-1 flex flex-col items-center h-full">

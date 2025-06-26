@@ -13,6 +13,7 @@ import useTranslations from "@/hooks/useTranslations";
 
 import { DotIndicator } from "./dot-indicator";
 import { getProducts } from "../constants";
+import Link from "next/link";
 
 const ProductCarouselMobile = () => {
   const { current, setApi, api } = useProductCarousel();
@@ -77,7 +78,11 @@ const ProductCarouselMobile = () => {
           </h1>
         </div>
 
-        <Button className="w-full max-w-xs">{products[current - 1].cta}</Button>
+        <Button className="w-full max-w-xs" asChild>
+          <Link href={products[current - 1].path}>
+            {products[current - 1].cta}
+          </Link>
+        </Button>
       </div>
     </div>
   );
