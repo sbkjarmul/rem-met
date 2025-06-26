@@ -29,7 +29,7 @@ const GeckoHeroSection = () => {
         <div className="absolute top-0 left-0 w-full aspect-video z-2">
           <Image
             src="/images/products/rem-met-gecko-name.svg"
-            alt={t("geckoAlt")}
+            alt={t("nameAlt")}
             fill
             className="object-contain"
           />

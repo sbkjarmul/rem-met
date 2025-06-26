@@ -135,12 +135,31 @@ export default {
     "gecko.cta": "Wybierz GECKO",
     "gecko.alt": "Wygrodzenie REM-MET GECKO",
   },
-  // Gecko Hero Section
+  // Gecko Page
   gecko: {
+    name: "GECKO",
+    // Hero Section
     accent: "Nowoczesność i przejrzystość",
     title: "Wygrodzenia poliwęglanowe",
     alt: "Wygrodzenie REM-MET GECKO",
     lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
     nameAlt: "GECKO",
+    breadcrumb: "Wygrodzenia bezpieczeństwa",
+    // Details Section
+    "details.accent": "System GECKO",
+    "details.title":
+      "Transparentna ochrona dla najbardziej wymagających stref przemysłowych",
+    "details.description":
+      "Stworzone z myślą o ochronie w strefach pracy maszyn CNC, robotów przemysłowych i urządzeń wysokiej prędkości.",
+    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+    "feature1.title": "Pełna widoczność",
+    "feature1.description":
+      "Panele z poliwęglanu zapewniają doskonałą widoczność procesów produkcyjnych oraz pozwalają na stałą kontrolę pracy maszyn i robotów.",
+    "feature2.title": "Bezpieczeństwo",
+    "feature2.description":
+      "GECKO chroni operatorów przed odłamkami, wiórami oraz elementami wirującymi z obrabianych detali. Idealne do stref o podwyższonym ryzyku.",
+    "feature3.title": "Zgodność",
+    "feature3.description":
+      "GECKO spełnia wymogi normy EN ISO 14120 oraz Dyrektywy Maszynowej 2006/42/WE, zapewniając najwyższy poziom zgodności z przepisami BHP.",
   },
 };
