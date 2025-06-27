@@ -48,7 +48,7 @@ export default function PasswordProtect({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
-      <Container className="max-w-sm w-full bg-brand-blue-200 rounded-lg shadow-lg flex flex-col items-center gap-6 z-1 ">
+      <Container className="max-w-sm w-full rounded-lg shadow-lg flex flex-col items-center gap-6 z-1">
         <form
           className="w-full flex flex-col gap-4"
           onSubmit={(e) => e.preventDefault()}
