@@ -275,7 +275,7 @@ export default {
     "details.title.mobile": "Maksymalna ochrona",
     "details.description":
       "Zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
-    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+    "details.alt": "Wygrodzenie REM-MET RHINO w rzucie izometrycznym",
     "feature1.title": "Pełna ochrona",
     "feature1.description":
       "Ochrona przed intensywnym światłem i iskrami. Wersja z szybą filtrującą umożliwia podgląd bez ryzyka uszkodzenia wzroku.",
@@ -286,9 +286,9 @@ export default {
     "feature3.description":
       "Dzięki wielu wymiarom i opcjom konfiguracji, RHINO można łatwo zintegrować zarówno z pojedynczymi celami, jak i zautomatyzowanymi liniami produkcyjnymi.",
     // Gecko Versions Section
-    versions: "wersje",
     2: "Dwa",
     two: "Dwie",
+    versions: "wersje",
     levels: "poziomy ochrony",
     "versions.alt": "Dwie wersje wygrodzeń RHINO",
     "vision.name": "Vision",

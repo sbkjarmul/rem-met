@@ -37,7 +37,7 @@ const GeckoVersionCard = ({
   );
 };
 
-export default function GeckoDetailsSection() {
+export default function GeckoVersionsSection() {
   const t = useTranslations("gecko");
 
   return (
