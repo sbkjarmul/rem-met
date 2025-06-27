@@ -1,20 +1,20 @@
 import SpecificationSection from "@/components/specification/specification-section";
 import useTranslations from "@/hooks/useTranslations";
 
-const GeckoSpecificationSection = () => {
-  const t = useTranslations("gecko");
+const FalconSpecificationSection = () => {
+  const t = useTranslations("falcon");
 
   return (
     <SpecificationSection
       panelText={t("specification.panel.description")}
-      panelImageSrc="/images/products/rem-met-gecko-air-panel.png"
+      panelImageSrc="/images/products/rem-met-falcon-panel.png"
       panelImageAlt={t("specification.panel.alt")}
-      gateImageSrc="/images/products/rem-met-gecko-air-gate.png"
+      gateImageSrc="/images/products/rem-met-falcon-gate.png"
       gateImageAlt={t("specification.gates.alt")}
-      postImageSrc="/images/products/rem-met-gecko-air-post.png"
+      postImageSrc="/images/products/rem-met-fence-post.png"
       postImageAlt={t("specification.posts.alt")}
     />
   );
 };
 
-export default GeckoSpecificationSection;
+export default FalconSpecificationSection;

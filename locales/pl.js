@@ -197,49 +197,184 @@ export default {
     "air.description":
       "Góra z poliwęglanu, dół z siatki stalowej. Idealna tam, gdzie liczy się przepływ powietrza i nadzór wizualny.",
     // Gecko Specification Section
-    "specification.accent": "Wygrodzenia bezpieczeństwa",
-    "specification.title": "Parametry techniczne",
-    "specification.title.mobile": "Specyfikacja",
-    "specification.table.title": "Specyfikacja:",
-    "specification.table.title.mobile": "Parametry techniczne:",
     // Panels
-    "specification.panel.title": "Panele",
     "specification.panel.description":
       "Panele GECKO to solidne moduły ochronne wykonane z wypełnieniem z poliwęglanu, siatki lub stali. Zapewniają ochronę i dobrą widoczność w strefach pracy maszyn.",
     "specification.panel.alt":
       "Panel systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
-    "specification.panel.table.height": "Wysokość [mm]",
-    "specification.panel.table.height.value":
-      "1600, 1800, 2000, 2200, 2600, inne na zapytanie",
-    "specification.panel.table.width": "Szerokość [mm]",
-    "specification.panel.table.width.value":
-      "200, 300, 500, 1000, 2000, inne na zapytanie",
-    "specification.panel.table.colors": "Kolory",
     // Gates
-    "specification.gates.title": "Bramki",
     "specification.gates.description":
-      "Do wszystkich rodzajów wygrodzeń mamy również bramki dostępowe. Bramki wykonane są adekwatnie do każdego z rodzaju wygrodzenia. Mają możliwość zastosowania czujników otwarcia, elektrozamków lub zamków multifunkcyjnych z klamką i przyciskami.",
+      "Do wszystkich rodzajów wygrodzeń REM-MET mamy również bramki dostępowe. Bramki wykonane są adekwatnie do każdego z rodzaju wygrodzenia. Mają możliwość zastosowania czujników otwarcia, elektrozamków lub zamków multifunkcyjnych z klamką i przyciskami.",
     "specification.gates.alt":
       "Bramka systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
-    "specification.gates.table.height": "Wysokość [mm]",
-    "specification.gates.table.height.value":
-      "1800, 2000, 2200, 2600, inne na zapytanie",
-    "specification.gates.table.width": "Szerokość [mm]",
-    "specification.gates.table.width.value":
-      "1000(jednoskrzydłowa),\n 1500(jednoskrzydłowa), 3000mm(dwuskrzydłowa), inne na zapytanie",
-    "specification.gates.table.colors": "Kolory",
     // Posts
-    "specification.posts.title": "Słupki",
     "specification.posts.description":
       "Słupki montażowe dostępne są w wersji standardowej (40×40 mm) oraz wzmocnionej (60×60 mm) do wygrodzeń powyżej 2200 mm. Wyposażone w specjalną stopę amortyzującą uderzenia, chronią przed uszkodzeniami i pozwalają na regulację pochylenia. Montaż 3-punktowy oraz mocowanie paneli za pomocą śrub zapewniają stabilność i łatwą instalację.",
     "specification.posts.alt":
       "Słupek systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
-    "specification.posts.table.height": "Wysokość [mm]",
-    "specification.posts.table.height.value":
+  },
+  falcon: {
+    name: "FALCON",
+    // Hero Section
+    accent: "Nowoczesność i przejrzystość",
+    title: "Wygrodzenia poliwęglanowe",
+    alt: "Wygrodzenie REM-MET GECKO",
+    lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
+    nameAlt: "GECKO",
+    breadcrumb: "Wygrodzenia bezpieczeństwa",
+    // Details Section
+    "details.accent": "System GECKO",
+    "details.title":
+      "Transparentna ochrona dla najbardziej wymagających stref przemysłowych",
+    "details.title.mobile": "Transparentna ochrona",
+    "details.description":
+      "Stworzone z myślą o ochronie w strefach pracy maszyn CNC, robotów przemysłowych i urządzeń wysokiej prędkości.",
+    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+    "feature1.title": "Pełna widoczność",
+    "feature1.description":
+      "Panele z poliwęglanu zapewniają doskonałą widoczność procesów produkcyjnych oraz pozwalają na stałą kontrolę pracy maszyn i robotów.",
+    "feature2.title": "Bezpieczeństwo",
+    "feature2.description":
+      "GECKO chroni operatorów przed odłamkami, wiórami oraz elementami wirującymi z obrabianych detali. Idealne do stref o podwyższonym ryzyku.",
+    "feature3.title": "Zgodność",
+    "feature3.description":
+      "GECKO spełnia wymogi normy EN ISO 14120 oraz Dyrektywy Maszynowej 2006/42/WE, zapewniając najwyższy poziom zgodności z przepisami BHP.",
+    // Gecko Versions Section
+    versions: "wersje",
+    3: "Trzy",
+    levels: "poziomy ochrony",
+    "versions.alt": "Trzy wersje wygrodzeń GECKO",
+    "vision.name": "Vision",
+    "vision.description":
+      "Panel z przezroczystego poliwęglanu. Do stref wymagających stałej kontroli wizualnej.",
+    "solid.name": "Solid",
+    "solid.description":
+      "Góra z poliwęglanu, dół z blachy stalowej. Do miejsc o podwyższonym ryzyku uderzeń.",
+    "air.name": "Air",
+    "air.description":
+      "Góra z poliwęglanu, dół z siatki stalowej. Idealna tam, gdzie liczy się przepływ powietrza i nadzór wizualny.",
+    // Falcon Specification Section
+    // Panels
+    "specification.panel.description":
+      "Panele GECKO to solidne moduły ochronne wykonane z wypełnieniem z poliwęglanu, siatki lub stali. Zapewniają ochronę i dobrą widoczność w strefach pracy maszyn.",
+    "specification.panel.alt":
+      "Panel systemu wygrodzeń FALCON firmy REM-MET w rzucie izometrycznym",
+    // Gates
+    "specification.gates.description":
+      "Do wszystkich rodzajów wygrodzeń REM-MET mamy również bramki dostępowe. Bramki wykonane są adekwatnie do każdego z rodzaju wygrodzenia. Mają możliwość zastosowania czujników otwarcia, elektrozamków lub zamków multifunkcyjnych z klamką i przyciskami.",
+    "specification.gates.alt":
+      "Bramka systemu wygrodzeń FALCON firmy REM-MET w rzucie izometrycznym",
+    // Posts
+    "specification.posts.description":
+      "Słupki montażowe dostępne są w wersji standardowej (40×40 mm) oraz wzmocnionej (60×60 mm) do wygrodzeń powyżej 2200 mm. Wyposażone w specjalną stopę amortyzującą uderzenia, chronią przed uszkodzeniami i pozwalają na regulację pochylenia. Montaż 3-punktowy oraz mocowanie paneli za pomocą śrub zapewniają stabilność i łatwą instalację.",
+    "specification.posts.alt":
+      "Słupek systemu wygrodzeń FALCON firmy REM-MET w rzucie izometrycznym",
+  },
+
+  // Rhino Page
+  rhino: {
+    name: "RHINO",
+    // Hero Section
+    accent: "Maksymalna ochrona i trwałość",
+    title: "Wygrodzenia metalowe",
+    alt: "Wygrodzenie REM-MET RHINO",
+    lightAlt: "Światło padające na wygrodzenia REM-MET RHINO",
+    nameAlt: "RHINO",
+    breadcrumb: "Wygrodzenia bezpieczeństwa",
+    // Details Section
+    "details.accent": "System RHINO",
+    "details.title":
+      "Maksymalna ochrona, tam gdzie pozostałe rozwiązanie nie wystarczają.",
+    "details.title.mobile": "Maksymalna ochrona",
+    "details.description":
+      "Zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+    "feature1.title": "Pełna ochrona",
+    "feature1.description":
+      "Ochrona przed intensywnym światłem i iskrami. Wersja z szybą filtrującą umożliwia podgląd bez ryzyka uszkodzenia wzroku.",
+    "feature2.title": "Wytrzymałość",
+    "feature2.description":
+      "Solidna rama z profilu stalowego 30×30 mm i blacha o grubości 2 mm zapewniają trwałość nawet w wymagających warunkach pracy.",
+    "feature3.title": "Uniwersalność",
+    "feature3.description":
+      "Dzięki wielu wymiarom i opcjom konfiguracji, RHINO można łatwo zintegrować zarówno z pojedynczymi celami, jak i zautomatyzowanymi liniami produkcyjnymi.",
+    // Gecko Versions Section
+    versions: "wersje",
+    2: "Dwa",
+    two: "Dwie",
+    levels: "poziomy ochrony",
+    "versions.alt": "Dwie wersje wygrodzeń RHINO",
+    "vision.name": "Vision",
+    "vision.description":
+      "Panel wykonany z blachy stalowej. \n Przeznaczonny do stref, gdzie nie jest wymagana widoczność.",
+    "solid.name": "Solid",
+    "solid.description":
+      "Panel z pełnej blachy stalowej zintegrowany z oknem rewizyjnym. \n Do stanowisk nadzorowanych lub szkoleniowych.",
+
+    // Rhino Specification Section
+    // Panels
+    "specification.panel.description":
+      "Panele RHINO to solidne moduły ochronne wykonane z blachy stalowej. Zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+    "specification.panel.alt":
+      "Panel systemu wygrodzeń RHINO firmy REM-MET w rzucie izometrycznym",
+    // Gates
+    "specification.gates.description":
+      "Do wszystkich rodzajów wygrodzeń REM-MET mamy również bramki dostępowe. Bramki wykonane są adekwatnie do każdego z rodzaju wygrodzenia. Mają możliwość zastosowania czujników otwarcia, elektrozamków lub zamków multifunkcyjnych z klamką i przyciskami.",
+    "specification.gates.alt":
+      "Bramka systemu wygrodzeń RHINO firmy REM-MET w rzucie izometrycznym",
+    // Posts
+    "specification.posts.description":
+      "Słupki montażowe dostępne są w wersji standardowej (40×40 mm) oraz wzmocnionej (60×60 mm) do wygrodzeń powyżej 2200 mm. Wyposażone w specjalną stopę amortyzującą uderzenia, chronią przed uszkodzeniami i pozwalają na regulację pochylenia. Montaż 3-punktowy oraz mocowanie paneli za pomocą śrub zapewniają stabilność i łatwą instalację.",
+    "specification.posts.alt":
+      "Słupek systemu wygrodzeń RHINO firmy REM-MET w rzucie izometrycznym",
+  },
+
+  // Specification Section
+  specification: {
+    accent: "Wygrodzenia bezpieczeństwa",
+    title: "Parametry techniczne",
+    "title.mobile": "Specyfikacja",
+    "table.title": "Specyfikacja:",
+    "table.title.mobile": "Parametry techniczne:",
+    // Panels
+    "panel.title": "Panele",
+    "panel.gecko.description":
+      "Panele GECKO to solidne moduły ochronne wykonane z wypełnieniem z poliwęglanu, siatki lub stali. Zapewniają ochronę i dobrą widoczność w strefach pracy maszyn.",
+    "panel.falcon.description":
+      "Panele FALCON wykonane są z profilu stalowego 20×20 mm i zgrzewanej siatki stalowej z drutu o średnicy 3 mm, o oczku 27×87 mm. Zapewniają doskonałą widoczność, lekkość oraz możliwość montażu blisko maszyn – zgodnie z normą EN ISO 13857.",
+    "panel.rhino.description": "",
+    "panel.alt":
+      "Panel systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
+    "panel.table.height": "Wysokość [mm]",
+    "panel.table.height.value":
       "1600, 1800, 2000, 2200, 2600, inne na zapytanie",
-    "specification.posts.table.dimension": "Przekrój [mm]",
-    "specification.posts.table.dimension.value": "40x40, 60x60",
-    "specification.posts.table.colors": "Kolory",
+    "panel.table.width": "Szerokość [mm]",
+    "panel.table.width.value": "200, 300, 500, 1000, 2000, inne na zapytanie",
+    "panel.table.colors": "Kolory",
+    // Gates
+    "gates.title": "Bramki",
+    "gates.description":
+      "Do wszystkich rodzajów wygrodzeń REM-MET mamy również bramki dostępowe. Bramki wykonane są adekwatnie do każdego z rodzaju wygrodzenia. Mają możliwość zastosowania czujników otwarcia, elektrozamków lub zamków multifunkcyjnych z klamką i przyciskami.",
+    "gates.alt":
+      "Bramka systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
+    "gates.table.height": "Wysokość [mm]",
+    "gates.table.height.value": "1800, 2000, 2200, 2600, inne na zapytanie",
+    "gates.table.width": "Szerokość [mm]",
+    "gates.table.width.value":
+      "1000(jednoskrzydłowa),\n 1500(jednoskrzydłowa), 3000mm(dwuskrzydłowa), inne na zapytanie",
+    "gates.table.colors": "Kolory",
+    // Posts
+    "posts.title": "Słupki",
+    "posts.description":
+      "Słupki montażowe dostępne są w wersji standardowej (40×40 mm) oraz wzmocnionej (60×60 mm) do wygrodzeń powyżej 2200 mm. Wyposażone w specjalną stopę amortyzującą uderzenia, chronią przed uszkodzeniami i pozwalają na regulację pochylenia. Montaż 3-punktowy oraz mocowanie paneli za pomocą śrub zapewniają stabilność i łatwą instalację.",
+    "posts.alt":
+      "Słupek systemu wygrodzeń GECKO firmy REM-MET w rzucie izometrycznym",
+    "posts.table.height": "Wysokość [mm]",
+    "posts.table.height.value":
+      "1600, 1800, 2000, 2200, 2600, inne na zapytanie",
+    "posts.table.dimension": "Przekrój [mm]",
+    "posts.table.dimension.value": "40x40, 60x60",
+    "posts.table.colors": "Kolory",
   },
   // Colors Section
   colors: {
