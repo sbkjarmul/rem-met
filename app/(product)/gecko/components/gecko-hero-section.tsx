@@ -2,7 +2,6 @@ import * as React from "react";
 import Image from "next/image";
 
 import { AccentText } from "@/components/ui/accent-text";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import useTranslations from "@/hooks/useTranslations";
 import Container from "@/components/ui/container";
 
