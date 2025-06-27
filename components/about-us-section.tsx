@@ -17,7 +17,7 @@ const AboutUsSection = () => {
   const t = useTranslations("aboutUs");
 
   return (
-    <section className="relative bg-white h-fit min-h-[800px] flex flex-col justify-center items-start">
+    <section className="relative bg-white h-fit md:min-h-[800px] flex flex-col justify-center items-start py-16 md:py-0">
       <Container className="flex flex-col gap-10 md:gap-16 items-center">
         <div className="flex flex-col max-w-4xl text-left md:text-center z-10 gap-6 md:gap-8">
           <div className="flex flex-col gap-2">

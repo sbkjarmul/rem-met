@@ -24,7 +24,7 @@ const ProductCarouselMobile = () => {
   return (
     <div className="flex flex-col gap-6 w-full items-center justify-center">
       <div className="flex flex-col gap-4 items-center mx-4">
-        <div className="flex flex-col gap-0 items-center">
+        <div className="flex flex-col gap-2 items-center">
           <AccentText className="text-brand-blue-200 text-center">
             Nasze produkty
           </AccentText>
@@ -52,7 +52,7 @@ const ProductCarouselMobile = () => {
             {products.map((product) => (
               <CarouselItem
                 key={product.id}
-                className={`basis-3/5 flex flex-col items-center justify-center relative aspect-video`}
+                className={`basis-3/5 flex flex-col items-center justify-center relative aspect-11/7`}
               >
                 <Image
                   src={product.image}

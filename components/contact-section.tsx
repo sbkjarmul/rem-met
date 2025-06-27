@@ -51,7 +51,7 @@ const ContactSection = ({ variant }: ContactSectionProps) => {
 
   return (
     <section
-      className={`relative ${bgColor} ${descriptionColor} gap-4 h-fit min-h-[400px] flex justify-center items-center py-20 px-10`}
+      className={`relative ${bgColor} ${descriptionColor} gap-4 h-fit md:min-h-[400px] flex justify-center items-center py-16 md:py-20 px-4 md:px-10`}
     >
       <Image
         className="z-0 hidden md:block select-none"
@@ -60,13 +60,17 @@ const ContactSection = ({ variant }: ContactSectionProps) => {
         width={200}
         height={200}
       />
-      <div className="flex flex-col items-center gap-8 text-center max-w-2xl z-1">
+      <div className="flex flex-col items-center gap-6 md:gap-8 text-center max-w-2xl z-1">
         <div className="flex flex-col items-center gap-2">
           <AccentText className={accentColor}>{accentText}</AccentText>
-          <h2 className={`text-4xl font-medium  ${titleColor}`}>{title}</h2>
+          <h2 className={`text-2xl md:text-4xl font-medium ${titleColor}`}>
+            {title}
+          </h2>
         </div>
-        <p className="text-lg">{description}</p>
-        <Button variant={buttonVariant}>{t("button")}</Button>
+        <p className="text-md md:text-lg mb-4 md:mb-0">{description}</p>
+        <Button variant={buttonVariant} className="w-full">
+          {t("button")}
+        </Button>
       </div>
 
       <Image

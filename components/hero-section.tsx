@@ -10,7 +10,7 @@ const HeroSection = () => {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative pt-20 sm:pt-40 bg-black min-h-[800px] md:min-h-screen flex flex-col justify-end">
+    <section className="relative pt-30 sm:pt-40 bg-black h-fit md:min-h-[800px] md:min-h-screen flex flex-col justify-end">
       <div className="flex flex-col items-center gap-6 max-w-4xl mx-auto text-center z-10 px-4">
         <div className="flex flex-col gap-2">
           <AccentText>

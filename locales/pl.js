@@ -30,12 +30,13 @@ export default {
     new: "Nowość",
     contact: "Kontakt",
     contactQuestion: "Masz jakieś pytania?",
-    contactEmail: "biuro@rem-met.pl",
+    contactEmail: "biuro@rem-met.com",
     contactSupport: "Potrzebujesz wsparcia? Zadzwoń do nas.",
     contactPhone: "+48 666 999 888",
-    copyright: "REM-MET. Wszelkie prawa zastrzeżone.",
+    copyrightPrefix: "REM-MET",
+    copyright: "Wszelkie prawa zastrzeżone.",
     // Attribution
-    attribution: "Strona stworzona przez ENTEI",
+    attribution: "Strona stworzona przez ",
   },
   // Hero Section
   hero: {
