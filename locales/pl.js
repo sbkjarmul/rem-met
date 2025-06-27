@@ -155,6 +155,9 @@ export default {
     "gecko.cta": "Wybierz GECKO",
     "gecko.alt": "Wygrodzenie REM-MET GECKO",
   },
+  product: {
+    lightAlt: "Światło padające na wygrodzenia REM-MET",
+  },
   // Gecko Page
   gecko: {
     name: "GECKO",
@@ -217,13 +220,13 @@ export default {
     name: "FALCON",
     // Hero Section
     accent: "Nowoczesność i przejrzystość",
-    title: "Wygrodzenia poliwęglanowe",
-    alt: "Wygrodzenie REM-MET GECKO",
-    lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
-    nameAlt: "GECKO",
+    title: "Wygrodzenia siatkowe",
+    alt: "Wygrodzenie REM-MET FALCON",
+    lightAlt: "Światło padające na wygrodzenia REM-MET FALCON",
+    nameAlt: "FALCON",
     breadcrumb: "Wygrodzenia bezpieczeństwa",
     // Details Section
-    "details.accent": "System GECKO",
+    "details.accent": "System FALCON",
     "details.title":
       "Transparentna ochrona dla najbardziej wymagających stref przemysłowych",
     "details.title.mobile": "Transparentna ochrona",
