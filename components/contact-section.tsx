@@ -68,7 +68,7 @@ const ContactSection = ({ variant = "default" }: ContactSectionProps) => {
           </h2>
         </div>
         <p className="text-md md:text-lg mb-4 md:mb-0">{description}</p>
-        <Button variant={buttonVariant} className="w-full">
+        <Button variant={buttonVariant} className="w-full md:w-auto">
           {t("button")}
         </Button>
       </div>

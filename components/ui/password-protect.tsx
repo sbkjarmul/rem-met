@@ -1,12 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Container from "./container";
-import Button from "./button";
-import { AccentText } from "./accent-text";
-import SecurityTimeIcon from "@/components/icons/security-time-icon";
 
-const PASSWORD = "remmet2024"; // Change this to your desired password
+const PASSWORD = "rem-met";
 const STORAGE_KEY = "remmet-authenticated";
 
 export default function PasswordProtect({
@@ -24,12 +22,23 @@ export default function PasswordProtect({
     }
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (input === PASSWORD) {
+  // Handle input change and auto-submit if correct
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setInput(value);
+    setError("");
+    if (value === PASSWORD) {
       setAuthenticated(true);
       localStorage.setItem(STORAGE_KEY, "true");
-    } else {
+    }
+  };
+
+  // Handle Enter key for submission
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && input === PASSWORD) {
+      setAuthenticated(true);
+      localStorage.setItem(STORAGE_KEY, "true");
+    } else if (e.key === "Enter") {
       setError("Nieprawidłowe hasło");
       setInput("");
     }
@@ -38,32 +47,32 @@ export default function PasswordProtect({
   if (authenticated) return <>{children}</>;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80">
-      <Container className="max-w-sm w-full bg-background rounded-lg shadow-lg p-8 flex flex-col items-center gap-6">
-        <SecurityTimeIcon size={48} />
-        <AccentText className="text-center">
-          Wprowadź hasło, aby uzyskać dostęp
-        </AccentText>
-        <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
+      <Container className="max-w-sm w-full bg-brand-blue-200 rounded-lg shadow-lg flex flex-col items-center gap-6 z-1 ">
+        <form
+          className="w-full flex flex-col gap-4"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <input
             type="password"
             value={input}
-            onChange={(e) => {
-              setInput(e.target.value);
-              setError("");
-            }}
-            placeholder="Hasło"
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
+            placeholder="Password"
             className="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-brand-blue-200 focus:ring-2 focus:ring-brand-blue-100 outline-none bg-white text-gray-900 text-md"
             autoFocus
           />
           {error && (
             <div className="text-red-500 text-sm text-center">{error}</div>
           )}
-          <Button type="submit" className="w-full">
-            Zatwierdź
-          </Button>
         </form>
       </Container>
+      <Image
+        src="/images/rem-met-logo-pattern.svg"
+        alt="REM-MET Logo Wzór Tło"
+        fill
+        className="object-cover z-0"
+      />
     </div>
   );
 }

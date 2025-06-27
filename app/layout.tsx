@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import pl from "@/locales/pl";
+import PasswordProtect from "@/components/ui/password-protect";
 
 const ttOctosquares = localFont({
   src: [
@@ -37,7 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${ttOctosquares.variable}`}>
-      <body>{children}</body>
+      <body>
+        <PasswordProtect>{children}</PasswordProtect>
+      </body>
     </html>
   );
 }
