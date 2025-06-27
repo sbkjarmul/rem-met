@@ -169,6 +169,7 @@ export default {
     "details.accent": "System GECKO",
     "details.title":
       "Transparentna ochrona dla najbardziej wymagających stref przemysłowych",
+    "details.title.mobile": "Transparentna ochrona",
     "details.description":
       "Stworzone z myślą o ochronie w strefach pracy maszyn CNC, robotów przemysłowych i urządzeń wysokiej prędkości.",
     "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
@@ -198,7 +199,9 @@ export default {
     // Gecko Specification Section
     "specification.accent": "Wygrodzenia bezpieczeństwa",
     "specification.title": "Parametry techniczne",
+    "specification.title.mobile": "Specyfikacja",
     "specification.table.title": "Specyfikacja:",
+    "specification.table.title.mobile": "Parametry techniczne:",
     // Panels
     "specification.panel.title": "Panele",
     "specification.panel.description":
@@ -223,7 +226,7 @@ export default {
       "1800, 2000, 2200, 2600, inne na zapytanie",
     "specification.gates.table.width": "Szerokość [mm]",
     "specification.gates.table.width.value":
-      "1000(jednoskrzydłowa),\n§ 1500(jednoskrzydłowa), 3000mm(dwuskrzydłowa), inne na zapytanie",
+      "1000(jednoskrzydłowa),\n 1500(jednoskrzydłowa), 3000mm(dwuskrzydłowa), inne na zapytanie",
     "specification.gates.table.colors": "Kolory",
     // Posts
     "specification.posts.title": "Słupki",
@@ -242,6 +245,9 @@ export default {
   colors: {
     accent: "Kolory wygrodzeń",
     title: "Dopasuj kolor wygrodzeń do swojej przestrzeni!",
+    "title.mobile": "Dopasuj kolor do swojej przestrzeni!",
+    "description.mobile":
+      " Wygrodzenia bezpieczeństwa REM-MET są malowane proszkowo w dowolnym kolorze z palety RAL.",
     description:
       "Malujemy wygrodzenia proszkowo w dowolnym kolorze z palety RAL.\n Wybierz odcień dopasowany do Twojej firmy lub oznaczeń stref bezpieczeństwa.",
     alt: "Beczki z farbami RAL do malowania wygrodzeń REM-MET",

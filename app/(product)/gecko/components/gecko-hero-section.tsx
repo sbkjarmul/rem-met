@@ -13,7 +13,7 @@ const GeckoHeroSection = () => {
       <Container className="relative z-1 flex flex-col justify-end gap-10">
         <div className="mx-auto text-center gap-2 flex flex-col">
           <AccentText className="text-brand-blue-200">{t("accent")}</AccentText>
-          <h1 className="text-4xl md:text-5xl font-medium uppercase text-gray-900">
+          <h1 className="text-3xl md:text-5xl font-medium uppercase text-gray-900">
             {t("title")}
           </h1>
         </div>

@@ -18,7 +18,7 @@ const SpecificationTableItem = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-[200px_1fr] gap-2 text-sm",
+        "grid grid-cols-[100px_1fr] md:grid-cols-[200px_1fr] gap-2 text-sm",
         index % 2 === 0 ? "bg-gray-200" : "bg-gray-300",
         "text-gray-600"
       )}
@@ -39,7 +39,12 @@ const SpecificationTable = ({ data }: SpecificationTableProps) => {
   return (
     <div className="flex flex-col gap-2 text-left ">
       <h4 className="text-md font-medium text-brand-blue-200">
-        {t("specification.table.title")}
+        <span className="hidden md:block">
+          {t("specification.table.title")}
+        </span>
+        <span className="block md:hidden">
+          {t("specification.table.title.mobile")}
+        </span>
       </h4>
       <div>
         {data.map((item, index) => (
@@ -61,13 +66,18 @@ const GeckoSpecificationSection = () => {
             <AccentText className="text-brand-blue-200">
               {t("specification.accent")}
             </AccentText>
-            <h2 className="text-4xl font-medium gap-2 flex items-center uppercase">
-              {t("specification.title")}
+            <h2 className="text-4xl font-medium gap-2 flex items-center uppercase text-gray-600">
+              <span className="hidden md:block">
+                {t("specification.title")}
+              </span>
+              <span className="block md:hidden">
+                {t("specification.title.mobile")}
+              </span>
             </h2>
           </div>
 
           <section className="flex flex-col md:flex-row gap-10 w-full">
-            <div className="relative aspect-square w-1/2">
+            <div className="relative aspect-square w-full md:w-1/2">
               <Image
                 src="/images/products/rem-met-gecko-air-panel.png"
                 alt={t("specification.panel.alt")}
@@ -76,12 +86,12 @@ const GeckoSpecificationSection = () => {
               />
             </div>
 
-            <aside className="flex flex-col gap-16 w-1/2 justify-start items-start">
+            <aside className="flex flex-col gap-16 w-full md:w-1/2 justify-start items-start">
               <div className="flex flex-col gap-2 justify-start items-start">
                 <h3 className="text-3xl font-medium text-brand-blue-200">
                   {t("specification.panel.title")}
                 </h3>
-                <p className="text-gray-600 text-sm text-left">
+                <p className="text-gray-600 text-md md:text-sm text-left">
                   {t("specification.panel.description")}
                 </p>
               </div>
@@ -112,13 +122,13 @@ const GeckoSpecificationSection = () => {
             </aside>
           </section>
 
-          <section className="flex flex-col md:flex-row gap-10 w-full">
-            <aside className="flex flex-col gap-16 w-1/2 justify-start items-start">
+          <section className="flex flex-col-reverse md:flex-row gap-10 w-full">
+            <aside className="flex flex-col gap-16 w-full md:w-1/2 justify-start items-start">
               <div className="flex flex-col gap-2 justify-start items-start">
                 <h3 className="text-3xl font-medium text-brand-blue-200">
                   {t("specification.gates.title")}
                 </h3>
-                <p className="text-gray-600 text-sm text-left">
+                <p className="text-gray-600 text-md md:text-sm text-left">
                   {t("specification.gates.description")}
                 </p>
               </div>
@@ -148,7 +158,7 @@ const GeckoSpecificationSection = () => {
               />
             </aside>
 
-            <div className="relative aspect-square w-1/2">
+            <div className="relative aspect-square w-full md:w-1/2">
               <Image
                 src="/images/products/rem-met-gecko-air-gate.png"
                 alt={t("specification.panel.alt")}
@@ -159,7 +169,7 @@ const GeckoSpecificationSection = () => {
           </section>
 
           <section className="flex flex-col md:flex-row gap-10 w-full">
-            <div className="relative aspect-square w-1/2">
+            <div className="relative aspect-square w-full md:w-1/2">
               <Image
                 src="/images/products/rem-met-fence-post.png"
                 alt={t("specification.posts.alt")}
@@ -168,12 +178,12 @@ const GeckoSpecificationSection = () => {
               />
             </div>
 
-            <aside className="flex flex-col gap-16 w-1/2 justify-start items-start">
+            <aside className="flex flex-col gap-16 w-full md:w-1/2 justify-start items-start">
               <div className="flex flex-col gap-2 justify-start items-start">
                 <h3 className="text-3xl font-medium text-brand-blue-200">
                   {t("specification.posts.title")}
                 </h3>
-                <p className="text-gray-600 text-sm text-left">
+                <p className="text-gray-600 text-md md:text-sm text-left">
                   {t("specification.posts.description")}
                 </p>
               </div>

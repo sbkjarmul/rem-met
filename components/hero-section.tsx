@@ -17,10 +17,10 @@ const HeroSection = () => {
             <span className="block md:hidden">{t("accent.mobile")}</span>
           </AccentText>
 
-          <h1 className="text-4xl md:text-5xl font-medium uppercase hidden md:block">
+          <h1 className="text-3xl md:text-5xl font-medium uppercase hidden md:block">
             {t("title.desktop")}
           </h1>
-          <h1 className="text-4xl md:text-5xl font-medium uppercase block md:hidden max-w-md">
+          <h1 className="text-3xl md:text-5xl font-medium uppercase block md:hidden max-w-md">
             {t("title.mobile")}
           </h1>
         </div>

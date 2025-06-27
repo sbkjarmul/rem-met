@@ -46,19 +46,22 @@ export default function GeckoDetailsSection() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <div className="flex flex-col md:flex-row gap-10 items-center">
-          <div className="flex flex-col gap-8 w-1/2">
+        <div className="flex flex-col md:flex-row gap-10 items-start md:items-center">
+          <div className="flex flex-col gap-8 w-full md:w-1/2">
             <div className="flex flex-col gap-2">
               <AccentText className="text-brand-blue-200">
                 {t("details.accent")}
               </AccentText>
               <h2 className="text-4xl font-medium text-gray-900">
-                {t("details.title")}
+                <span className="hidden md:block">{t("details.title")}</span>
+                <span className="block md:hidden">
+                  {t("details.title.mobile")}
+                </span>
               </h2>
             </div>
             <p className="text-gray-600 text-lg">{t("details.description")}</p>
           </div>
-          <div className="relative w-1/2 aspect-square">
+          <div className="relative w-full md:w-1/2 aspect-square">
             <Image
               src="/images/products/rem-met-gecko-izo.png"
               alt={t("details.alt")}
@@ -67,7 +70,8 @@ export default function GeckoDetailsSection() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <DetailsCard
             title={t("feature1.title")}
             description={t("feature1.description")}
