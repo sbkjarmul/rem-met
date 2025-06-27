@@ -157,6 +157,7 @@ export default {
   },
   product: {
     lightAlt: "Światło padające na wygrodzenia REM-MET",
+    breadcrumb: "Wygrodzenia bezpieczeństwa",
   },
   // Gecko Page
   gecko: {
@@ -167,7 +168,6 @@ export default {
     alt: "Wygrodzenie REM-MET GECKO",
     lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
     nameAlt: "GECKO",
-    breadcrumb: "Wygrodzenia bezpieczeństwa",
     // Details Section
     "details.accent": "System GECKO",
     "details.title":
@@ -224,38 +224,23 @@ export default {
     alt: "Wygrodzenie REM-MET FALCON",
     lightAlt: "Światło padające na wygrodzenia REM-MET FALCON",
     nameAlt: "FALCON",
-    breadcrumb: "Wygrodzenia bezpieczeństwa",
     // Details Section
     "details.accent": "System FALCON",
     "details.title":
-      "Transparentna ochrona dla najbardziej wymagających stref przemysłowych",
-    "details.title.mobile": "Transparentna ochrona",
+      "Lekka ochrona tam, gdzie liczy się widoczność i elastyczność",
+    "details.title.mobile": "Lekka ochrona",
     "details.description":
-      "Stworzone z myślą o ochronie w strefach pracy maszyn CNC, robotów przemysłowych i urządzeń wysokiej prędkości.",
-    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+      "Idealny do zabezpieczania linii produkcyjnych, maszyn, stanowisk zrobotyzowanych oraz stref o intensywnym przepływie ludzi i materiałów.",
+    "details.alt": "Wygrodzenie REM-MET FALCON w rzucie izometrycznym",
     "feature1.title": "Pełna widoczność",
     "feature1.description":
-      "Panele z poliwęglanu zapewniają doskonałą widoczność procesów produkcyjnych oraz pozwalają na stałą kontrolę pracy maszyn i robotów.",
-    "feature2.title": "Bezpieczeństwo",
+      "Zgrzewana siatka stalowa zapewnia doskonałą widoczność i kontrolę nad pracą maszyn, nie zakłócając nadzoru ani oświetlenia w hali.",
+    "feature2.title": "Minimalna odległość ",
     "feature2.description":
-      "GECKO chroni operatorów przed odłamkami, wiórami oraz elementami wirującymi z obrabianych detali. Idealne do stref o podwyższonym ryzyku.",
-    "feature3.title": "Zgodność",
+      "Dzięki wymiarom oczek 27×87 mm system można montowaćmontować bliżej maszyny niż inne rozwiązania – z zachowaniem pełnej zgodności z normą EN ISO 13857.",
+    "feature3.title": "Łatwy montaż",
     "feature3.description":
-      "GECKO spełnia wymogi normy EN ISO 14120 oraz Dyrektywy Maszynowej 2006/42/WE, zapewniając najwyższy poziom zgodności z przepisami BHP.",
-    // Gecko Versions Section
-    versions: "wersje",
-    3: "Trzy",
-    levels: "poziomy ochrony",
-    "versions.alt": "Trzy wersje wygrodzeń GECKO",
-    "vision.name": "Vision",
-    "vision.description":
-      "Panel z przezroczystego poliwęglanu. Do stref wymagających stałej kontroli wizualnej.",
-    "solid.name": "Solid",
-    "solid.description":
-      "Góra z poliwęglanu, dół z blachy stalowej. Do miejsc o podwyższonym ryzyku uderzeń.",
-    "air.name": "Air",
-    "air.description":
-      "Góra z poliwęglanu, dół z siatki stalowej. Idealna tam, gdzie liczy się przepływ powietrza i nadzór wizualny.",
+      "Zoptymalizowana konstrukcja umożliwia szybki montaż przez jedną osobę, bez konieczności użycia specjalistycznych narzędzi.",
     // Falcon Specification Section
     // Panels
     "specification.panel.description":
@@ -283,7 +268,6 @@ export default {
     alt: "Wygrodzenie REM-MET RHINO",
     lightAlt: "Światło padające na wygrodzenia REM-MET RHINO",
     nameAlt: "RHINO",
-    breadcrumb: "Wygrodzenia bezpieczeństwa",
     // Details Section
     "details.accent": "System RHINO",
     "details.title":
