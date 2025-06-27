@@ -145,7 +145,7 @@ export const useProductCarousel = () => {
       .on("scroll", tweenScale)
       .on("slideFocus", tweenOpacity)
       .on("slideFocus", tweenScale);
-  }, [api, tweenOpacity, tweenScale]);
+  }, [api, tweenOpacity, tweenScale, setTweenNodes, setTweenFactor]);
 
   return { current, setApi, count, api };
 };

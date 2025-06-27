@@ -5,10 +5,10 @@ import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
 
 interface ContactSectionProps {
-  variant: "product" | "default";
+  variant?: "product" | "default";
 }
 
-const ContactSection = ({ variant }: ContactSectionProps) => {
+const ContactSection = ({ variant = "default" }: ContactSectionProps) => {
   const t = useTranslations("contactSection");
 
   const styles = {

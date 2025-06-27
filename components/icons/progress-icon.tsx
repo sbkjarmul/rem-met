@@ -1,9 +1,7 @@
 import { FC } from "react";
 import { Icon, IconProps as BaseIconProps } from "@/components/ui/icon";
 
-interface IconProps extends Omit<BaseIconProps, "src" | "alt"> {}
-
-const ProgressIcon: FC<IconProps> = (props) => {
+const ProgressIcon: FC<Omit<BaseIconProps, "src" | "alt">> = (props) => {
   return (
     <Icon
       src="/icons/rem-met-progress-icon.svg"

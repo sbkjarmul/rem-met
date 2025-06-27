@@ -13,7 +13,7 @@ export default function Home() {
       <QualitySection />
       <FullSupportSection />
       <OurProductsSection />
-      <ContactSection />
+      <ContactSection variant="default" />
     </div>
   );
 }

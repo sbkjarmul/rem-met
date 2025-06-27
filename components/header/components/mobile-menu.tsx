@@ -5,7 +5,6 @@ import useTranslations from "@/hooks/useTranslations";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,

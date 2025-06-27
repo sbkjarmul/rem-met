@@ -134,7 +134,7 @@ const FullSupportSection = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [steps.length]);
 
   return (
     <section className="relative bg-brand-blue-400 h-fit min-h-[800px] py-16 lg:py-0 flex flex-col justify-center items-start">

@@ -1,9 +1,4 @@
-import React, {
-  ComponentPropsWithRef,
-  useCallback,
-  useEffect,
-  useState,
-} from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { CarouselApi } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 
@@ -33,7 +28,7 @@ export const useDotIndicator = (
 
     carouselApi.on("reInit", onInit);
     carouselApi.on("select", onSelect);
-  }, [carouselApi, onInit]);
+  }, [carouselApi, onInit, onSelect]);
 
   return {
     selectedIndex,

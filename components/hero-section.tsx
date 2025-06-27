@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import useTranslations from "@/hooks/useTranslations";
 
 const HeroSection = () => {

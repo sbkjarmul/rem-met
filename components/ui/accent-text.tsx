@@ -1,8 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-export interface AccentTextProps
-  extends React.HTMLAttributes<HTMLParagraphElement> {}
+type AccentTextProps = React.HTMLAttributes<HTMLParagraphElement>;
 
 const AccentText = ({ className, children, ...props }: AccentTextProps) => {
   return (
