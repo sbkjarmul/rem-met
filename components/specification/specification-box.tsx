@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import useTranslations from "@/hooks/useTranslations";
-
 import SpecificationTable from "./specification-table";
 import { type SpecificationTableItem } from "./interfaces";
 import { cn } from "@/lib/utils";
@@ -23,8 +21,6 @@ const SpecificationBox = ({
   imageAlt,
   isReversed = false,
 }: SpecificationBoxProps) => {
-  const t = useTranslations("specification");
-
   return (
     <section
       className={cn("flex flex-col md:flex-row gap-10 w-full", {
