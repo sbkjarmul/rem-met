@@ -31,7 +31,7 @@ export default function GeckoDetailsSection() {
 
   return (
     <section className="flex flex-col justify-start relative bg-white min-h-[800px] ">
-      <Container className="relative z-1 flex flex-col justify-center gap-20 py-20">
+      <Container className="relative z-1 flex flex-col justify-center gap-10 md:gap-20 py-16 md:py-20">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
