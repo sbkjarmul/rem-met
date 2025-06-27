@@ -51,12 +51,15 @@ const MobileMenu = () => {
           aria-label="Otwórz menu"
           className="flex flex-col justify-center items-center w-10 h-10 p-2 bg-transparent border-none cursor-pointer gap-1"
         >
-          <span className="block w-8 h-1 bg-gray-400 transition-all" />
-          <span className="block w-8 h-1 bg-gray-400 transition-all" />
-          <span className="block w-8 h-1 bg-gray-400 transition-all" />
+          <span className="block w-8 h-1 dark:bg-gray-200 bg-gray-900 transition-all" />
+          <span className="block w-8 h-1 dark:bg-gray-200 bg-gray-900 transition-all" />
+          <span className="block w-8 h-1 dark:bg-gray-200 bg-gray-900 transition-all" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-brand-blue-400 w-screen" side="right">
+      <SheetContent
+        className="bg-brand-blue-400 w-screen border-gray-700"
+        side="right"
+      >
         <SheetHeader className="sr-only">
           <SheetTitle>REM-MET</SheetTitle>
         </SheetHeader>

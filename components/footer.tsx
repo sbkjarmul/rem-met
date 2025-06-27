@@ -1,15 +1,19 @@
 import * as React from "react";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
+import Image from "next/image";
 
 const Logo = () => {
   const t = useTranslations("footer");
 
   return (
-    <div>
-      <h3 className="text-4xl font-bold tracking-widest text-gray-700">
-        REM-MET
-      </h3>
+    <div className="flex flex-col gap-1">
+      <Image
+        src="/images/logos/rem-met-logo-wordmark-black.svg"
+        alt="REM-MET Logo"
+        width={310}
+        height={100}
+      />
       <p className="text-sm text-gray-700">{t("tagline")}</p>
     </div>
   );

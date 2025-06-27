@@ -10,26 +10,48 @@ const HeroSection = () => {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative pt-20 md:pt-40 bg-black min-h-screen flex flex-col justify-end">
-      <div className="max-w-4xl mx-auto text-center z-10">
-        <AccentText>{t("heroAccent")}</AccentText>
-        <h1 className="mt-4 text-4xl md:text-5xl font-medium uppercase">
-          {t("heroTitle")}
-        </h1>
-        <p className="mt-6 text-lg text-gray-500">{t("description")}</p>
-        <div className="mt-10 flex justify-center gap-4">
-          <Button variant="outline">{t("primaryButton")}</Button>
-          <Button>{t("secondaryButton")}</Button>
+    <section className="relative pt-20 sm:pt-40 bg-black min-h-[800px] md:min-h-screen flex flex-col justify-end">
+      <div className="flex flex-col items-center gap-6 max-w-4xl mx-auto text-center z-10 px-4">
+        <div className="flex flex-col gap-2">
+          <AccentText>
+            <span className="hidden md:block">{t("accent.desktop")}</span>
+            <span className="block md:hidden">{t("accent.mobile")}</span>
+          </AccentText>
+
+          <h1 className="text-4xl md:text-5xl font-medium uppercase hidden md:block">
+            {t("title.desktop")}
+          </h1>
+          <h1 className="text-4xl md:text-5xl font-medium uppercase block md:hidden max-w-md">
+            {t("title.mobile")}
+          </h1>
+        </div>
+
+        <p className="text-lg text-gray-500 hidden md:block">
+          {t("description.desktop")}
+        </p>
+        <p className="text-lg text-gray-500 block md:hidden max-w-sm sm:max-w-lg mx-auto">
+          {t("description.mobile")}
+        </p>
+
+        <div className="mt-10 flex justify-center gap-4 w-full">
+          <Button variant="outline" className="hidden md:block">
+            {t("secondaryButton.desktop")}
+          </Button>
+          <Button className="w-full md:w-auto">
+            {t("primaryButton.desktop")}
+          </Button>
         </div>
       </div>
-      <AspectRatio ratio={7 / 2} className="w-full mt-20">
+
+      <div className="relative w-full mt-10 md:mt-20 aspect-5/2 md:aspect-7/2">
         <Image
           src="/images/rem-met-hero-section-background.png"
           alt="Hero section background"
           fill
           className="object-cover"
         />
-      </AspectRatio>
+      </div>
+
       <div className="absolute top-0 left-0 w-full h-1/2  z-0">
         <Image
           src="/images/rem-met-hero-section-light.svg"

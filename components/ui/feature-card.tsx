@@ -26,12 +26,14 @@ export const FeatureCard = ({
     <div style={shadowStyle} className={cn("inline-block", className)}>
       <div
         style={clipPathStyle}
-        className="bg-brand-blue-200 text-white px-8 py-6 flex items-center gap-2 w-[260px] h-[80px]"
+        className="bg-brand-blue-200 text-white px-4 sm:px-8 py-4 sm:py-6 flex items-center gap-2 w-[170px] sm:w-[260px] h-[60px] sm:h-[80px]"
         {...props}
       >
-        <div className="flex-shrink-0 text-brand-blue-300">{icon}</div>
+        <div className="flex-shrink-0 text-brand-blue-300 w-[32px] md:w-[40px]">
+          {icon}
+        </div>
         <div className="flex flex-col">
-          <span className="font-medium text-white text-base line-he">
+          <span className="font-medium text-white text-xs sm:text-base line-he">
             {text}
           </span>
           <span className="font-medium text-xs">{subtitle}</span>

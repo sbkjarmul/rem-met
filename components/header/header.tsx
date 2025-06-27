@@ -12,18 +12,18 @@ import MobileMenu from "./components/mobile-menu";
 
 const Logo = () => {
   return (
-    <Link href="/">
+    <Link href="/" className="select-none">
       <Image
-        src="/images/rem-met-logo-light-mode.png"
+        src="/images/logos/rem-met-logo-light-mode.svg"
         alt="REM-MET Logo"
-        width={160}
+        width={200}
         height={40}
         className="block dark:hidden"
       />
       <Image
-        src="/images/rem-met-logo-dark-mode.png"
+        src="/images/logos/rem-met-logo-dark-mode.svg"
         alt="REM-MET Logo"
-        width={160}
+        width={200}
         height={40}
         className="hidden dark:block"
       />

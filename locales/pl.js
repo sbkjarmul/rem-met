@@ -39,17 +39,23 @@ export default {
   },
   // Hero Section
   hero: {
-    heroAccent: "Polski producent",
-    heroTitle: "Bezpieczne i wytrzymałe wygrodzenia przemysłowe",
-    description:
+    "accent.desktop": "Polski producent",
+    "title.desktop": "Bezpieczne i wytrzymałe wygrodzenia przemysłowe",
+    "accent.mobile": "Polski produkt",
+    "title.mobile": " wygrodzenia dopasowane pod Twoją Firmę",
+    "description.desktop":
       "Zabezpiecz swoje miejsce pracy z profesjonalnymi systemami wygrodzeń REM-MET dopasowanymi pod Ciebie.",
-    primaryButton: "Zobacz ofertę",
-    secondaryButton: "Zamów projekt",
+    "description.mobile":
+      "Projektujemy i dostarczamy systemy zabezpieczeń. Sprawdź naszą ofertę.",
+    "primaryButton.desktop": "Zamów projekt",
+    "secondaryButton.desktop": "Zobacz ofertę",
+    "primaryButton.mobile": "Zamów projekt",
   },
   // About Us Section
   aboutUs: {
-    aboutUsAccent: "To jest REM-MET",
-    aboutUsTitle: "Producent wygrodzeń przemysłowych z Polski",
+    accent: "To jest REM-MET",
+    "title.desktop": "Producent wygrodzeń przemysłowych z Polski",
+    "title.mobile": "Polski producent wygrodzeń przemysłowych.",
     description:
       "Specjalizujemy się w projektowaniu i produkcji wygrodzeń przemysłowych, dostosowanych do potrzeb Twojego zakładu. Nasze produkty łączą funkcjonalność, trwałość oraz zgodność z normami bezpieczeństwa.",
     feature1: "Jakość i Wytrzymałość",
@@ -70,14 +76,20 @@ export default {
     accent: "Wytrzymałość i Jakość",
     title: "Niezawodna ochrona dla pracowników i sprzętu.",
     "feature1.title": "Wysoka wytrzymałość stali",
-    "feature1.description":
+    "feature1.description.desktop":
       "Wygrodzenia REM-MET wykonane są z stali konstrukcyjnej o podwyższonej wytrzymałości, co zapewnia odporność na obciążenia i uszkodzenia mechaniczne.",
+    "feature1.description.mobile":
+      "Do produkcji wygrodzeń używamy stali konstrukcyjnej o podwyższonej wytrzymałości.",
     "feature2.title": "Odporność na degradację",
-    "feature2.description":
+    "feature2.description.desktop":
       "Zastosowanie wysokiej jakości powłok lakierniczych sprawia, że wygrodzenia REM-MET zachowują swoje właściwości estetyczne i użytkowe przez długi czas, nie ulegając degradacji.",
+    "feature2.description.mobile":
+      "Stosujemy powłoki lakiernicze najwyższej jakości.",
     "feature3.title": "Ochrona środowiska",
-    "feature3.description":
+    "feature3.description.desktop":
       "W procesie produkcji dbamy o ograniczenie odpadów oraz zużycia energii, stosując technologie, które przyczyniają się do ochrony środowiska.",
+    "feature3.description.mobile":
+      "Dbamy o ograniczenie odpadów oraz zużycia energii podczas produkcji.",
   },
   // Full Support Section
   fullSupport: {
@@ -87,6 +99,8 @@ export default {
       "Zapewniamy kompleksową usługę i wsparcie na każdym etapie realizacji.",
     description2:
       "Dbamy o ergonomię, bezpieczeństwo i niezawodność rozwiązań, które dostarczamy – od analizy potrzeb po montaż.",
+    "description.mobile":
+      "Odpowiadamy za każdy etap projektu – od analizy potrzeb do montażu wygrodzeń REM-MET w Twojej firmie.",
     "feature1.title": "Analiza",
     "feature1.description":
       "Analizujemy Twoje potrzeby i dopasowujemy odpowiednie rozwiązanie",

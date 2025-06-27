@@ -26,14 +26,14 @@ const PlanStep: React.FC<PlanStepProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-row gap-6 items-center`}
+      className={`flex flex-col md:flex-row gap-0 md:gap-6 items-start md:items-center`}
       style={{
         animationDelay: `${index * 2000}ms`,
       }}
     >
       <span
         className={cn(
-          `text-[80px] font-medium w-[124px] transition-all duration-300`,
+          `text-[60px] leading-none md:text-[80px] font-medium w-[124px] transition-all duration-300`,
           {
             "text-brand-blue-50": isActive,
             "text-gray-800": !isActive,
@@ -42,7 +42,7 @@ const PlanStep: React.FC<PlanStepProps> = ({
       >
         0{index}
       </span>
-      <div className="flex flex-col gap-0 flex-1">
+      <div className="flex flex-col gap- flex-1">
         <h3
           className={cn(`text-2xl font-medium  transition-all duration-300`, {
             "text-gray-100": isActive,
@@ -52,7 +52,7 @@ const PlanStep: React.FC<PlanStepProps> = ({
           {title}
         </h3>
         <p
-          className={cn(`text-md  transition-all duration-300`, {
+          className={cn(`text-sm md:text-md transition-all duration-300`, {
             "text-gray-400": isActive,
             "text-gray-600": !isActive,
           })}
@@ -74,7 +74,7 @@ const PlanTimeline = ({ activeStep }: PlanTimelineProps) => {
   return (
     <div className="grid grid-cols-[80px_1fr] grid-rows-[1fr] gap-x-0 gap-y-4 w-full h-full">
       <VerticalTimeline steps={4} activeStep={activeStep} />
-      <div className="flex flex-col justify-between h-full gap-0">
+      <div className="flex flex-col justify-between h-full gap-10 md:gap-4">
         <PlanStep
           index={1}
           title={t("feature1.title")}
@@ -137,19 +137,27 @@ const FullSupportSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-brand-blue-400 h-fit min-h-[800px] py-10 lg:py-0 flex flex-col justify-center items-start">
+    <section className="relative bg-brand-blue-400 h-fit min-h-[800px] py-16 lg:py-0 flex flex-col justify-center items-start">
       <Container className="flex flex-col lg:flex-row items-center z-1 gap-16 lg:gap-0">
-        <div className="max-w-4xl text-start z-10 flex flex-col gap-8 w-full lg:w-1/2">
+        <div className="max-w-4xl text-start z-10 flex flex-col gap-6 md:gap-8 w-full lg:w-1/2">
           <div className="flex flex-col gap-2">
             <AccentText className="text-brand-blue-100">
               {t("accent")}
             </AccentText>
-            <h2 className="text-4xl md:text-4xl font-medium text-gray-100 whitespace-pre-line">
+            <h2 className="text-2xl md:text-4xl font-medium text-gray-100 whitespace-pre-line">
               {t("title")}
             </h2>
           </div>
-          <p className="text-lg text-gray-500">{t("description1")}</p>
-          <p className="text-lg text-gray-500">{t("description2")}</p>
+
+          <p className="text-lg text-gray-500 hidden md:block">
+            {t("description1")}
+          </p>
+          <p className="text-lg text-gray-500 hidden md:block">
+            {t("description2")}
+          </p>
+          <p className="text-lg text-gray-500 block md:hidden">
+            {t("description.mobile")}
+          </p>
         </div>
         <div className="w-full lg:w-1/2 h-full">
           <PlanTimeline activeStep={activeStep} />
