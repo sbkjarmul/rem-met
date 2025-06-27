@@ -11,7 +11,7 @@ const GeckoSpecificationSection = () => {
       panelImageAlt={t("specification.panel.alt")}
       gateImageSrc="/images/products/rem-met-gecko-air-gate.png"
       gateImageAlt={t("specification.gates.alt")}
-      postImageSrc="/images/products/rem-met-gecko-air-post.png"
+      postImageSrc="/images/products/rem-met-fence-post.png"
       postImageAlt={t("specification.posts.alt")}
     />
   );
