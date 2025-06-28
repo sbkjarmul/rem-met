@@ -10,7 +10,7 @@ const FalconHeroSection = () => {
       title={t("title")}
       imageDesktopSrc="/images/products/rem-met-falcon-hero-shadow.png"
       imageMobileSrc="/images/products/rem-met-falcon-hero-mobile.png"
-      imageAlt={t("imageAlt")}
+      imageAlt={t("alt")}
       nameSrc="/images/products/rem-met-falcon-name.svg"
       nameAlt={t("nameAlt")}
     />

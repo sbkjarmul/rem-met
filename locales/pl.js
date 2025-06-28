@@ -374,4 +374,40 @@ export default {
       "Malujemy wygrodzenia proszkowo w dowolnym kolorze z palety RAL.\n Wybierz odcień dopasowany do Twojej firmy lub oznaczeń stref bezpieczeństwa.",
     alt: "Beczki z farbami RAL do malowania wygrodzeń REM-MET",
   },
+  // About Us Page
+  aboutUs: {
+    name: "O nas",
+    breadcrumb: "Strona główna",
+    // Hero Section
+    "hero.accent": "REM-MET",
+    "hero.title": "Zaufany dostawca rozwiązań bezpieczeństwa dla każdej branży",
+    "hero.description":
+      "Obsługujemy małe zakłady i duże linie produkcyjne. Nasze wygrodzenia chronią ludzi i maszyny tam, gdzie precyzja i bezpieczeństwo są najważniejsze.",
+    "hero.quote":
+      "Tam, gdzie maszyny pracują, \n my dbamy o to, by było bezpiecznie. ",
+    "hero.quote.author": "Mateusz Ozga",
+    "hero.quote.author.position": "Właściciel REM-MET",
+    "hero.image.alt":
+      "Pracownik w stroju REM-MET, stojący przed wygrodzeniem firmy REM-MET",
+    // Description Section
+    "description.accent": "O nas",
+    "description.title":
+      "Od ponad 20 lat działamy w branży przemysłowej, wspierając firmy produkcyjne w realizacji ich celów. Do 2022 roku specjalizowaliśmy się w usługach spawalniczych i obróbkowych jako podwykonawcy komponentów. Dziś skupiamy się na tym, co dla naszych klientów najważniejsze – bezpieczeństwie.",
+    "description.image.alt": "Wygrodzenie REM-MET w rzucie izometrycznym",
+    "description.statistics.1": "zadowolonych klientów",
+    "description.statistics.2": "lat doświadczenia",
+    "description.statistics.2.subtext": "w branży przemysłowej",
+    "description.statistics.4": "systemy wygrodzeń",
+    // Ecology Section
+    "ecology.title":
+      "Dbamy nie tylko o jakość i terminowość naszych realizacji, ale też o środowisko. ",
+    "ecology.article1.title": "Wykorzystanie surowców wtórnych",
+    "ecology.article1.description":
+      "W naszych projektach wykorzystujemy materiały pochodzące z recyklingu, takie jak stalowe profile, siatki czy elementy plastikowe.",
+    "ecology.article2.title": "70% stali pochodzi z recyklingu",
+    "ecology.article3.title": "Optymalizacja zużycia energii i materiałów",
+    "ecology.article3.description":
+      "W procesie produkcji wdrażamy technologie ograniczające straty materiałowe i zużycie energii, takie jak energooszczędne maszyny i oświetlenie LED",
+    "ecology.image.alt": "Ecology icon",
+  },
 };

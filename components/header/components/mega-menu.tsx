@@ -19,12 +19,15 @@ const MegaMenu = () => {
     <NavigationMenu className="static">
       <NavigationMenuList className="h-[100px]">
         <NavigationMenuItem className="h-full flex flex-col justify-center">
-          <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
             {t("home")}
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
-          <NavigationMenuLink href="#" className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink
+            href="/about-us"
+            className={navigationMenuTriggerStyle()}
+          >
             {t("about")}
           </NavigationMenuLink>
         </NavigationMenuItem>

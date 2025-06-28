@@ -12,7 +12,7 @@ const GeckoHeroSection = () => {
       title={t("title")}
       imageDesktopSrc="/images/products/rem-met-gecko-hero-shadow.png"
       imageMobileSrc="/images/products/rem-met-gecko-hero-mobile.png"
-      imageAlt={t("imageAlt")}
+      imageAlt={t("alt")}
       nameSrc="/images/products/rem-met-gecko-name.svg"
       nameAlt={t("nameAlt")}
     />

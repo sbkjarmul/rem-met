@@ -1,4 +1,4 @@
-import ProductVersionsSection from "@/components/product-versions";
+import ProductVersionsSection from "@/components/product-versions-section";
 import useTranslations from "@/hooks/useTranslations";
 
 const RhinoVersionsSection = () => {
@@ -22,13 +22,13 @@ const RhinoVersionsSection = () => {
   return (
     <ProductVersionsSection
       header={
-        <h2 className="text-[28px] md:text-4xl font-medium gap- flex flex-col md:flex-row">
+        <h2 className="text-[28px] md:text-4xl font-medium flex flex-col md:flex-row">
           <span className="block md:inline">
             <span className="text-gray-500 mr-2">{t("2")}</span>
             <span>{t("versions")}.</span>
           </span>
           <span className="block md:inline">
-            <span className="text-gray-500 mx-2">{t("two")}</span>
+            <span className="text-gray-500 ml-0 mr-2 md:ml-2 ">{t("two")}</span>
             <span>{t("levels")}.</span>
           </span>
         </h2>
