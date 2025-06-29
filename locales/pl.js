@@ -468,7 +468,19 @@ export default {
       "Konstrukcja naszych osłon eliminuje ryzyko wspinania się po nich – brak poziomych elementów konstrukcyjnych oraz odpowiedni dobór materiałów uniemożliwia niebezpieczne użytkowanie",
     // Standards ISO 13857 Section
     "iso13857.accent": "EN ISO 13857",
-    "iso13857.title": "Sięganie przez otwory o regularnym kształcie",
+    "iso13857.title": "Odległości ochronne",
+    "iso13857.description":
+      "Norma ta skupia się na bezpiecznych odległościach, które zapobiegają dotknięciu niebezpiecznych części maszyny (np. przez ręce lub inne części ciała).",
+    "iso13857.4.2.4.1.accent": "EN ISO 13857, 4.2.4.1",
+    "iso13857.4.2.4.1.title": "Sięganie przez otwory o regularnym kształcie",
+    "iso13857.422.accent": "EN ISO 13857, 4.2.2",
+    "iso13857.422.title": "Sięganie ponad konstrukcjami ochronnymi",
+    "iso13857.422.alt": "Obrazek instrukcji do normy EN ISO 13857, 4.2.2",
+    "iso13857.422.A": "Wysokośc strefy niebezpiecznej",
+    "iso13857.422.B": "Wysokośc konstrukcji ochronnej",
+    "iso13857.422.C": "Odległość bezpieczeństwa",
+    "iso13857.422.table.header":
+      "Pozioma odległość bezpieczeństwa od strefy niebezpiecznej",
 
     // Table 1
     bodyPart: "Część ciała",

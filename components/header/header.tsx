@@ -49,7 +49,7 @@ const Header = () => {
         scrolled ? "dark:bg-brand-blue-400 bg-gray-100" : "bg-transparent"
       }`}
     >
-      <Container className="px-4 md:px-8">
+      <Container>
         <div className="flex h-[60px] md:h-[100px] items-center justify-between">
           <Logo />
           <div className="hidden lg:flex">

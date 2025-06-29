@@ -40,7 +40,7 @@ const StandardsIso14120Section = () => {
       </Container>
 
       <Container>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           <StandardCard
             accent={t("iso14120.5.2.4.accent")}
             title={t("iso14120.5.2.4.title")}
