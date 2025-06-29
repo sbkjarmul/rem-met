@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { AccentText } from "@/components/ui/accent-text";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";

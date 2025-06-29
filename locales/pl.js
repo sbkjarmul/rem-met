@@ -5,6 +5,7 @@ export default {
   // Header
   header: {
     home: "Strona główna",
+    standards: "Normy",
     about: "O nas",
     offer: "Oferta",
     contact: "Kontakt",
@@ -465,5 +466,25 @@ export default {
     "iso14120.5.18.title": "Wspinanie się po osłonach",
     "iso14120.5.18.description":
       "Konstrukcja naszych osłon eliminuje ryzyko wspinania się po nich – brak poziomych elementów konstrukcyjnych oraz odpowiedni dobór materiałów uniemożliwia niebezpieczne użytkowanie",
+    // Standards ISO 13857 Section
+    "iso13857.accent": "EN ISO 13857",
+    "iso13857.title": "Sięganie przez otwory o regularnym kształcie",
+
+    // Table 1
+    bodyPart: "Część ciała",
+    illustration: "Ilustracja",
+    hole: "Otwór",
+    safetyDistance: "Odlegość bezpieczeństwa do strefy niebezpiecznej",
+    slot: "Szczelina",
+    square: "Kwadrat",
+    circle: "Koło",
+    fingertip: "Czubek palca",
+    fingerTipToTheBase: "Czubek palca do nasady",
+    hand: "Dłoń",
+    armToTheShoulder: "Ramię do stawu barkowego",
+    "table1.description":
+      "Rozmiar otworu „e” to długość boku w przypadku otworu kwadratowego, średnica w przypadku otworu okrągłego, lub mniejszy wymiar w przypadku otworu szczelinowego. W przypadku otworów większych niż 120 mm, konieczne jest zachowanie odpowiednich odległości bezpieczeństwa",
+    "table1.description2":
+      "W przypadku otworów szczelinowych o długości ≤ 65 mm, kciuk działa jak blokada,  więc odległość, na której trzeba ustawić ogrodzenie, może być mniejsza – tylko 200 mm. Dzięki temu możliwe jest zaoszczędzenie miejsca, przy jednoczesnym zapewnieniu odpowiedniego poziomu ochrony.",
   },
 };

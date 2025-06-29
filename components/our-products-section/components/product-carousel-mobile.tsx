@@ -22,7 +22,7 @@ const ProductCarouselMobile = () => {
   const products = getProducts(t);
 
   return (
-    <div className="flex flex-col gap-6 w-full items-center justify-center">
+    <div className="flex flex-col gap-6 w-full items-center justify-center py-16">
       <div className="flex flex-col gap-4 items-center mx-4">
         <div className="flex flex-col gap-2 items-center">
           <AccentText className="text-brand-blue-200 text-center">

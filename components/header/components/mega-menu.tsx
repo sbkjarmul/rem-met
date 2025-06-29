@@ -25,6 +25,14 @@ const MegaMenu = () => {
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink
+            href="/standards"
+            className={navigationMenuTriggerStyle()}
+          >
+            {t("standards")}
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="h-full flex flex-col justify-center">
+          <NavigationMenuLink
             href="/about-us"
             className={navigationMenuTriggerStyle()}
           >
