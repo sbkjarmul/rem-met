@@ -14,7 +14,7 @@ import {
 } from "@/components/icons";
 
 const AboutUsSection = () => {
-  const t = useTranslations("aboutUs");
+  const t = useTranslations("homeAboutUs");
 
   return (
     <section className="relative bg-white h-fit md:min-h-[800px] flex flex-col justify-center items-start py-16 md:py-0">

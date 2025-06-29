@@ -54,7 +54,7 @@ export default {
     "primaryButton.mobile": "Zamów projekt",
   },
   // About Us Section
-  aboutUs: {
+  homeAboutUs: {
     accent: "To jest REM-MET",
     "title.desktop": "Producent wygrodzeń przemysłowych z Polski",
     "title.mobile": "Polski producent wygrodzeń przemysłowych.",

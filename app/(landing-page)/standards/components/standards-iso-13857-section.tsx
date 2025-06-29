@@ -10,7 +10,7 @@ const StandardsIso13857Section = () => {
     <section className="flex flex-col justify-start relative bg-gray-600 h-fit py-16 md:py-20 gap-16 md:gap-20">
       <Container className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <AccentText className="text-brand-blue-200">
+          <AccentText className="text-gray-400">
             {t("iso13857.accent")}
           </AccentText>
           <h2 className="text-4xl text-gray-100">{t("iso13857.title")}</h2>
