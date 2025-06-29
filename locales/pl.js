@@ -410,4 +410,60 @@ export default {
       "W procesie produkcji wdrażamy technologie ograniczające straty materiałowe i zużycie energii, takie jak energooszczędne maszyny i oświetlenie LED",
     "ecology.image.alt": "Ecology icon",
   },
+  // Standards Page
+  standards: {
+    name: "Standardy",
+    breadcrumb: "Strona główna",
+    // Hero Section
+    "hero.accent": "Standardy bezpieczeństwa",
+    "hero.title": "Bezpieczeństwo to nasz priorytet",
+    "hero.description":
+      "Wszystkie nasze wygrodzenia ochronne do maszyn projektujemy i wykonujemy zgodnie z najbardziej wymagającymi europejskimi normami bezpieczeństwa: EN ISO 14120 oraz EN ISO 13857.",
+    "hero.quote": "Razem stworzymy bezpieczniejsze miejsce pracy.",
+    "hero.quote.author": "Mateusz Ozga",
+    "hero.quote.author.position": "Właściciel REM-MET",
+    "hero.image.alt": "Makrofotografia wygrodzenia REM-MET, w tle maszyny",
+    // Description Section
+    "description.accent": "Czym są dyrektywy bezpieczeństwa?",
+    "description.title.regular":
+      "Unijne dyrektywy wymagają, by osłony i wygrodzenia maszyn były zgodne z określonymi normami – zarówno pod względem budowy, jak i odległości ochronnych.",
+    "description.title.bold":
+      "Bez takich zabezpieczeń nie można legalnie i bezpiecznie używać maszyn w zakładzie pracy.",
+    // Standards ISO 14120 Section
+    "iso14120.accent": "EN ISO 14120",
+    "iso14120.title":
+      "Ogólne wymagania projektowe dla osłon stałych i ruchomych",
+    "iso14120.description":
+      "Ta norma określa wymagania dotyczące projektowania i budowy osłon, które zabezpieczają operatorów przed zagrożeniami związanymi z pracą maszyn.",
+    // TODO: Add all the cards
+    "iso14120.5.2.4.accent": "EN ISO 14120, 5.2.4 ",
+    "iso14120.5.2.4.title": "Widoczność",
+    "iso14120.5.2.4.description":
+      "Nasze osłony zapewniają odpowiednią widoczność procesu technologicznego – tam, gdzie jest to wymagane. Dzięki temu operatorzy nie muszą obchodzić osłon, co zwiększa bezpieczeństwo i komfort pracy.",
+    // 5.2.5.2
+    "iso14120.5.2.5.2.accent": "EN ISO 14120, 5.2.5.2",
+    "iso14120.5.2.5.2.title": "Rozmiary, masa i przeznaczenie",
+    "iso14120.5.2.5.2.description":
+      "Odejmowalne elementy osłon powinny być zaprojektowane odpowiednio do ich rozmiarów, masy i przeznaczenia, aby umożliwić łatwe operowanie.",
+    // 5.2.5.3
+    "iso14120.5.2.5.3.accent": "EN ISO 14120, 5.2.5.3",
+    "iso14120.5.2.5.3.title": "Siły potrzebne podczas użytkowania",
+    "iso14120.5.2.5.3.description":
+      "Ruchome lub zdejmowane elementy naszych osłon są projektowane z myślą o łatwym i ergonomicznym użytkowaniu – z uwzględnieniem minimalnego wysiłku przy obsłudze.",
+    // 5.3.3
+    "iso14120.5.3.3.accent": "EN ISO 14120, 5.3.3",
+    "iso14120.5.3.3.title": "Trwałość",
+    "iso14120.5.3.3.description":
+      "Nasze rozwiązania są przygotowane do niezawodnej pracy przez cały przewidywany okres użytkowania maszyny. W razie potrzeby – części narażone na zużycie są łatwo wymienne, co pozwala na szybki serwis bez zbędnych przestojów.",
+    // 5.10
+    "iso14120.5.10.accent": "EN ISO 14120, 5.10",
+    "iso14120.5.10.title": "Przezroczystość",
+    "iso14120.5.10.description":
+      "Stosujemy materiały, które zachowują przezroczystość mimo upływu czasu i eksploatacji. Dzięki temu możliwa jest ciągła obserwacja pracy maszyny bez utraty widoczności. Osłony są też zaprojektowane tak, aby zużyte elementy można było łatwo wymieniać.",
+    // 5.18
+    "iso14120.5.18.accent": "EN ISO 14120, 5.18",
+    "iso14120.5.18.title": "Wspinanie się po osłonach",
+    "iso14120.5.18.description":
+      "Konstrukcja naszych osłon eliminuje ryzyko wspinania się po nich – brak poziomych elementów konstrukcyjnych oraz odpowiedni dobór materiałów uniemożliwia niebezpieczne użytkowanie",
+  },
 };

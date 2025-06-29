@@ -72,13 +72,13 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("systems")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href="#">
+                <FooterLink href="/falcon">
                   {t("falcon")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="#">
+                <FooterLink href="/gecko">
                   {t("gecko")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="#">
+                <FooterLink href="/rhino">
                   {t("rhino")} <NewBadge />
                 </FooterLink>
               </ul>

@@ -36,7 +36,7 @@ const ProductCarouselDesktop = () => {
           {products[current - 1].description}
         </p>
 
-        <Button className="w-full">
+        <Button className="w-full mt-10">
           <Link href={products[current - 1].path}>
             {products[current - 1].cta}
           </Link>

@@ -7,7 +7,7 @@ interface QuoteProps {
 const Quote = ({ text, author, authorPosition }: QuoteProps) => {
   return (
     <div className="flex flex-col gap-2 border-l-6 border-brand-blue-200 pl-4">
-      <p className="text-gray-200 text-lg whitespace-pre-line max-w-sm leading-tight">
+      <p className="text-gray-200 text-lg whitespace-pre-line max-w-md leading-tight">
         {text}
       </p>
       <div className="flex flex-row gap-1">
