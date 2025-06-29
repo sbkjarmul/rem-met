@@ -70,10 +70,13 @@ const MobileMenu = () => {
             <MobileMenuLink href="/">{t("offer")}</MobileMenuLink>
           </MobileMenuItem>
           <MobileMenuItem>
-            <MobileMenuLink href="/">{t("about")}</MobileMenuLink>
+            <MobileMenuLink href="/about-us">{t("about")}</MobileMenuLink>
           </MobileMenuItem>
           <MobileMenuItem>
-            <MobileMenuLink href="/">{t("contact")}</MobileMenuLink>
+            <MobileMenuLink href="/standards">{t("standards")}</MobileMenuLink>
+          </MobileMenuItem>
+          <MobileMenuItem>
+            <MobileMenuLink href="/contact">{t("contact")}</MobileMenuLink>
           </MobileMenuItem>
         </MobileMenuList>
         <SheetFooter className="p-0">
