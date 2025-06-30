@@ -52,7 +52,8 @@ const MobileMenuButton = ({
   return (
     <Button
       onClick={onClick}
-      className="text-3xl font-medium text-center w-full"
+      className="text-3xl font-medium text-center w-full hover:bg-transparent hover:text-gray-400 capitalize"
+      variant="ghost"
     >
       {children}
     </Button>
@@ -82,11 +83,13 @@ const MobileMenuMainView = ({
 
   return (
     <div className="flex flex-col h-full justify-center gap-10">
-      <Breadcrumb>
-        <BreadcrumbList className="w-full justify-center text-center">
-          <BreadcrumbItem className="text-gray-500">Menu</BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+      <div className="py-10">
+        <Breadcrumb>
+          <BreadcrumbList className="w-full justify-center text-center">
+            <BreadcrumbItem className="text-gray-500">Menu</BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
 
       <MobileMenuList>
         <MobileMenuItem>
@@ -115,6 +118,13 @@ const MobileMenuMainView = ({
           </MobileMenuLink>
         </MobileMenuItem>
       </MobileMenuList>
+
+      <SheetFooter className="p-0 flex flex-col gap-4">
+        <p className="text-sm text-center text-gray-100">
+          {t("mobileMenu.question")}
+        </p>
+        <Button className="w-full">{t("mobileMenu.cta")}</Button>
+      </SheetFooter>
     </div>
   );
 };
@@ -129,20 +139,22 @@ const MobileMenuProductView = ({
   const tOurProducts = useTranslations("ourProducts");
 
   return (
-    <div className="flex flex-col h-full justify-center gap-10 pt-30 overflow-y-auto">
-      <Breadcrumb>
-        <BreadcrumbList className="w-full justify-center text-center">
-          <BreadcrumbItem className="text-gray-500">
-            <BreadcrumbLink onClick={onBack}>Menu</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage className="text-gray-300 font-medium">
-              Oferta
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+    <div className="flex flex-col h-full justify-center gap-10 overflow-y-auto">
+      <div className="py-10">
+        <Breadcrumb>
+          <BreadcrumbList className="w-full justify-center text-center">
+            <BreadcrumbItem className="text-gray-500">
+              <BreadcrumbLink onClick={onBack}>Menu</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-gray-300 font-medium">
+                Oferta
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
 
       <h2 className="text-xl uppercase text-center text-gray-300">
         {tOurProducts("systems")}
@@ -182,8 +194,6 @@ const MobileMenuProductView = ({
 };
 
 const MobileMenu = () => {
-  const t = useTranslations("header");
-
   const [view, setView] = useState<"main" | "product">("main");
 
   const handleViewChange = (view: "main" | "product") => {
@@ -224,13 +234,6 @@ const MobileMenu = () => {
             onClose={() => setOpen(false)}
           />
         )}
-
-        <SheetFooter className="p-0">
-          <p className="text-sm text-center text-gray-100">
-            {t("mobileMenu.question")}
-          </p>
-          <Button className="w-full">{t("mobileMenu.cta")}</Button>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );
