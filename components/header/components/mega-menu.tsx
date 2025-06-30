@@ -10,10 +10,19 @@ import {
 import useTranslations from "@/hooks/useTranslations";
 
 import NavigationMenuProductCard from "./mega-menu-product-card";
+import { useCallback, useRef } from "react";
 
 const MegaMenu = () => {
   const t = useTranslations("header");
   const tOurProducts = useTranslations("ourProducts");
+
+  const triggerRef = useRef<HTMLButtonElement>(null);
+
+  const closeMenu = useCallback(() => {
+    if (triggerRef.current) {
+      triggerRef.current.click();
+    }
+  }, [triggerRef]);
 
   return (
     <NavigationMenu className="static">
@@ -35,7 +44,10 @@ const MegaMenu = () => {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
-          <NavigationMenuTrigger className={navigationMenuTriggerStyle()}>
+          <NavigationMenuTrigger
+            className={navigationMenuTriggerStyle()}
+            ref={triggerRef}
+          >
             {t("offer")}
           </NavigationMenuTrigger>
           <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
@@ -54,6 +66,7 @@ const MegaMenu = () => {
                       imageAlt={tOurProducts("falcon.alt")}
                       buttonText={tOurProducts("falcon.cta")}
                       path="/falcon"
+                      onClick={closeMenu}
                     />
                   </NavigationMenuLink>
                 </li>
@@ -66,6 +79,7 @@ const MegaMenu = () => {
                       imageAlt={tOurProducts("rhino.alt")}
                       buttonText={tOurProducts("rhino.cta")}
                       path="/rhino"
+                      onClick={closeMenu}
                     />
                   </NavigationMenuLink>
                 </li>
@@ -78,6 +92,7 @@ const MegaMenu = () => {
                       imageAlt={tOurProducts("gecko.alt")}
                       buttonText={tOurProducts("gecko.cta")}
                       path="/gecko"
+                      onClick={closeMenu}
                     />
                   </NavigationMenuLink>
                 </li>

@@ -9,6 +9,7 @@ type MegaMenuProductCardProps = {
   imageAlt: string;
   buttonText: string;
   path: string;
+  onClick?: () => void;
 };
 
 const MegaMenuProductCard = ({
@@ -18,6 +19,7 @@ const MegaMenuProductCard = ({
   imageAlt,
   buttonText,
   path,
+  onClick,
 }: MegaMenuProductCardProps) => {
   return (
     <div className="flex h-full w-full flex-col justify-center items-center lg:dark:hover:bg-gray-800 lg:hover:bg-white p-6 min-w-full">
@@ -29,7 +31,7 @@ const MegaMenuProductCard = ({
         <Image src={imageSrc} alt={imageAlt} fill className="object-contain" />
       </div>
       <Button className="w-full">
-        <NextLink href={path} className="w-full">
+        <NextLink href={path} onClick={onClick} className="w-full">
           {buttonText}
         </NextLink>
       </Button>
