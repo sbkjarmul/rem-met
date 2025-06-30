@@ -14,25 +14,33 @@ const StandardsIso13857422Section = () => {
           <AccentText className="text-brand-blue-200">
             {t("iso13857.422.accent")}
           </AccentText>
-          <h2 className="text-4xl text-gray-800">{t("iso13857.422.title")}</h2>
+          <h2 className="text-2xl md:text-4xl text-gray-800">
+            {t("iso13857.422.title")}
+          </h2>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-10 w-full">
           <div className="flex flex-col gap-2 w-full lg:w-1/2">
             <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-6 text-gray-800">
+              <div className="flex items-center md:gap-6 gap-4 text-gray-800">
                 <span className="font-medium text-4xl">A</span>
-                <span className="text-2xl">{t("iso13857.422.A")}</span>
+                <span className="text-lg md:text-2xl">
+                  {t("iso13857.422.A")}
+                </span>
               </div>
-              <div className="flex items-center gap-6 text-gray-800">
+              <div className="flex items-center md:gap-6 gap-4 text-gray-800">
                 <span className="font-medium text-4xl">B</span>
-                <span className="text-2xl">{t("iso13857.422.B")}</span>
+                <span className="text-lg md:text-2xl">
+                  {t("iso13857.422.B")}
+                </span>
               </div>
-              <div className="flex items-center gap-6 text-gray-800">
+              <div className="flex items-center md:gap-6 gap-4 text-gray-800">
                 <span className="font-medium text-4xl text-brand-blue-200">
                   C
                 </span>
-                <span className="text-2xl">{t("iso13857.422.C")}</span>
+                <span className="text-lg md:text-2xl">
+                  {t("iso13857.422.C")}
+                </span>
               </div>
             </div>
 

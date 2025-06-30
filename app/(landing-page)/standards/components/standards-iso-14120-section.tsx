@@ -13,10 +13,12 @@ const StandardCard = ({ accent, title, description }: StandardCardProps) => {
     <div className="flex flex-col gap-4">
       <div className="flex flex-col">
         <AccentText className="text-brand-blue-200">{accent}</AccentText>
-        <h3 className="text-2xl text-gray-600">{title}</h3>
+        <h3 className="text-lg md:text-2xl text-gray-600 font-medium">
+          {title}
+        </h3>
       </div>
       <div className="flex flex-col gap-2 border-l-6 border-brand-blue-200 pl-4">
-        <p className="text-gray-600 text-md whitespace-pre-line leading-tight">
+        <p className="text-gray-500 text-md whitespace-pre-line leading-tight">
           {description}
         </p>
       </div>
@@ -28,15 +30,17 @@ const StandardsIso14120Section = () => {
   const t = useTranslations("standards");
 
   return (
-    <section className="flex flex-col justify-start relative bg-gray-200 h-fit py-16 md:py-20 gap-16 md:gap-20">
+    <section className="flex flex-col justify-start relative bg-gray-200 h-fit py-16 md:py-20 gap-10 md:gap-20">
       <Container className="flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <AccentText className="text-brand-blue-200">
             {t("iso14120.accent")}
           </AccentText>
-          <h2 className="text-4xl text-gray-600">{t("iso14120.title")}</h2>
+          <h2 className="text-xl md:text-4xl font-medium text-gray-600">
+            {t("iso14120.title")}
+          </h2>
         </div>
-        <p className="text-gray-500">{t("iso14120.description")}</p>
+        <p className="text-gray-600">{t("iso14120.description")}</p>
       </Container>
 
       <Container>

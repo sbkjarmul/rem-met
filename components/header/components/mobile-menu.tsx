@@ -195,12 +195,11 @@ const MobileMenuProductView = ({
 
 const MobileMenu = () => {
   const [view, setView] = useState<"main" | "product">("main");
+  const [open, setOpen] = useState(false);
 
   const handleViewChange = (view: "main" | "product") => {
     setView(view);
   };
-
-  const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>

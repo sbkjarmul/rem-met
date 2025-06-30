@@ -44,7 +44,7 @@ const TableCell = ({
   return (
     <td
       className={cn(
-        "text-gray-900 p-4 bg-gray-200 font-normal text-center relative h-full",
+        "text-gray-900 p-2 md:p-4 bg-gray-200 text-sm md:text-base font-normal text-center relative h-full",
         className
       )}
     >
@@ -80,7 +80,7 @@ const TableCellImage = ({
   className?: string;
 }) => {
   return (
-    <td className={cn("bg-white font-normal relative w-80 p-4", className)}>
+    <td className={cn("bg-white font-normal relative md:w-80 p-4", className)}>
       <div className="flex items-center justify-center h-full w-full">
         {children}
       </div>
@@ -106,8 +106,10 @@ const StandardsIso138574241Table = () => {
       <Table>
         <thead>
           <TableRow>
-            <TableHeader>{t("bodyPart")}</TableHeader>
-            <TableHeader>{t("illustration")}</TableHeader>
+            <TableHeader className="w-40 md:w-50">{t("bodyPart")}</TableHeader>
+            <TableHeader className="w-10 md:w-40">
+              {t("illustration")}
+            </TableHeader>
             <TableHeader className="w-40">{t("hole")}</TableHeader>
             <TableHeader className="p-2">
               <div className="flex flex-col gap-2">
@@ -125,16 +127,17 @@ const StandardsIso138574241Table = () => {
           <TableRow>
             <TableCell>{t("fingertip")}</TableCell>
 
-            <TableCellImage>
-              <Image
-                src="/images/standards/rem-met-iso-13857-image-1.svg"
-                alt="Fingertip"
-                height={200}
-                width={150}
-              />
-            </TableCellImage>
+            <TableCell className="bg-white">
+              <div className="relative h-20 md:h-40 w-full">
+                <Image
+                  src="/images/standards/rem-met-iso-13857-image-1.svg"
+                  alt="Fingertip"
+                  fill
+                />
+              </div>
+            </TableCell>
 
-            <TableCell className="flex flex-col gap-2 bg-transparent p-0">
+            <TableCell className="flex flex-col gap-2 bg-transparent p-0 md:p-0">
               <TableCellNested className="flex items-center justify-center">
                 {"e ≤ 4"}
               </TableCellNested>
@@ -143,7 +146,7 @@ const StandardsIso138574241Table = () => {
               </TableCellNested>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="flex flex-row gap-2">
                   <TableCellNested className="flex-1">{"≥ 2"}</TableCellNested>
@@ -163,16 +166,17 @@ const StandardsIso138574241Table = () => {
           <TableRow>
             <TableCell>{t("fingerTipToTheBase")}</TableCell>
 
-            <TableCell className="bg-white flex items-center justify-center">
-              <Image
-                src="/images/standards/rem-met-iso-13857-image-2.svg"
-                alt="Fingertip"
-                height={200}
-                width={150}
-              />
+            <TableCell className="bg-white flex items-center justify-center ">
+              <div className="relative h-20 md:h-40 w-full">
+                <Image
+                  src="/images/standards/rem-met-iso-13857-image-2.svg"
+                  alt="Fingertip"
+                  fill
+                />
+              </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="flex items-center justify-center">
                   {"6 < e ≤ 8"}
@@ -183,7 +187,7 @@ const StandardsIso138574241Table = () => {
               </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="flex flex-row gap-2">
                   <TableCellNested className="flex-1">{"≥ 20"}</TableCellNested>
@@ -204,16 +208,17 @@ const StandardsIso138574241Table = () => {
             <TableCell>{t("hand")}</TableCell>
 
             <TableCell className="bg-white flex items-center justify-center">
-              <Image
-                src="/images/standards/rem-met-iso-13857-image-3.svg"
-                alt="Fingertip"
-                height={150}
-                width={150}
-              />
+              <div className="relative h-20 md:h-40 w-full">
+                <Image
+                  src="/images/standards/rem-met-iso-13857-image-3.svg"
+                  alt="Fingertip"
+                  fill
+                />
+              </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
-              <div className="flex flex-col gap-2 h-full">
+            <TableCell className="bg-transparent p-0 md:p-0">
+              <div className="flex flex-col gap-2 h-full ">
                 <TableCellNested className="h-full flex items-center justify-center flex-1">
                   {"10 < e ≤ 12"}
                 </TableCellNested>
@@ -226,7 +231,7 @@ const StandardsIso138574241Table = () => {
               </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="flex flex-row gap-2 flex-1">
                   <TableCellNested>{"≥ 100"}</TableCellNested>
@@ -249,19 +254,20 @@ const StandardsIso138574241Table = () => {
             </TableCell>
           </TableRow>
 
-          <TableRow className="bg-gray-900">
+          <TableRow>
             <TableCell>{t("armToTheShoulder")}</TableCell>
 
             <TableCell className="bg-white flex items-center justify-center">
-              <Image
-                src="/images/standards/rem-met-iso-13857-image-4.svg"
-                alt="Fingertip"
-                height={100}
-                width={150}
-              />
+              <div className="relative h-20 md:h-40 w-full">
+                <Image
+                  src="/images/standards/rem-met-iso-13857-image-4.svg"
+                  alt="Fingertip"
+                  fill
+                />
+              </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="h-full flex items-center justify-center p">
                   {"30 < e ≤ 40"}
@@ -272,7 +278,7 @@ const StandardsIso138574241Table = () => {
               </div>
             </TableCell>
 
-            <TableCell className="bg-transparent p-0">
+            <TableCell className="bg-transparent p-0 md:p-0">
               <div className="flex flex-col gap-2 h-full">
                 <TableCellNested className="flex flex-row">
                   <TableCellNested>{"≥ 850"}</TableCellNested>

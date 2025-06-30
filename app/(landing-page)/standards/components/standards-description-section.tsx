@@ -32,11 +32,15 @@ const StandardsDescriptionSection = () => {
 
         <div className="flex flex-col gap-20 items-start">
           <div className="flex flex-col gap-8 w-full">
-            <div className="flex flex-col gap-2">
-              <AccentText className="text-brand-blue-200">
+            <div className="flex flex-col gap-6 md:gap-2">
+              <AccentText className="text-brand-blue-200 hidden md:block">
                 {t("description.accent")}
               </AccentText>
-              <h2 className="text-4xl">
+              <h2 className="text-3xl text-brand-blue-200 font-medium md:hidden">
+                {t("description.accent")}
+              </h2>
+
+              <h2 className="text-4xl hidden md:block">
                 <span className="font-normal text-gray-500 mr-1">
                   {t("description.title.regular")}
                 </span>
@@ -44,6 +48,15 @@ const StandardsDescriptionSection = () => {
                   {t("description.title.bold")}
                 </span>
               </h2>
+
+              <p className="md:hidden">
+                <span className="font-normal text-gray-500 mr-1">
+                  {t("description.title.regular")}
+                </span>
+                <span className="font-medium text-gray-600">
+                  {t("description.title.bold")}
+                </span>
+              </p>
             </div>
           </div>
         </div>

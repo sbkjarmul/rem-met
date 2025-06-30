@@ -33,7 +33,7 @@ export default {
     contactQuestion: "Masz jakieś pytania?",
     contactEmail: "biuro@rem-met.com",
     contactSupport: "Potrzebujesz wsparcia? Zadzwoń do nas.",
-    contactPhone: "+48 666 999 888",
+    contactPhone: "+48 725 724 883",
     copyrightPrefix: "REM-MET",
     copyright: "Wszelkie prawa zastrzeżone.",
     // Attribution
@@ -378,13 +378,16 @@ export default {
   },
   // About Us Page
   aboutUs: {
-    name: "O nas",
+    name: "O Nas",
     breadcrumb: "Strona główna",
     // Hero Section
     "hero.accent": "REM-MET",
     "hero.title": "Zaufany dostawca rozwiązań bezpieczeństwa dla każdej branży",
+    "hero.title.mobile": "Zaufany dostawca rozwiązań bezpieczeństwa",
     "hero.description":
       "Obsługujemy małe zakłady i duże linie produkcyjne. Nasze wygrodzenia chronią ludzi i maszyny tam, gdzie precyzja i bezpieczeństwo są najważniejsze.",
+    "hero.description.mobile":
+      "Współpracujemy z firmami z różnych branż. - tam, gdzie maszyny pracują, my dbamy o to, by były bezpieczne.",
     "hero.quote":
       "Tam, gdzie maszyny pracują, \n my dbamy o to, by było bezpiecznie. ",
     "hero.quote.author": "Mateusz Ozga",
@@ -392,7 +395,7 @@ export default {
     "hero.image.alt":
       "Pracownik w stroju REM-MET, stojący przed wygrodzeniem firmy REM-MET",
     // Description Section
-    "description.accent": "O nas",
+    "description.accent": "O Nas",
     "description.title":
       "Od ponad 20 lat działamy w branży przemysłowej, wspierając firmy produkcyjne w realizacji ich celów. Do 2022 roku specjalizowaliśmy się w usługach spawalniczych i obróbkowych jako podwykonawcy komponentów. Dziś skupiamy się na tym, co dla naszych klientów najważniejsze – bezpieczeństwie.",
     "description.image.alt": "Wygrodzenie REM-MET w rzucie izometrycznym",
@@ -403,7 +406,8 @@ export default {
     // Ecology Section
     "ecology.title":
       "Dbamy nie tylko o jakość i terminowość naszych realizacji, ale też o środowisko. ",
-    "ecology.article1.title": "Wykorzystanie surowców wtórnych",
+    "ecology.title.mobile": "Dbamy o środowisko.",
+    "ecology.article1.title": "Wykorzystanie surowców wtórnych",
     "ecology.article1.description":
       "W naszych projektach wykorzystujemy materiały pochodzące z recyklingu, takie jak stalowe profile, siatki czy elementy plastikowe.",
     "ecology.article2.title": "70% stali pochodzi z recyklingu",
@@ -421,6 +425,8 @@ export default {
     "hero.title": "Bezpieczeństwo to nasz priorytet",
     "hero.description":
       "Wszystkie nasze wygrodzenia ochronne do maszyn projektujemy i wykonujemy zgodnie z najbardziej wymagającymi europejskimi normami bezpieczeństwa: EN ISO 14120 oraz EN ISO 13857.",
+    "hero.description.mobile":
+      "Wygrodzenia ochronne REM-MET zgodnie europejskimi normami bezpieczeństwa.",
     "hero.quote": "Razem stworzymy bezpieczniejsze miejsce pracy.",
     "hero.quote.author": "Mateusz Ozga",
     "hero.quote.author.position": "Właściciel REM-MET",

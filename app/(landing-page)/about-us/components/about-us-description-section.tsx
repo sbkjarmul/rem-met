@@ -18,11 +18,13 @@ interface StatisticsCardProps {
 
 const StatisticsCard = ({ value, text, subtext }: StatisticsCardProps) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 justify-center items-center text-center md:text-left md:items-start md:justify-start">
       <h3 className="text-8xl font-medium text-brand-blue-200">{value}</h3>
       <div>
-        <p className="text-gray-500 text-lg">{text}</p>
-        {subtext && <p className="text-gray-400 text-sm">{subtext}</p>}
+        <p className="text-gray-500 text-2xl md:text-lg">{text}</p>
+        {subtext && (
+          <p className="text-gray-400 text-md md:text-sm">{subtext}</p>
+        )}
       </div>
     </div>
   );
@@ -51,12 +53,18 @@ const AboutUsDescriptionSection = () => {
         <div className="flex flex-col gap-20 items-start">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-2">
-              <AccentText className="text-brand-blue-200">
+              <AccentText className="text-brand-blue-200 hidden md:block">
                 {t("description.accent")}
               </AccentText>
-              <h2 className="text-4xl text-gray-600">
+              <h2 className="text-3xl text-brand-blue-200 font-medium md:hidden">
+                {t("description.accent")}
+              </h2>
+              <h2 className="text-4xl text-gray-600 hidden md:block">
                 {t("description.title")}
               </h2>
+              <p className="text-gray-500 text-lg md:hidden">
+                {t("description.title")}
+              </p>
             </div>
           </div>
 

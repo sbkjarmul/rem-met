@@ -13,9 +13,11 @@ const StandardsIso13857Section = () => {
           <AccentText className="text-gray-400">
             {t("iso13857.accent")}
           </AccentText>
-          <h2 className="text-4xl text-gray-100">{t("iso13857.title")}</h2>
-          <p className="text-gray-300">{t("iso13857.description")}</p>
+          <h2 className="text-xl md:text-4xl text-gray-100">
+            {t("iso13857.title")}
+          </h2>
         </div>
+        <p className="text-gray-300">{t("iso13857.description")}</p>
       </Container>
 
       <div className="flex flex-col gap-10">
