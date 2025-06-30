@@ -52,7 +52,7 @@ const MobileMenuButton = ({
   return (
     <Button
       onClick={onClick}
-      className="text-3xl font-medium text-center w-full hover:bg-transparent hover:text-gray-400 capitalize"
+      className="text-3xl py-0 font-medium text-center w-full hover:bg-transparent hover:text-gray-400 capitalize"
       variant="ghost"
     >
       {children}
@@ -68,7 +68,7 @@ const MobileMenuItem = ({ children }: { children: React.ReactNode }) => {
 
 const MobileMenuList = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ul className="flex flex-col gap-10 h-fit justify-center">{children}</ul>
+    <ul className="flex flex-col gap-6 h-full justify-center">{children}</ul>
   );
 };
 
@@ -215,6 +215,7 @@ const MobileMenu = () => {
           <span className="block w-8 h-1 dark:bg-gray-200 bg-gray-900 transition-all" />
         </Button>
       </SheetTrigger>
+
       <SheetContent
         className="bg-brand-blue-400 w-screen border-gray-700"
         side="right"
