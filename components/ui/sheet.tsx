@@ -71,7 +71,7 @@ function SheetContent({
         {...props}
       >
         {children}
-        <SheetPrimitive.Close className="h-16 w-16 flex justify-center items-center ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
+        <SheetPrimitive.Close className="h-16 w-16 flex justify-center items-center ring-offset-background absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus-visible:ring-0 disabled:pointer-events-none">
           <div className="relative w-6 h-6">
             <span className="absolute top-1/2 left-0 w-8 h-1 bg-gray-400 rotate-45" />
             <span className="absolute top-1/2 left-0 w-8 h-1 bg-gray-400 -rotate-45" />
