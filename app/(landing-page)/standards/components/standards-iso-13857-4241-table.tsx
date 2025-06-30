@@ -72,22 +72,6 @@ const TableCellNested = ({
   );
 };
 
-const TableCellImage = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <td className={cn("bg-white font-normal relative md:w-80 p-4", className)}>
-      <div className="flex items-center justify-center h-full w-full">
-        {children}
-      </div>
-    </td>
-  );
-};
-
 const TableRow = ({
   children,
   className,
