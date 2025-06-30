@@ -19,8 +19,8 @@ const StandardsIso13857422Section = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 w-full">
-          <div className="flex flex-col gap-2 w-full lg:w-1/2">
+        <div className="flex flex-col xl:flex-row gap-10 w-full">
+          <div className="flex flex-col gap-2 w-full max-w-xl xl:w-1/2">
             <div className="flex flex-col gap-2">
               <div className="flex items-center md:gap-6 gap-4 text-gray-800">
                 <span className="font-medium text-4xl">A</span>
@@ -53,11 +53,15 @@ const StandardsIso13857422Section = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
+          <div className="w-full xl:w-1/2 hidden md:block overflow-x-auto">
             <StandardsIso13857422Table />
           </div>
         </div>
       </Container>
+
+      <div className="w-full md:w-1/2 overflow-x-auto pl-2 pr-4 md:hidden">
+        <StandardsIso13857422Table />
+      </div>
     </section>
   );
 };
