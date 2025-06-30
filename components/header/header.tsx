@@ -50,7 +50,7 @@ const Header = () => {
       }`}
     >
       <Container>
-        <div className="flex h-[60px] md:h-[100px] items-center justify-between">
+        <div className="flex h-[100px] items-center justify-between">
           <Logo />
           <div className="hidden lg:flex">
             <MegaMenu />
