@@ -18,7 +18,7 @@ import Link from "next/link";
 const ProductCarouselDesktop = () => {
   const { current, setApi, count } = useProductCarousel();
 
-  const t = useTranslations("ourProductsSection");
+  const t = useTranslations("ourProducts");
   const products = getProducts(t);
 
   return (

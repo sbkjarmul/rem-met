@@ -129,7 +129,8 @@ export default {
     "button.product": "Skontaktuj się",
   },
   // Our Products Section
-  ourProductsSection: {
+  ourProducts: {
+    systems: "Systemy wygrodzeń",
     accent: "Nasze produkty",
     title: "Wygrodzenia przemysłowe",
     description:

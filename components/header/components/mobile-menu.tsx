@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 import useTranslations from "@/hooks/useTranslations";
 
@@ -12,18 +12,50 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Button from "@/components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import MobileMenuProductCard from "./mobile-menu-product-card";
 
 const MobileMenuLink = ({
   href,
   children,
+  onClick,
 }: {
   href: string;
   children: React.ReactNode;
+  onClick: () => void;
 }) => {
   return (
-    <NextLink href={href} className="text-3xl font-medium text-center w-full">
+    <NextLink
+      href={href}
+      className="text-3xl font-medium text-center w-full"
+      onClick={onClick}
+    >
       {children}
     </NextLink>
+  );
+};
+
+const MobileMenuButton = ({
+  onClick,
+  children,
+}: {
+  onClick: () => void;
+  children: React.ReactNode;
+}) => {
+  return (
+    <Button
+      onClick={onClick}
+      className="text-3xl font-medium text-center w-full"
+    >
+      {children}
+    </Button>
   );
 };
 
@@ -35,15 +67,133 @@ const MobileMenuItem = ({ children }: { children: React.ReactNode }) => {
 
 const MobileMenuList = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ul className="flex flex-col gap-10 h-full justify-center">{children}</ul>
+    <ul className="flex flex-col gap-10 h-fit justify-center">{children}</ul>
+  );
+};
+
+const MobileMenuMainView = ({
+  handleViewChange,
+  onClose,
+}: {
+  handleViewChange: (view: "main" | "product") => void;
+  onClose: () => void;
+}) => {
+  const t = useTranslations("header");
+
+  return (
+    <div className="flex flex-col h-full justify-center gap-10">
+      <Breadcrumb>
+        <BreadcrumbList className="w-full justify-center text-center">
+          <BreadcrumbItem className="text-gray-500">Menu</BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <MobileMenuList>
+        <MobileMenuItem>
+          <MobileMenuLink href="/" onClick={onClose}>
+            {t("home")}
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuButton onClick={() => handleViewChange("product")}>
+            {t("offer")}
+          </MobileMenuButton>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="/about-us" onClick={onClose}>
+            {t("about")}
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="/standards" onClick={onClose}>
+            {t("standards")}
+          </MobileMenuLink>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuLink href="/contact" onClick={onClose}>
+            {t("contact")}
+          </MobileMenuLink>
+        </MobileMenuItem>
+      </MobileMenuList>
+    </div>
+  );
+};
+
+const MobileMenuProductView = ({
+  onBack,
+  onClose,
+}: {
+  onBack: () => void;
+  onClose: () => void;
+}) => {
+  const tOurProducts = useTranslations("ourProducts");
+
+  return (
+    <div className="flex flex-col h-full justify-center gap-10 pt-30 overflow-y-auto">
+      <Breadcrumb>
+        <BreadcrumbList className="w-full justify-center text-center">
+          <BreadcrumbItem className="text-gray-500">
+            <BreadcrumbLink onClick={onBack}>Menu</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage className="text-gray-300 font-medium">
+              Oferta
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <h2 className="text-xl uppercase text-center text-gray-300">
+        {tOurProducts("systems")}
+      </h2>
+
+      <div className="grid grid-rows-[1fr_1fr_1fr] gap-4 h-full overflow-y-auto">
+        <MobileMenuProductCard
+          title={tOurProducts("falcon.title")}
+          name={tOurProducts("falcon.name")}
+          imageSrc="/images/products/rem-met-falcon-hero.png"
+          imageAlt={tOurProducts("falcon.alt")}
+          buttonText={tOurProducts("falcon.cta")}
+          path="/falcon"
+          onClick={onClose}
+        />
+        <MobileMenuProductCard
+          title={tOurProducts("rhino.title")}
+          name={tOurProducts("rhino.name")}
+          imageSrc="/images/products/rem-met-rhino-hero.png"
+          imageAlt={tOurProducts("rhino.alt")}
+          buttonText={tOurProducts("rhino.cta")}
+          path="/rhino"
+          onClick={onClose}
+        />
+        <MobileMenuProductCard
+          title={tOurProducts("gecko.title")}
+          name={tOurProducts("gecko.name")}
+          imageSrc="/images/products/rem-met-gecko-hero.png"
+          imageAlt={tOurProducts("gecko.alt")}
+          buttonText={tOurProducts("gecko.cta")}
+          path="/gecko"
+          onClick={onClose}
+        />
+      </div>
+    </div>
   );
 };
 
 const MobileMenu = () => {
   const t = useTranslations("header");
 
+  const [view, setView] = useState<"main" | "product">("main");
+
+  const handleViewChange = (view: "main" | "product") => {
+    setView(view);
+  };
+
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button
           variant="ghost"
@@ -62,23 +212,19 @@ const MobileMenu = () => {
         <SheetHeader className="sr-only">
           <SheetTitle>REM-MET</SheetTitle>
         </SheetHeader>
-        <MobileMenuList>
-          <MobileMenuItem>
-            <MobileMenuLink href="/">{t("home")}</MobileMenuLink>
-          </MobileMenuItem>
-          <MobileMenuItem>
-            <MobileMenuLink href="/">{t("offer")}</MobileMenuLink>
-          </MobileMenuItem>
-          <MobileMenuItem>
-            <MobileMenuLink href="/about-us">{t("about")}</MobileMenuLink>
-          </MobileMenuItem>
-          <MobileMenuItem>
-            <MobileMenuLink href="/standards">{t("standards")}</MobileMenuLink>
-          </MobileMenuItem>
-          <MobileMenuItem>
-            <MobileMenuLink href="/contact">{t("contact")}</MobileMenuLink>
-          </MobileMenuItem>
-        </MobileMenuList>
+
+        {view === "main" ? (
+          <MobileMenuMainView
+            handleViewChange={handleViewChange}
+            onClose={() => setOpen(false)}
+          />
+        ) : (
+          <MobileMenuProductView
+            onBack={() => handleViewChange("main")}
+            onClose={() => setOpen(false)}
+          />
+        )}
+
         <SheetFooter className="p-0">
           <p className="text-sm text-center text-gray-100">
             {t("mobileMenu.question")}

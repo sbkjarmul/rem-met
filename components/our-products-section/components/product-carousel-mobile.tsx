@@ -18,7 +18,7 @@ import Link from "next/link";
 const ProductCarouselMobile = () => {
   const { current, setApi, api } = useProductCarousel();
 
-  const t = useTranslations("ourProductsSection");
+  const t = useTranslations("ourProducts");
   const products = getProducts(t);
 
   return (

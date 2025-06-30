@@ -13,7 +13,7 @@ import NavigationMenuProductCard from "./mega-menu-product-card";
 
 const MegaMenu = () => {
   const t = useTranslations("header");
-  const tOurProducts = useTranslations("ourProductsSection");
+  const tOurProducts = useTranslations("ourProducts");
 
   return (
     <NavigationMenu className="static">
