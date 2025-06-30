@@ -9,6 +9,7 @@ import Button from "@/components/ui/button";
 import useTranslations from "@/hooks/useTranslations";
 import MegaMenu from "./components/mega-menu";
 import MobileMenu from "./components/mobile-menu";
+import { ContactDialog } from "../contact-dialog";
 
 const Logo = () => {
   return (
@@ -55,9 +56,15 @@ const Header = () => {
           <div className="hidden lg:flex">
             <MegaMenu />
           </div>
-          <Button size="lg" className="hidden lg:block">
-            {t("headerButton")}
-          </Button>
+
+          <ContactDialog
+            triggerButton={
+              <Button size="lg" className="hidden lg:block">
+                {t("headerButton")}
+              </Button>
+            }
+          />
+
           <div className="lg:hidden">
             <MobileMenu />
           </div>

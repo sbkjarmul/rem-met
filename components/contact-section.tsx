@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 
 import useTranslations from "@/hooks/useTranslations";
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
+import { ContactDialog } from "./contact-dialog";
 
 interface ContactSectionProps {
   variant?: "product" | "default";
@@ -68,9 +71,14 @@ const ContactSection = ({ variant = "default" }: ContactSectionProps) => {
           </h2>
         </div>
         <p className="text-md md:text-lg mb-4 md:mb-0">{description}</p>
-        <Button variant={buttonVariant} className="w-full md:w-auto">
-          {t("button")}
-        </Button>
+
+        <ContactDialog
+          triggerButton={
+            <Button variant={buttonVariant} className="w-full md:w-auto">
+              {t("button")}
+            </Button>
+          }
+        />
       </div>
 
       <Image

@@ -128,6 +128,15 @@ export default {
       "Wypełnij formularz kontaktowy, aby otrzymać bezpłatną wycenę.",
     "button.product": "Skontaktuj się",
   },
+  contactDialog: {
+    title: "Zbudujemy system bezpieczeństwa dla Twojej Firmy",
+    get: "Otrzymaj",
+    free: "darmową",
+    estimation: "wycenę",
+    description:
+      "Wypełnij formularz ze szczegółami zlecenia, a my skontaktujemy się z Tobą w ciągu kilku dni",
+    "button.cta": "Wyślij zapytanie",
+  },
   // Our Products Section
   ourProducts: {
     systems: "Systemy wygrodzeń",

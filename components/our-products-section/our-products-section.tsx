@@ -5,7 +5,10 @@ import ProductCarouselMobile from "./components/product-carousel-mobile";
 
 const OurProductsSection = () => {
   return (
-    <section className="w-full bg-gray-200 md:min-h-[800px] flex flex-col items-center justify-center py-16 md:py-0">
+    <section
+      id="ourProducts"
+      className="w-full bg-gray-200 md:min-h-[800px] flex flex-col items-center justify-center py-16 md:py-0"
+    >
       <div className="hidden lg:flex">
         <ProductCarouselDesktop />
       </div>

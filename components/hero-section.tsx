@@ -4,6 +4,8 @@ import Image from "next/image";
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
 import useTranslations from "@/hooks/useTranslations";
+import { ContactDialog } from "./contact-dialog";
+import Link from "next/link";
 
 const HeroSection = () => {
   const t = useTranslations("hero");
@@ -33,12 +35,17 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-10 flex justify-center gap-4 w-full">
-          <Button variant="outline" className="hidden md:block">
-            {t("secondaryButton.desktop")}
+          <Button variant="outline" className="hidden md:block" asChild>
+            <Link href="/#ourProducts">{t("secondaryButton.desktop")}</Link>
           </Button>
-          <Button className="w-full md:w-auto">
-            {t("primaryButton.desktop")}
-          </Button>
+
+          <ContactDialog
+            triggerButton={
+              <Button className="w-full h-full md:w-auto">
+                {t("primaryButton.desktop")}
+              </Button>
+            }
+          />
         </div>
       </div>
 
