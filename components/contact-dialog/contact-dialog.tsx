@@ -72,7 +72,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
           </div>
 
           <div className="w-full lg:w-2/3 p-8 z-1">
-            <div className="flex-1 p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-center bg-gray-100">
+            <div className="flex-1 p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-center bg-gray-100 md:shadow-lg">
               <h1 className="text-3xl md:text-6xl font-medium text-center text-gray-900">
                 {t("get")}{" "}
                 <span className="text-brand-blue-100">{t("free")}</span>{" "}

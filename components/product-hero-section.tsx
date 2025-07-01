@@ -28,7 +28,7 @@ const ProductHeroSection = ({
 
   return (
     <section className="flex flex-col justify-end relative bg-gray-400 md:bg-gradient-to-b from-gray-400 from-[75%] to-[80%] to-white min-h-[500px] md:min-h-screen gap-10">
-      <Container className="relative z-1 flex flex-col justify-end gap-10 md:pt-40">
+      <Container className="relative z-1 flex flex-col justify-end gap-10 mt-40">
         <div className="mx-auto text-center gap-2 flex flex-col">
           <AccentText className="text-brand-blue-200">{accent}</AccentText>
           <h1 className="text-3xl md:text-5xl font-medium uppercase text-gray-900">

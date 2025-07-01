@@ -51,7 +51,7 @@ const ProductCarouselDesktop = () => {
           }}
           plugins={[
             Autoplay({
-              delay: 10000,
+              delay: 30000,
             }),
           ]}
           orientation="horizontal"

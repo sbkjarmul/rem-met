@@ -21,6 +21,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import MobileMenuProductCard from "./mobile-menu-product-card";
+import { ContactDialog } from "@/components/contact-dialog/contact-dialog";
 
 const MobileMenuLink = ({
   href,
@@ -123,7 +124,11 @@ const MobileMenuMainView = ({
         <p className="text-sm text-center text-gray-100">
           {t("mobileMenu.question")}
         </p>
-        <Button className="w-full">{t("mobileMenu.cta")}</Button>
+        <ContactDialog
+          triggerButton={
+            <Button className="w-full">{t("mobileMenu.cta")}</Button>
+          }
+        />
       </SheetFooter>
     </div>
   );
