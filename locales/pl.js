@@ -549,4 +549,10 @@ export default {
     "table1.description2":
       "W przypadku otworów szczelinowych o długości ≤ 65 mm, kciuk działa jak blokada,  więc odległość, na której trzeba ustawić ogrodzenie, może być mniejsza – tylko 200 mm. Dzięki temu możliwe jest zaoszczędzenie miejsca, przy jednoczesnym zapewnieniu odpowiedniego poziomu ochrony.",
   },
+  notFound: {
+    code: "404",
+    title: "Nie znaleziono strony",
+    description: "Przepraszamy, strona, której szukasz, nie istnieje.",
+    cta: "Wróć do strony głównej",
+  },
 };
