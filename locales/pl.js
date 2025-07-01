@@ -134,8 +134,11 @@ export default {
     free: "darmową",
     estimation: "wycenę",
     description:
-      "Wypełnij formularz ze szczegółami zlecenia, a my skontaktujemy się z Tobą w ciągu kilku dni",
+      "Wypełnij formularz ze szczegółami zlecenia, a my skontaktujemy się z Tobą w ciągu kilku dni.",
     "button.cta": "Wyślij zapytanie",
+    "description.mobile":
+      "Wypełnij formularz a my skontaktujemy się z Tobą w ciągu kilku dni.",
+    now: "teraz",
   },
   contactForm: {
     fullName: "Imię i nazwisko",

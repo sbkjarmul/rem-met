@@ -6,7 +6,7 @@ import { submitContactForm } from "@/actions/submit-contact-form";
 import ContactForm from "./contact-form";
 import ContactFormSuccessMessage from "./contact-form-success-message";
 
-export default function ContactBox() {
+const ContactFormWrapper = () => {
   const initialState = {
     success: false,
   };
@@ -25,4 +25,6 @@ export default function ContactBox() {
       )}
     </div>
   );
-}
+};
+
+export default ContactFormWrapper;

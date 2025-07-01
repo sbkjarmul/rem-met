@@ -76,8 +76,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   return (
     <Form {...form}>
       <form
-        className="grid grid-cols-2 grid-rows-[1fr_1fr_200px] gap-4"
-        // action={formAction}
+        className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 grid-rows-auto md:grid-rows-[1fr_1fr_200px] gap-6 md:gap-4"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         <FormField
@@ -85,7 +84,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="fullName"
           render={({ field }) => (
             <ContactFormItem>
-              <ContactFormLabel>Username</ContactFormLabel>
+              <ContactFormLabel>Imię i nazwisko</ContactFormLabel>
               <FormControl>
                 <Input placeholder="Jak się nazywasz" {...field} />
               </FormControl>
@@ -93,6 +92,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </ContactFormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="email"
@@ -106,6 +106,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </ContactFormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="companyName"
@@ -122,6 +123,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </ContactFormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="phone"
@@ -139,6 +141,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </ContactFormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="description"
@@ -147,7 +150,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
               <ContactFormLabel>Opis zlecenia</ContactFormLabel>
               <FormControl>
                 <Textarea
-                  className="h-full"
+                  className="min-h-[200px]"
                   placeholder="Opisz swój pomysł lub potrzeby"
                   {...field}
                 />
@@ -156,6 +159,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </ContactFormItem>
           )}
         />
+
         <FormField
           control={form.control}
           name="acceptPolicy"
