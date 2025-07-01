@@ -21,6 +21,7 @@ import Link from "next/link";
 import { startTransition } from "react";
 import { mapContactFormDataToFormData } from "./utils";
 import { cn } from "@/lib/utils";
+import useTranslations from "@/hooks/useTranslations";
 
 export const ContactFormLabel = ({
   children,
@@ -53,6 +54,10 @@ export const ContactFormItem = ({
   );
 };
 
+const ContactFormMessage = () => {
+  return <FormMessage className="text-red-500 text-xs" />;
+};
+
 interface ContactFormProps {
   formAction: (payload: FormData) => void;
   isLoading: boolean;
@@ -62,6 +67,8 @@ const ContactForm: React.FC<ContactFormProps> = ({
   formAction,
   isLoading,
 }: ContactFormProps) => {
+  const t = useTranslations("contactForm");
+
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues,
@@ -76,7 +83,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   return (
     <Form {...form}>
       <form
-        className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 grid-rows-auto md:grid-rows-[1fr_1fr_200px] gap-6 md:gap-4"
+        className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-6 md:gap-4"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         <FormField
@@ -84,11 +91,15 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="fullName"
           render={({ field }) => (
             <ContactFormItem>
-              <ContactFormLabel>Imię i nazwisko</ContactFormLabel>
+              <ContactFormLabel>{t("fullName.label")}</ContactFormLabel>
               <FormControl>
-                <Input placeholder="Jak się nazywasz" {...field} />
+                <Input
+                  autoComplete="off"
+                  placeholder={t("fullName.placeholder")}
+                  {...field}
+                />
               </FormControl>
-              <FormMessage />
+              <ContactFormMessage />
             </ContactFormItem>
           )}
         />
@@ -98,11 +109,15 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="email"
           render={({ field }) => (
             <ContactFormItem>
-              <ContactFormLabel>Email</ContactFormLabel>
+              <ContactFormLabel>{t("email.label")}</ContactFormLabel>
               <FormControl>
-                <Input placeholder="Gdzie możemy odpisać" {...field} />
+                <Input
+                  autoComplete="off"
+                  placeholder={t("email.placeholder")}
+                  {...field}
+                />
               </FormControl>
-              <FormMessage />
+              <ContactFormMessage />
             </ContactFormItem>
           )}
         />
@@ -112,14 +127,15 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="companyName"
           render={({ field }) => (
             <ContactFormItem>
-              <ContactFormLabel>Nazwa firmy</ContactFormLabel>
+              <ContactFormLabel>{t("companyName.label")}</ContactFormLabel>
               <FormControl>
                 <Input
-                  placeholder="Twoja marka, projekt lub startup"
+                  autoComplete="off"
+                  placeholder={t("companyName.placeholder")}
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <ContactFormMessage />
             </ContactFormItem>
           )}
         />
@@ -129,15 +145,16 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="phone"
           render={({ field }) => (
             <ContactFormItem>
-              <ContactFormLabel>Numer telefonu</ContactFormLabel>
+              <ContactFormLabel>{t("phone.label")}</ContactFormLabel>
               <FormControl>
                 <Input
+                  autoComplete="off"
                   type="tel"
-                  placeholder="Twoj numer telefonu"
+                  placeholder={t("phone.placeholder")}
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <ContactFormMessage />
             </ContactFormItem>
           )}
         />
@@ -147,15 +164,16 @@ const ContactForm: React.FC<ContactFormProps> = ({
           name="description"
           render={({ field }) => (
             <ContactFormItem className="col-span-2">
-              <ContactFormLabel>Opis zlecenia</ContactFormLabel>
+              <ContactFormLabel>{t("description.label")}</ContactFormLabel>
               <FormControl>
                 <Textarea
+                  autoComplete="off"
                   className="min-h-[200px]"
-                  placeholder="Opisz swój pomysł lub potrzeby"
+                  placeholder={t("description.placeholder")}
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <ContactFormMessage />
             </ContactFormItem>
           )}
         />
@@ -175,21 +193,20 @@ const ContactForm: React.FC<ContactFormProps> = ({
                 </FormControl>
                 <FormLabel className="text-xs text-gray-500 font-normal">
                   <span>
-                    Upoważniam do przetwarzania danych osobowych zgodnie z
-                    polityką prywatności, zgodnie z RODO itp
+                    {t("acceptPolicy.label")}
                     <Link href="/polityka-prywatnosci">
-                      politykę prywatności
+                      {t("acceptPolicy.privacyPolicy")}
                     </Link>
                   </span>
                 </FormLabel>
               </div>
-              <FormMessage />
+              <ContactFormMessage />
             </FormItem>
           )}
         />
 
         <Button type="submit" disabled={isLoading}>
-          {isLoading ? "Wysyłanie..." : "Wyślij zapytanie"}
+          {isLoading ? t("cta.loading") : t("cta")}
         </Button>
       </form>
     </Form>

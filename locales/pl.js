@@ -141,11 +141,32 @@ export default {
     now: "teraz",
   },
   contactForm: {
-    fullName: "Imię i nazwisko",
-    email: "Email",
-    phone: "Telefon",
-    message: "Wiadomość",
-    send: "Wyślij",
+    "fullName.label": "Imię i nazwisko",
+    "fullName.placeholder": "Np. Jan Kowalski",
+    "fullName.error": "Proszę podać pełne imię i nazwisko (min. 5 znaków).",
+    "email.label": "Email",
+    "email.placeholder": "Np. jan.kowalski@gmail.com",
+    "email.error":
+      "Proszę podać poprawny adres email (np. przyklad@domena.pl).",
+    "companyName.label": "Nazwa firmy",
+    "companyName.placeholder": "Np. REM-MET",
+    "companyName.error": "Proszę podać nazwę firmy (min. 2 znaki).",
+    "phone.label": "Numer telefonu",
+    "phone.placeholder": "Np. +48 123 456 789",
+    "phone.error":
+      "Proszę podać poprawny numer telefonu (np. +48 123 456 789).",
+    "description.label": "Opis zlecenia",
+    "description.placeholder":
+      "Opisz swoje zapytanie/zlecenie (np. rodzaj usługi, wymagania, termin realizacji)",
+    "description.error": "Proszę podać opis zlecenia (min. 10 znaków).",
+    "acceptPolicy.label":
+      "Upoważniam do przetwarzania danych osobowych zgodnie z ",
+    "acceptPolicy.privacyPolicy": "Polityką prywatności",
+    "acceptPolicy.and": "oraz",
+    "acceptPolicy.rodo": "RODO",
+    "acceptPolicy.error": "Wymagana akceptacja polityki prywatności oraz RODO.",
+    "cta.loading": "Wysyłanie...",
+    cta: "Wyślij zapytanie",
   },
   // Our Products Section
   ourProducts: {

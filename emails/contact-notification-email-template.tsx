@@ -109,11 +109,6 @@ const contactCardStyle = {
 const contactCardFooterStyle = {
   height: "100px",
   width: "100%",
-  // backgroundImage:
-  //   "url('https://i.ibb.co/mrNcqrV2/entei-contact-card-pattern-2.png')",
-  // backgroundPosition: "center",
-  // backgroundRepeat: "no-repeat",
-  // backgroundSize: "cover",
 };
 
 const h1 = {

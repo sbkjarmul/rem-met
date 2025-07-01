@@ -9,7 +9,7 @@ const AboutUsHeroSection = () => {
   const t = useTranslations("aboutUs");
 
   return (
-    <section className="relative bg-background mih-h-[600px] md:min-h-[800px] flex flex-col justify-end items-start pt-32 md:py-20 gap-4">
+    <section className="relative bg-background mih-h-[600px] md:min-h-[800px] flex flex-col justify-center items-start pt-32 md:py-20 gap-4">
       <Container className="z-1 flex flex-col justify-start h-full gap-20">
         <div className="gap-6 flex flex-col w-full lg:w-1/2">
           <div className="text-left gap-2 flex flex-col">
