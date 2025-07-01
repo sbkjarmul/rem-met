@@ -52,7 +52,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
 
       <SheetContent
         side="top"
-        className="bg-radial from-brand-blue-200 to-80% to-black w-screen pt-20 border-none"
+        className="bg-radial from-brand-blue-200 to-80% to-black w-screen pt-20 border-none h-screen"
       >
         <SheetHeader className="sr-only">
           <SheetTitle>REM-MET</SheetTitle>
@@ -80,6 +80,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
               <p className="text-center text-gray-500 mb-8">
                 {t("description")}
               </p>
+
               <ContactBox />
             </div>
           </div>

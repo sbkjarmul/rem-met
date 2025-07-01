@@ -15,22 +15,26 @@ export async function submitContactForm(
   },
   formData: FormData
 ) {
+  console.log(formData);
+
   const schema = z.object({
     fullName: z.string().nonempty(),
     email: z.string().nonempty(),
     companyName: z.string(),
-    message: z.string().nonempty(),
+    description: z.string().nonempty(),
   });
 
   try {
     const data = schema.parse({
       fullName: formData.get("fullName")?.toString(),
       email: formData.get("email")?.toString(),
-      message: formData.get("message")?.toString(),
       companyName: formData.get("companyName")?.toString(),
+      phone: formData.get("phone")?.toString(),
+      description: formData.get("description")?.toString(),
+      acceptPolicy: formData.get("acceptPolicy")?.toString(),
     });
 
-    const { fullName, email, message, companyName } = data;
+    const { fullName, email, description, companyName } = data;
 
     // Send confirmation email to client
     await resend.emails.send({
@@ -40,19 +44,19 @@ export async function submitContactForm(
       react: ContactConfirmationEmailTemplate({
         fullName,
         companyName,
-        message,
+        description,
       }),
     });
 
     // Send notification email to ENTEI
     await resend.emails.send({
       from: "ENTEI <noreply@rem-met.com>",
-      to: "biur@rem-met.com",
+      to: "sbkjarmul@gmail.com",
       subject: "Nowe zapytanie",
       react: ContactNotificationEmailTemplate({
         fullName,
         companyName,
-        message,
+        description,
         email: email,
       }),
     });

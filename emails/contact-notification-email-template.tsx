@@ -16,7 +16,7 @@ import * as React from "react";
 interface ContactNotificationEmailTemplateProps {
   fullName: string;
   companyName?: string;
-  message: string;
+  description: string;
   email?: string;
 }
 
@@ -24,7 +24,7 @@ export default function ContactNotificationEmailTemplate({
   email = "michal@email.com",
   fullName = "Full Name",
   companyName = "NaturaNova",
-  message = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
+  description = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
 }: ContactNotificationEmailTemplateProps) {
   return (
     <Html>
@@ -36,7 +36,7 @@ export default function ContactNotificationEmailTemplate({
         <Container style={container}>
           <Heading style={h1}>Nowe zgłoszenie</Heading>
           <Section style={section}>
-            {message && (
+            {description && (
               <Section style={contactCardStyle}>
                 <Row width="100%">
                   <Column align="left" width="50%">
@@ -57,7 +57,7 @@ export default function ContactNotificationEmailTemplate({
                 {companyName && (
                   <Text style={companyNameStyle}>{companyName}</Text>
                 )}
-                <Text style={text}>{message}</Text>
+                <Text style={text}>{description}</Text>
                 <Section style={contactCardFooterStyle}>xd</Section>
               </Section>
             )}

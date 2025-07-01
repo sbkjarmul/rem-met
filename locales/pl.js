@@ -137,6 +137,13 @@ export default {
       "Wypełnij formularz ze szczegółami zlecenia, a my skontaktujemy się z Tobą w ciągu kilku dni",
     "button.cta": "Wyślij zapytanie",
   },
+  contactForm: {
+    fullName: "Imię i nazwisko",
+    email: "Email",
+    phone: "Telefon",
+    message: "Wiadomość",
+    send: "Wyślij",
+  },
   // Our Products Section
   ourProducts: {
     systems: "Systemy wygrodzeń",

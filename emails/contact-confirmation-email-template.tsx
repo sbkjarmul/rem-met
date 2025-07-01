@@ -17,13 +17,13 @@ import * as React from "react";
 interface ContactConfirmationEmailTemplateProps {
   fullName: string;
   companyName?: string;
-  message: string;
+  description: string;
 }
 
 export default function ContactConfirmationEmailTemplate({
   fullName = "Full Name",
   companyName = "NaturaNova",
-  message = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
+  description = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
 }: ContactConfirmationEmailTemplateProps) {
   return (
     <Html>
@@ -66,7 +66,7 @@ export default function ContactConfirmationEmailTemplate({
               {companyName && (
                 <Text style={companyNameStyle}>{companyName}</Text>
               )}
-              <Text style={text}>{message}</Text>
+              <Text style={text}>{description}</Text>
             </Section>
           </Section>
         </Container>

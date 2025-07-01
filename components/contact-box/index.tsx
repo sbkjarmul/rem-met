@@ -17,7 +17,7 @@ export default function ContactBox() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-20 md:p-10 rounded-none md:rounded-md min-h-[600px] h-full">
+    <div>
       {state.success ? (
         <ContactFormSuccessMessage />
       ) : (

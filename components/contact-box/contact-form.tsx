@@ -5,6 +5,53 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { ContactFormData, contactFormSchema, defaultValues } from "./schema";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "../ui/form";
+import { Input } from "../ui/input";
+import Button from "../ui/button";
+import { Textarea } from "../ui/textarea";
+import { Checkbox } from "../ui/checkbox";
+import Link from "next/link";
+import { startTransition } from "react";
+import { mapContactFormDataToFormData } from "./utils";
+import { cn } from "@/lib/utils";
+
+export const ContactFormLabel = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <FormLabel className={cn("text-gray-500 font-normal", className)}>
+      {children}
+      <span className="text-gray-500">*</span>
+    </FormLabel>
+  );
+};
+
+export const ContactFormItem = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <FormItem
+      className={cn("flex flex-col gap-2 items-start justify-start", className)}
+    >
+      {children}
+    </FormItem>
+  );
+};
 
 interface ContactFormProps {
   formAction: (payload: FormData) => void;
@@ -15,108 +62,133 @@ const ContactForm: React.FC<ContactFormProps> = ({
   formAction,
   isLoading,
 }: ContactFormProps) => {
-  const {
-    register,
-    formState: { errors, isValid, isDirty },
-    watch,
-    setValue,
-  } = useForm<ContactFormData>({
+  const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues,
-    mode: "onBlur",
   });
 
-  const policyAccepted = watch("acceptPolicy");
+  const onSubmit = async (contactFormData: ContactFormData) => {
+    startTransition(() => {
+      formAction(mapContactFormDataToFormData(contactFormData));
+    });
+  };
 
   return (
-    <form action={formAction}>
-      <div className="flex flex-col gap-8 md:gap-4">
-        
-        {/* <TextField
-          {...register("fullName")}
-          type="text"
-          label="Imię i nazwisko"
-          placeholder="Jak się nazywasz"
-          isDisabled={isLoading}
-          error={errors.fullName?.message}
-        />
-
-        <TextField
-          {...register("email")}
-          type="email"
-          label="Adres email"
-          placeholder="Gdzie możemy odpisać"
-          isDisabled={isLoading}
-          error={errors.email?.message}
-        />
-
-        <TextField
-          {...register("companyName")}
-          type="text"
-          label="Nazwa firmy (opcjonalnie)"
-          placeholder="Twoja marka, projekt lub startup"
-          isDisabled={isLoading}
-          error={errors.companyName?.message}
-        />
-
-        <Field className="flex flex-col gap-2">
-          <Label>Opisz swój pomysł lub potrzeby</Label>
-          <Textarea
-            {...register("message")}
-            placeholder="Podziel się ważnymi informacjami o Twojej marce lub projekcie"
-            className="p-2 bg-black rounded-md text-gray-400 border border-gray-800 h-[160px]
-                focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
-            disabled={isLoading}
-            aria-disabled={isLoading}
-          />
-          {errors.message && (
-            <span className="text-red-500 text-sm">
-              {errors.message.message}
-            </span>
+    <Form {...form}>
+      <form
+        className="grid grid-cols-2 grid-rows-[1fr_1fr_200px] gap-4"
+        // action={formAction}
+        onSubmit={form.handleSubmit(onSubmit)}
+      >
+        <FormField
+          control={form.control}
+          name="fullName"
+          render={({ field }) => (
+            <ContactFormItem>
+              <ContactFormLabel>Username</ContactFormLabel>
+              <FormControl>
+                <Input placeholder="Jak się nazywasz" {...field} />
+              </FormControl>
+              <FormMessage />
+            </ContactFormItem>
           )}
-        </Field>
-
-        <Field className="flex align-center justify-center gap-2">
-          <Checkbox
-            checked={policyAccepted}
-            onChange={(checked) => setValue("acceptPolicy", checked)}
-            className="cursor-pointer group block rounded border border-gray-500 bg-gray-800 data-checked:bg-primary h-[24px] w-[24px]
-          focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-primary
-          "
-          >
-            <svg
-              className="stroke-gray-800 opacity-0 group-data-checked:opacity-100"
-              viewBox="0 0 14 14"
-              fill="none"
-            >
-              <path
-                d="M3 8L6 11L11 3.5"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Checkbox>
-          <Label className="text-xs text-gray-500 flex-1 cursor-pointer">
-            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu
-            kontaktu, zgodnie z polityką prywatności.
-          </Label>
-          {errors.acceptPolicy && (
-            <span className="text-red-500 text-sm">
-              {errors.acceptPolicy.message}
-            </span>
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <ContactFormItem>
+              <ContactFormLabel>Email</ContactFormLabel>
+              <FormControl>
+                <Input placeholder="Gdzie możemy odpisać" {...field} />
+              </FormControl>
+              <FormMessage />
+            </ContactFormItem>
           )}
-        </Field>
+        />
+        <FormField
+          control={form.control}
+          name="companyName"
+          render={({ field }) => (
+            <ContactFormItem>
+              <ContactFormLabel>Nazwa firmy</ContactFormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Twoja marka, projekt lub startup"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </ContactFormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <ContactFormItem>
+              <ContactFormLabel>Numer telefonu</ContactFormLabel>
+              <FormControl>
+                <Input
+                  type="tel"
+                  placeholder="Twoj numer telefonu"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </ContactFormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="description"
+          render={({ field }) => (
+            <ContactFormItem className="col-span-2">
+              <ContactFormLabel>Opis zlecenia</ContactFormLabel>
+              <FormControl>
+                <Textarea
+                  className="h-full"
+                  placeholder="Opisz swój pomysł lub potrzeby"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </ContactFormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="acceptPolicy"
+          render={({ field }) => (
+            <FormItem className="flex flex-col gap-2">
+              <div className="flex flex-row items-center gap-2">
+                <FormControl>
+                  <Checkbox
+                    className="border-gray-300 h-5 w-5 cursor-pointer"
+                    checked={field.value}
+                    onCheckedChange={field.onChange}
+                  />
+                </FormControl>
+                <FormLabel className="text-xs text-gray-500 font-normal">
+                  <span>
+                    Upoważniam do przetwarzania danych osobowych zgodnie z
+                    polityką prywatności, zgodnie z RODO itp
+                    <Link href="/polityka-prywatnosci">
+                      politykę prywatności
+                    </Link>
+                  </span>
+                </FormLabel>
+              </div>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
 
-        <Button
-          variant="primary"
-          type="submit"
-          disabled={isLoading || !isValid || !isDirty}
-        >
-          {isLoading ? "Ładowanie" : "Wyślij zapytanie"}
-        </Button> */}
-      </div>
-    </form>
+        <Button type="submit" disabled={isLoading}>
+          {isLoading ? "Wysyłanie..." : "Wyślij zapytanie"}
+        </Button>
+      </form>
+    </Form>
   );
 };
 
