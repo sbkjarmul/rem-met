@@ -4,7 +4,7 @@ import Image from "next/image";
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
 import useTranslations from "@/hooks/useTranslations";
-import { ContactDialog } from "./contact-dialog";
+import { ContactDialog } from "./contact-dialog/contact-dialog";
 import Link from "next/link";
 
 const HeroSection = () => {

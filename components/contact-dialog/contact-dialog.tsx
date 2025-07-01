@@ -1,6 +1,9 @@
 "use client";
 
-import * as React from "react";
+import { ReactNode, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
 import {
   Sheet,
   SheetContent,
@@ -9,10 +12,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import ContactFormWrapper from "./contact-box";
-import Image from "next/image";
 import useTranslations from "@/hooks/useTranslations";
-import Link from "next/link";
+import ContactFormWrapper from "./contact-form-wrapper";
 
 interface ContactItemProps {
   title: string;
@@ -38,11 +39,11 @@ const GoogleMapLink = () => (
 );
 
 interface ContactDialogProps {
-  triggerButton: React.ReactNode;
+  triggerButton: ReactNode;
 }
 
 export function ContactDialog({ triggerButton }: ContactDialogProps) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const t = useTranslations("contactDialog");
 
@@ -58,8 +59,8 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
           <SheetTitle>Formularz kontaktowy REM-MET</SheetTitle>
         </SheetHeader>
 
-        <div className="flex flex-col md:flex-row">
-          <div className="px-10 py-20 w-1/3 hidden md:flex flex-col justify-start z-1 gap-6">
+        <div className="flex flex-col lg:flex-row">
+          <div className="px-10 py-20 w-1/3 hidden lg:flex flex-col justify-start z-1 gap-6">
             <SheetDescription className="text-gray-100 text-3xl font-medium leading-tight">
               {t("title")}
             </SheetDescription>
@@ -70,7 +71,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
             <GoogleMapLink />
           </div>
 
-          <div className="w-full md:w-2/3 p-8 z-1">
+          <div className="w-full lg:w-2/3 p-8 z-1">
             <div className="flex-1 p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-center bg-gray-100">
               <h1 className="text-3xl md:text-6xl font-medium text-center text-gray-900">
                 {t("get")}{" "}

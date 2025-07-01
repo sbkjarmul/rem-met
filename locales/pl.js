@@ -143,22 +143,25 @@ export default {
   contactForm: {
     "fullName.label": "Imię i nazwisko",
     "fullName.placeholder": "Np. Jan Kowalski",
-    "fullName.error": "Proszę podać pełne imię i nazwisko (min. 5 znaków).",
+    "fullName.minError": "Proszę podać pełne imię i nazwisko (min. 5 znaków).",
+    "fullName.maxError":
+      "Proszę podać pełne imię i nazwisko (max. 100 znaków).",
+    "fullName.regexError": "Proszę podać poprawne imię i nazwisko.",
     "email.label": "Email",
     "email.placeholder": "Np. jan.kowalski@gmail.com",
-    "email.error":
-      "Proszę podać poprawny adres email (np. przyklad@domena.pl).",
+    "email.regexError": "Proszę podać poprawny adres email.",
     "companyName.label": "Nazwa firmy",
     "companyName.placeholder": "Np. REM-MET",
-    "companyName.error": "Proszę podać nazwę firmy (min. 2 znaki).",
+    "companyName.minError": "Proszę podać nazwę firmy (min. 2 znaki).",
+    "companyName.maxError": "Proszę podać nazwę firmy (max. 100 znaków).",
     "phone.label": "Numer telefonu",
     "phone.placeholder": "Np. +48 123 456 789",
-    "phone.error":
-      "Proszę podać poprawny numer telefonu (np. +48 123 456 789).",
+    "phone.minError": "Proszę podać poprawny numer telefonu (min. 9 znaków).",
+    "phone.maxError": "Proszę podać poprawny numer telefonu (max. 15 znaków).",
     "description.label": "Opis zlecenia",
     "description.placeholder":
       "Opisz swoje zapytanie/zlecenie (np. rodzaj usługi, wymagania, termin realizacji)",
-    "description.error": "Proszę podać opis zlecenia (min. 10 znaków).",
+    "description.minError": "Proszę podać opis zlecenia (min. 10 znaków).",
     "acceptPolicy.label":
       "Upoważniam do przetwarzania danych osobowych zgodnie z ",
     "acceptPolicy.privacyPolicy": "Polityką prywatności",

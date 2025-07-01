@@ -9,7 +9,7 @@ import Button from "@/components/ui/button";
 import useTranslations from "@/hooks/useTranslations";
 import MegaMenu from "./components/mega-menu";
 import MobileMenu from "./components/mobile-menu";
-import { ContactDialog } from "../contact-dialog";
+import { ContactDialog } from "../contact-dialog/contact-dialog";
 
 const Logo = () => {
   return (

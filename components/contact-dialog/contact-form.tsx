@@ -70,7 +70,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   const t = useTranslations("contactForm");
 
   const form = useForm<ContactFormData>({
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(contactFormSchema(t)),
     defaultValues,
   });
 
