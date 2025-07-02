@@ -15,13 +15,12 @@ export async function submitContactForm(
   },
   formData: FormData
 ) {
-  console.log(formData);
-
   const schema = z.object({
     fullName: z.string().nonempty(),
     email: z.string().nonempty(),
     companyName: z.string(),
     description: z.string().nonempty(),
+    phone: z.string().nonempty(),
   });
 
   try {
@@ -34,7 +33,7 @@ export async function submitContactForm(
       acceptPolicy: formData.get("acceptPolicy")?.toString(),
     });
 
-    const { fullName, email, description, companyName } = data;
+    const { fullName, email, description, companyName, phone } = data;
 
     // Send confirmation email to client
     await resend.emails.send({
@@ -58,6 +57,7 @@ export async function submitContactForm(
         companyName,
         description,
         email: email,
+        phone: phone,
       }),
     });
 
