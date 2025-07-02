@@ -34,8 +34,8 @@ export const ContactConfirmationEmailTemplate = ({
         <Section style={box}>
           <Img
             src={`https://rem-met.vercel.app/images/logos/rem-met-logo-light-mode.png`}
-            width="540"
-            height="87"
+            width="180"
+            height="29"
             alt="REM-MET"
           />
           <Hr style={hr} />
