@@ -37,7 +37,7 @@ export async function submitContactForm(
 
     // Send confirmation email to client
     await resend.emails.send({
-      from: "ENTEI <noreply@rem-met.com>",
+      from: "REM-MET <noreply@rem-met.com>",
       to: email.toString(),
       subject: "Wypełniłeś formularz kontaktowy",
       react: ContactConfirmationEmailTemplate({
@@ -49,7 +49,7 @@ export async function submitContactForm(
 
     // Send notification email to ENTEI
     await resend.emails.send({
-      from: "ENTEI <noreply@rem-met.com>",
+      from: "REM-MET <noreply@rem-met.com>",
       to: "sbkjarmul@gmail.com",
       subject: "Nowe zapytanie",
       react: ContactNotificationEmailTemplate({
