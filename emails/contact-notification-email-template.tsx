@@ -10,7 +10,6 @@ import {
   Text,
 } from "@react-email/components";
 import { box, container, footer, hr, main, paragraph } from "./styles";
-import { baseUrl } from "./config";
 
 interface ContactConfirmationEmailTemplateProps {
   fullName: string;
