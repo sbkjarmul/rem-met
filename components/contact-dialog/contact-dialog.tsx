@@ -60,7 +60,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
         </SheetHeader>
 
         <div className="flex flex-col lg:flex-row flex-1">
-          <div className="px-10 py-20 w-1/3 hidden lg:flex flex-col justify-start z-1 gap-6">
+          <div className="px-10 py-20 lg:w-1/3 hidden lg:flex flex-col justify-start z-1 gap-6">
             <SheetDescription className="text-gray-100 text-4xl font-medium leading-tight whitespace-pre-line">
               {t("title")}
             </SheetDescription>
@@ -72,7 +72,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
           </div>
 
           <div className="w-full lg:w-2/3 p-8 z-1">
-            <div className=" p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-start items-center bg-gray-100 md:shadow-lg">
+            <div className="h-full p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-start items-center bg-gray-100 md:shadow-lg">
               <h1 className="text-3xl md:text-6xl font-medium text-center text-gray-900">
                 {t("get")}{" "}
                 <span className="text-brand-blue-100">{t("free")}</span>{" "}
@@ -80,7 +80,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
                 <span className="inline md:hidden">{t("now")}!</span>
               </h1>
 
-              <p className="hidden md:block text-center text-gray-500">
+              <p className="hidden md:block text-center text-lg text-gray-500 max-w-md">
                 {t("description")}
               </p>
               <p className="text-center text-sm text-gray-500 block md:hidden">

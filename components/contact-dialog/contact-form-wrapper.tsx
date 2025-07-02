@@ -19,7 +19,7 @@ const ContactFormWrapper = () => {
 
   return (
     <div>
-      {state.success ? (
+      {!state.success ? (
         <ContactFormSuccessMessage />
       ) : (
         <ContactForm formAction={action} isLoading={isLoading} />
