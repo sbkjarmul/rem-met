@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 import pl from "@/locales/pl";
@@ -42,6 +43,7 @@ export default function RootLayout({
       <body>
         <PasswordProtect>{children}</PasswordProtect>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
