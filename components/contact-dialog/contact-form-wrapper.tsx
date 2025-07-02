@@ -7,7 +7,11 @@ import { submitContactForm } from "@/actions/submit-contact-form";
 import ContactForm from "./contact-form";
 import ContactFormSuccessMessage from "./contact-form-success-message";
 
-const ContactFormWrapper = () => {
+interface ContactFormWrapperProps {
+  onClose: () => void;
+}
+
+const ContactFormWrapper = ({ onClose }: ContactFormWrapperProps) => {
   const initialState = {
     success: false,
   };
@@ -20,7 +24,7 @@ const ContactFormWrapper = () => {
   return (
     <div>
       {state.success ? (
-        <ContactFormSuccessMessage />
+        <ContactFormSuccessMessage onClose={onClose} />
       ) : (
         <ContactForm formAction={action} isLoading={isLoading} />
       )}

@@ -24,7 +24,7 @@ export const ContactConfirmationEmailTemplate = ({
   companyName = "WtórStal",
   email = "jan.kowalski@gmail.com",
   phone = "123 456 789",
-  description = "Szukamy wsparcia kreatywnego przy rebrandingu naszej marki – NaturaNova to firma zajmująca się produkcją naturalnych kosmetyków opartych na lokalnych składnikach. Potrzebujemy nowej identyfikacji wizualnej (logo, paleta kolorów, typografia), odświeżenia opakowań produktów oraz zaprojektowania nowej strony internetowej z e-sklepem. Zależy nam na estetyce minimalistycznej, bliskiej naturze, ale jednocześnie nowoczesnej i przyjaznej użytkownikowi. Chcielibyśmy także współpracować przy strategii komunikacji wizualnej w social mediach.",
+  description = "Testowe zlecenie.",
 }: ContactConfirmationEmailTemplateProps) => (
   <Html>
     <Head />
@@ -33,7 +33,7 @@ export const ContactConfirmationEmailTemplate = ({
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`https://rem-met.vercel.app/images/logos/rem-met-logo-light-mode.svg`}
+            src={`https://rem-met.vercel.app/images/logos/rem-met-logo-light-mode.png`}
             width="200"
             height="40"
             alt="REM-MET"

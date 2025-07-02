@@ -87,7 +87,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
                 {t("description.mobile")}
               </p>
 
-              <ContactFormWrapper />
+              <ContactFormWrapper onClose={() => setOpen(false)} />
             </div>
           </div>
 

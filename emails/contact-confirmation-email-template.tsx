@@ -29,7 +29,7 @@ export const ContactConfirmationEmailTemplate = ({
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`https://rem-met.vercel.app/images/logos/rem-met-logo-light-mode.svg`}
+            src={`https://rem-met.vercel.app/images/logos/rem-met-logo-light-mode.png`}
             width="200"
             height="40"
             alt="REM-MET"

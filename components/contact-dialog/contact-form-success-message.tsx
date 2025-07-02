@@ -1,11 +1,14 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import Button from "../ui/button";
 
-export default function ContactFormSuccessMessage() {
-  const router = useRouter();
+interface ContactFormSuccessMessageProps {
+  onClose: () => void;
+}
 
+export default function ContactFormSuccessMessage({
+  onClose,
+}: ContactFormSuccessMessageProps) {
   return (
     <div className="flex flex-col items-center justify-center h-full gap-8 min-h-[500px]">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -14,7 +17,7 @@ export default function ContactFormSuccessMessage() {
           Wypełniłeś formularz kontaktowy. Odezwiemy się wkrótce!
         </p>
       </div>
-      <Button onClick={() => router.push("/")}>Wracam do strony głównej</Button>
+      <Button onClick={onClose}>Wracam do strony głównej</Button>
     </div>
   );
 }
