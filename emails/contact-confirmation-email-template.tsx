@@ -11,10 +11,7 @@ import {
   Text,
 } from "@react-email/components";
 import { box, button, container, footer, hr, main, paragraph } from "./styles";
-
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
+import { baseUrl } from "./config";
 
 interface ContactConfirmationEmailTemplateProps {
   fullName: string;
@@ -34,8 +31,8 @@ export const ContactConfirmationEmailTemplate = ({
         <Section style={box}>
           <Img
             src={`${baseUrl}/images/logos/rem-met-logo-light-mode.svg`}
-            width="49"
-            height="21"
+            width="200"
+            height="40"
             alt="REM-MET"
           />
           <Hr style={hr} />
@@ -48,21 +45,16 @@ export const ContactConfirmationEmailTemplate = ({
             Opis zlecenia:
           </Text>
           <Text style={{ ...paragraph, display: "inline" }}>{description}</Text>
-
           <Hr style={hr} />
-
           <Text style={paragraph}>
             Wkrótce skontaktujemy się z Tobą, aby omówić szczegóły. A tymczasem
             sprawdź naszą ofertę:
           </Text>
-
           <Button style={button} href="https://rem-met.com">
             Zobacz naszą ofertę
           </Button>
-
           <Text style={paragraph}>Z poważaniem,</Text>
           <Text style={paragraph}>Zespół REM-MET</Text>
-
           <Hr style={hr} />
           <Text style={footer}>
             REM-MET, ul. Żytnia 17, 37-450 Stalowa Wola

@@ -10,10 +10,7 @@ import {
   Text,
 } from "@react-email/components";
 import { box, container, footer, hr, main, paragraph } from "./styles";
-
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
+import { baseUrl } from "./config";
 
 interface ContactConfirmationEmailTemplateProps {
   fullName: string;
@@ -38,8 +35,8 @@ export const ContactConfirmationEmailTemplate = ({
         <Section style={box}>
           <Img
             src={`${baseUrl}/images/logos/rem-met-logo-light-mode.svg`}
-            width="49"
-            height="21"
+            width="200"
+            height="40"
             alt="REM-MET"
           />
           <Hr style={hr} />

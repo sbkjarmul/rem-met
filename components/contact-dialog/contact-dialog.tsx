@@ -59,9 +59,9 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
           <SheetTitle>Formularz kontaktowy REM-MET</SheetTitle>
         </SheetHeader>
 
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row flex-1">
           <div className="px-10 py-20 w-1/3 hidden lg:flex flex-col justify-start z-1 gap-6">
-            <SheetDescription className="text-gray-100 text-3xl font-medium leading-tight">
+            <SheetDescription className="text-gray-100 text-4xl font-medium leading-tight whitespace-pre-line">
               {t("title")}
             </SheetDescription>
 
@@ -72,7 +72,7 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
           </div>
 
           <div className="w-full lg:w-2/3 p-8 z-1">
-            <div className="flex-1 p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-center bg-gray-100 md:shadow-lg">
+            <div className=" p-0 md:p-10 gap-6 md:gap-10 flex flex-col justify-start items-center bg-gray-100 md:shadow-lg">
               <h1 className="text-3xl md:text-6xl font-medium text-center text-gray-900">
                 {t("get")}{" "}
                 <span className="text-brand-blue-100">{t("free")}</span>{" "}

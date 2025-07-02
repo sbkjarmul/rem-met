@@ -129,7 +129,7 @@ export default {
     "button.product": "Skontaktuj się",
   },
   contactDialog: {
-    title: "Zbudujemy system bezpieczeństwa dla Twojej Firmy",
+    title: "Zbudujemy system bezpieczeństwa \n dla Twojej Firmy",
     get: "Otrzymaj",
     free: "darmową",
     estimation: "wycenę",
