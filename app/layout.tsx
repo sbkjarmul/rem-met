@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 import pl from "@/locales/pl";
-import PasswordProtect from "@/components/ui/password-protect";
 
 const ttOctosquares = localFont({
   src: [
@@ -60,7 +59,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body>
-        <PasswordProtect>{children}</PasswordProtect>
+        {children}
         <SpeedInsights />
         <Analytics />
       </body>

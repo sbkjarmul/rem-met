@@ -10,6 +10,7 @@ export default {
     "producent wygrodzeń przemysłowych",
     "producent wygrodzeń bezpieczeństwa",
   ],
+  url: "https://rem-met.com",
   ogImage: "/images/rem-met-og-image.png",
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
   // Header
