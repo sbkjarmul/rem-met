@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-200 py-6 text-sm text-gray-700 text-center md:text-left">
           <p className="block md:inline">
-            &copy; {new Date().getFullYear()} {t("copyrightPrefix")}.
+            &copy; {new Date().getFullYear()} {t("copyrightPrefix")}
           </p>
           <p className="block md:inline">{t("copyright")}</p>
         </div>

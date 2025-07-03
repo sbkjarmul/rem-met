@@ -45,7 +45,7 @@ export default {
     contactEmail: "biuro@rem-met.com",
     contactSupport: "Potrzebujesz wsparcia? Zadzwoń do nas.",
     contactPhone: "+48 725 724 883",
-    copyrightPrefix: "REM-MET",
+    copyrightPrefix: "REM-MET. ",
     copyright: "Wszelkie prawa zastrzeżone.",
     // Attribution
     attribution: "Strona stworzona przez ",

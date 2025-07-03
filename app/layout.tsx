@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 import pl from "@/locales/pl";
+import Script from "next/script";
 
 const ttOctosquares = localFont({
   src: [
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: pl.title,
     description: pl.description,
-    url: "https://rem-met.com",
+    url: pl.url,
     images: [
       {
         url: "/images/rem-met-og-image.png",
@@ -57,7 +58,25 @@ export default function RootLayout({
     <html lang="pl" className={`${ttOctosquares.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+        {/* <!-- Hotjar Tracking Code for REM-MET --> */}
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+           (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6453375,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `,
+          }}
+        />
       </head>
+
       <body>
         {children}
         <SpeedInsights />
