@@ -40,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className={`${ttOctosquares.variable}`}>
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body>
         <PasswordProtect>{children}</PasswordProtect>
         <SpeedInsights />
