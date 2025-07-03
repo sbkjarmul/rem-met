@@ -194,7 +194,11 @@ const ContactForm: React.FC<ContactFormProps> = ({
                 <FormLabel className="text-xs text-gray-500 font-normal">
                   <span>
                     {t("acceptPolicy.label")}
-                    <Link href="/polityka-prywatnosci">
+                    <Link
+                      href="/privacy-policy"
+                      target="_blank"
+                      className="text-brand-blue-100"
+                    >
                       {t("acceptPolicy.privacyPolicy")}
                     </Link>
                   </span>

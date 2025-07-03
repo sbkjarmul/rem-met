@@ -65,8 +65,9 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("info")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href="#">{t("privacyPolicy")}</FooterLink>
-                <FooterLink href="#">{t("cookiesPolicy")}</FooterLink>
+                <FooterLink href="/privacy-policy">
+                  {t("privacyPolicy")}
+                </FooterLink>
               </ul>
             </div>
             <div className="flex flex-col gap-2">
