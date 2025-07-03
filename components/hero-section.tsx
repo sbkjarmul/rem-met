@@ -36,7 +36,7 @@ const HeroSection = () => {
 
         <div className="mt-10 flex justify-center gap-4 w-full">
           <Button variant="outline" className="hidden md:block" asChild>
-            <Link href="/#ourProducts">{t("secondaryButton.desktop")}</Link>
+            <Link href="/#our-products">{t("secondaryButton.desktop")}</Link>
           </Button>
 
           <ContactDialog
