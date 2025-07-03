@@ -1,7 +1,17 @@
 export default {
-  title: "REM-MET - Polski Producent Wygrodzeń Bezpieczeństwa",
+  title:
+    "REM-MET - Wygrodzenia bezpieczeństwa | Producent wygrodzeń przemysłowych",
   description:
     "REM-MET projektuje i produkuje wygrodzenia bezpieczeństwa dla maszyn i linii przemysłowych. Zapewniamy kompleksową obsługę – od projektu po montaż. Działamy na terenie całej Polski. Siedziba: Stalowa Wola, Podkarpacie.",
+  keywords: [
+    "wygrodzenia bezpieczeństwa",
+    "wygrodzenia przemysłowe",
+    "producent wygrodzeń",
+    "producent wygrodzeń przemysłowych",
+    "producent wygrodzeń bezpieczeństwa",
+  ],
+  ogImage: "/images/rem-met-og-image.png",
+  ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
   // Header
   header: {
     home: "Strona główna",

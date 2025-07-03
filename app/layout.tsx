@@ -31,6 +31,22 @@ const ttOctosquares = localFont({
 export const metadata: Metadata = {
   title: pl.title,
   description: pl.description,
+  keywords: pl.keywords,
+  openGraph: {
+    title: pl.title,
+    description: pl.description,
+    url: "https://rem-met.com",
+    images: [
+      {
+        url: "/images/rem-met-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: pl.ogImageAlt,
+      },
+    ],
+    locale: "pl_PL",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
