@@ -61,6 +61,7 @@ export default function RootLayout({
 
         {/* <!-- Hotjar Tracking Code for REM-MET --> */}
         <Script
+          id="hotjar"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
