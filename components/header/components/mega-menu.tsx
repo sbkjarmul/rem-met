@@ -11,6 +11,8 @@ import useTranslations from "@/hooks/useTranslations";
 
 import NavigationMenuProductCard from "./mega-menu-product-card";
 import { useCallback, useRef } from "react";
+import { Contact } from "lucide-react";
+import { ContactDialog } from "@/components/contact-dialog/contact-dialog";
 
 const MegaMenu = () => {
   const t = useTranslations("header");
@@ -101,12 +103,13 @@ const MegaMenu = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
-          <NavigationMenuLink
-            href="/contact"
-            className={navigationMenuTriggerStyle()}
-          >
-            {t("contact")}
-          </NavigationMenuLink>
+          <ContactDialog
+            triggerButton={
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                {t("contact")}
+              </NavigationMenuLink>
+            }
+          ></ContactDialog>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
