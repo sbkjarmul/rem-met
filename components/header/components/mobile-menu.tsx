@@ -174,7 +174,7 @@ const MobileMenuProductView = ({
         <MobileMenuProductCard
           title={tOurProducts("falcon.title")}
           name={tOurProducts("falcon.name")}
-          imageSrc="/images/products/rem-met-falcon-hero.png"
+          imageSrc="/images/products/rem-met-falcon-product.webp"
           imageAlt={tOurProducts("falcon.alt")}
           buttonText={tOurProducts("falcon.cta")}
           path={ROUTE_PATHS.FALCON}
@@ -183,7 +183,7 @@ const MobileMenuProductView = ({
         <MobileMenuProductCard
           title={tOurProducts("rhino.title")}
           name={tOurProducts("rhino.name")}
-          imageSrc="/images/products/rem-met-rhino-hero.png"
+          imageSrc="/images/products/rem-met-rhino-product.webp"
           imageAlt={tOurProducts("rhino.alt")}
           buttonText={tOurProducts("rhino.cta")}
           path={ROUTE_PATHS.RHINO}
@@ -192,7 +192,7 @@ const MobileMenuProductView = ({
         <MobileMenuProductCard
           title={tOurProducts("gecko.title")}
           name={tOurProducts("gecko.name")}
-          imageSrc="/images/products/rem-met-gecko-hero.png"
+          imageSrc="/images/products/rem-met-gecko-product.webp"
           imageAlt={tOurProducts("gecko.alt")}
           buttonText={tOurProducts("gecko.cta")}
           path={ROUTE_PATHS.GECKO}
