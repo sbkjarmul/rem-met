@@ -21,6 +21,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+
   alternates: {
     canonical: "https://www.rem-met.com",
   },
