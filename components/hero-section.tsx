@@ -67,7 +67,6 @@ const HeroSection = () => {
           fill
           className="object-cover object-start"
           priority
-          unoptimized
         />
       </div>
     </section>
