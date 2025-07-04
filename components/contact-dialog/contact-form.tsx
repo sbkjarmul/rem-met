@@ -3,6 +3,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 
 import { ContactFormData, contactFormSchema, defaultValues } from "./schema";
 import {
@@ -17,11 +18,11 @@ import { Input } from "../ui/input";
 import Button from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { Checkbox } from "../ui/checkbox";
-import Link from "next/link";
 import { startTransition } from "react";
 import { mapContactFormDataToFormData } from "./utils";
 import { cn } from "@/lib/utils";
 import useTranslations from "@/hooks/useTranslations";
+import { ROUTE_PATHS } from "@/app/constants";
 
 export const ContactFormLabel = ({
   children,
@@ -195,7 +196,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
                   <span>
                     {t("acceptPolicy.label")}
                     <Link
-                      href="/privacy-policy"
+                      href={ROUTE_PATHS.PRIVACY_POLICY}
                       target="_blank"
                       className="text-brand-blue-100"
                     >

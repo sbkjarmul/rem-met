@@ -26,15 +26,11 @@ const ProductCarouselMobile = () => {
       <div className="flex flex-col gap-4 items-center mx-4">
         <div className="flex flex-col gap-2 items-center">
           <AccentText className="text-brand-blue-200 text-center">
-            Nasze produkty
+            {t("accent")}
           </AccentText>
-          <h2 className="text-2xl font-medium text-gray-900">
-            Wygrodzenia przemysłowe
-          </h2>
+          <h2 className="text-2xl font-medium text-gray-900">{t("title")}</h2>
         </div>
-        <p className="text-gray-600 text-center">
-          Wybierz wygrodzenia bezpieczeństwa dostosowane do Twoich potrzeb!
-        </p>
+        <p className="text-gray-600 text-center">{t("description")}</p>
       </div>
 
       <div className="relative flex-1 flex flex-col items-center w-full">

@@ -2,6 +2,7 @@ import * as React from "react";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 import Image from "next/image";
+import { ROUTE_PATHS } from "@/app/constants";
 
 const Logo = () => {
   const t = useTranslations("footer");
@@ -65,7 +66,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("info")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href="/privacy-policy">
+                <FooterLink href={ROUTE_PATHS.PRIVACY_POLICY}>
                   {t("privacyPolicy")}
                 </FooterLink>
               </ul>
@@ -73,13 +74,13 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("systems")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href="/falcon">
+                <FooterLink href={ROUTE_PATHS.FALCON}>
                   {t("falcon")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="/gecko">
+                <FooterLink href={ROUTE_PATHS.GECKO}>
                   {t("gecko")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="/rhino">
+                <FooterLink href={ROUTE_PATHS.RHINO}>
                   {t("rhino")} <NewBadge />
                 </FooterLink>
               </ul>
