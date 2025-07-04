@@ -9,7 +9,7 @@ const FalconHeroSection = () => {
       accent={t("accent")}
       title={t("title")}
       imageDesktopSrc="/images/products/rem-met-falcon-hero-shadow.png"
-      imageMobileSrc="/images/products/rem-met-falcon-hero-mobile.png"
+      imageMobileSrc="/images/products/rem-met-falcon-hero-mobile.webp"
       imageAlt={t("alt")}
       nameSrc="/images/products/rem-met-falcon-name.svg"
       nameAlt={t("nameAlt")}

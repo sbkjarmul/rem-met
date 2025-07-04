@@ -41,10 +41,17 @@ const ProductHeroSection = ({
             alt={imageAlt}
             fill
             className="object-contain"
+            priority
           />
         </div>
         <div className="absolute top-15 md:top-0 left-0 w-full aspect-video z-2">
-          <Image src={nameSrc} alt={nameAlt} fill className="object-contain" />
+          <Image
+            src={nameSrc}
+            alt={nameAlt}
+            fill
+            className="object-contain"
+            priority
+          />
         </div>
       </Container>
       <div className="relative w-full z-3 md:hidden aspect-6/3">
@@ -53,6 +60,7 @@ const ProductHeroSection = ({
           alt={imageAlt}
           fill
           className="object-cover"
+          priority
         />
       </div>
       <div className="absolute top-0 left-0 w-full aspect-video z-0 hidden md:block">
@@ -61,6 +69,7 @@ const ProductHeroSection = ({
           alt={t("lightAlt")}
           fill
           className="object-cover"
+          priority
         />
       </div>
     </section>

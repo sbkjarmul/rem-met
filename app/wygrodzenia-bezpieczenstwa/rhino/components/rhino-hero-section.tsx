@@ -9,7 +9,7 @@ const RhinoHeroSection = () => {
       accent={t("accent")}
       title={t("title")}
       imageDesktopSrc="/images/products/rem-met-rhino-hero-shadow.png"
-      imageMobileSrc="/images/products/rem-met-rhino-hero-mobile.png"
+      imageMobileSrc="/images/products/rem-met-rhino-hero-mobile.webp"
       imageAlt={t("alt")}
       nameSrc="/images/products/rem-met-rhino-name.svg"
       nameAlt={t("nameAlt")}
