@@ -1,0 +1,25 @@
+@theme {
+  --animate-blink: blink 2s ease-in-out infinite;
+
+  @keyframes blink {
+    0% {
+      background-color: var(--rem-met-blue-0);
+    }
+
+    100% {
+      background-color: var(--rem-met-blue-2);
+    }
+  }
+
+  --animate-blink-border: blink-border 2s ease-in-out infinite;
+
+  @keyframes blink-border {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}

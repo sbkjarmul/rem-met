@@ -2,7 +2,10 @@ import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 
-import "./globals.css";
+import "@/styles/globals.css";
+import "@/styles/themes.css";
+import "@/styles/animations.css";
+
 import Script from "next/script";
 import { organizationSchema, websiteSchema } from "./seo/schemas";
 
