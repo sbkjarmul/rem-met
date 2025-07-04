@@ -42,7 +42,7 @@ const StandardsHeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900/0 to-black z-1" />
 
       <Image
-        src="/images/rem-met-standards-hero.png"
+        src="/images/rem-met-standards-hero.webp"
         alt={t("hero.image.alt")}
         fill
         className="absolute inset-0 object-cover z-0"
