@@ -31,7 +31,7 @@ const AboutUsEcologySection = () => {
                 {t("ecology.article2.title")}
               </p>
               <Image
-                src="/images/rem-met-steel-photo.png"
+                src="/images/rem-met-steel-photo.webp"
                 alt={t("ecology.image.alt")}
                 fill
                 className="top-0 right-0 object-right z-0 object-cover"
@@ -49,7 +49,7 @@ const AboutUsEcologySection = () => {
 
         <Image
           src="/icons/rem-met-ecology-icon-outlined.svg"
-          alt={t("ecology.image.alt")}
+          alt={t("ecology.icon.alt")}
           fill
           className="top-0 right-0 object-right z-0 object-contain hidden md:block"
         />

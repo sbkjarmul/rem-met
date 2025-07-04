@@ -522,7 +522,9 @@ export default {
     "ecology.article3.title": "Optymalizacja zużycia energii i materiałów",
     "ecology.article3.description":
       "W procesie produkcji wdrażamy technologie ograniczające straty materiałowe i zużycie energii, takie jak energooszczędne maszyny i oświetlenie LED",
-    "ecology.image.alt": "Ecology icon",
+    "ecology.image.alt":
+      "Zdjęcie stali konstrukcyjnej służącej do produkcji wygrodzeń bezpieczeństwa",
+    "ecology.icon.alt": "Ikona ekologii w kolorze REM-MET",
   },
   // Standards Page
   standards: {
