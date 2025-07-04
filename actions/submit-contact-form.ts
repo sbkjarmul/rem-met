@@ -47,10 +47,10 @@ export async function submitContactForm(
       }),
     });
 
-    // Send notification email to ENTEI
+    // Send notification email to biuro@rem-met.com
     await resend.emails.send({
       from: "REM-MET <noreply@rem-met.com>",
-      to: "sbkjarmul@gmail.com",
+      to: "biuro@rem-met.com",
       subject: "Nowe zapytanie",
       react: ContactNotificationEmailTemplate({
         fullName,

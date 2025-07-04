@@ -9,10 +9,50 @@ export default {
     "producent wygrodzeń",
     "producent wygrodzeń przemysłowych",
     "producent wygrodzeń bezpieczeństwa",
+    "wygrodzenia bezpieczeństwa",
+    "systemy ochronne przemysłowe",
+    "bariery maszynowe",
+    "normy bezpieczeństwa maszyn",
+    "wygrodzenia siatkowe",
+    "wygrodzenia poliwęglanowe",
+    "wygrodzenia metalowe",
+    "ochrona stref niebezpiecznych",
+    "montaż wygrodzeń",
   ],
   url: "https://rem-met.com",
   ogImage: "/images/rem-met-og-image.png",
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
+  // Product Metadata
+  "falcon.metadata.title":
+    "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+  "falcon.metadata.description":
+    "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
+  "rhino.metadata.title":
+    "System wygrodzeń bezpieczeństwa RHINO - maksymalna ochrona i trwałość",
+  "rhino.metadata.description":
+    "Wygrodzenia bezpieczeństwa RHINO zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+  "gecko.metadata.title":
+    "System wygrodzeń bezpieczeństwa GECKO - nowoczesność i przejrzystość",
+  "gecko.metadata.description":
+    "Wygrodzenia bezpieczeństwa GECKO zapewniają maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. System wygrodzeń poliwęglanowych REM-MET GECKO jest idealny do nowoczesnych zakładów przemysłowych.",
+  "aboutUs.metadata.title":
+    "O firmie REM-MET - Polski producent wygrodzeń przemysłowych",
+  "aboutUs.metadata.description":
+    "Poznaj historię i misję REM-MET. Jesteśmy polskim producentem wygrodzeń przemysłowych, który zapewniają ochronę dla pracowników i maszyn",
+  // SEO Schemas
+  "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
+  "schema.organization": "REM-MET",
+  "schema.organizationDescription":
+    "Polski producent systemów wygrodzeń bezpieczeństwa: FALCON, RHINO, GECKO",
+  "schema.home": "Strona główna",
+  "schema.contactForm": "Wyceń indywidualnie – wypełnij formularz",
+  "schema.falcon": "Wygrodzenia bezpieczeństwa FALCON",
+  "schema.rhino": "Wygrodzenia bezpieczeństwa RHINO",
+  "schema.gecko": "Wygrodzenia bezpieczeństwa GECKO",
+  "schema.streetAddress": "ul. Żytnia 17",
+  "schema.addressLocality": "Stalowa Wola",
+  "schema.postalCode": "37-450",
+  "schema.telephone": "+48 725 724 883",
   // Header
   header: {
     home: "Strona główna",
@@ -140,6 +180,10 @@ export default {
     "button.product": "Skontaktuj się",
   },
   contactDialog: {
+    streetAddress: "ul. Żytnia 17",
+    addressLocality: "Stalowa Wola",
+    postalCode: "37-450",
+    telephone: "+48 725 724 883",
     title: "Zbudujemy system bezpieczeństwa \n dla Twojej Firmy",
     get: "Otrzymaj",
     free: "darmową",
@@ -196,6 +240,10 @@ export default {
       "Siatkowe wygrodzenia zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
     "falcon.cta": "Wybierz FALCON",
     "falcon.alt": "Wygrodzenie REM-MET FALCON",
+    "falcon.metadata.title":
+      "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+    "falcon.metadata.description":
+      "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
     // Rhino
     "rhino.name": "RHINO",
     "rhino.title": "Wygrodzenia metalowe",

@@ -65,9 +65,12 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
               {t("title")}
             </SheetDescription>
 
-            <ContactItem title="Telefon" value="+(48) 666 669 996" />
-            <ContactItem title="Email" value="biuro@rem-met.com" />
-            <ContactItem title="Adres" value="Żytnia 17, 37-450 Stalowa Wola" />
+            <ContactItem title="Telefon" value={t("telephone")} />
+            <ContactItem title="Email" value={t("email")} />
+            <ContactItem
+              title="Adres"
+              value={`${t("streetAddress")}, ${t("postalCode")} ${t("addressLocality")}`}
+            />
             <GoogleMapLink />
           </div>
 

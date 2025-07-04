@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "email dev"
+    "email": "email dev",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@hookform/resolvers": "5.1.1",
@@ -26,6 +27,7 @@
     "embla-carousel-react": "8.6.0",
     "lucide-react": "0.518.0",
     "next": "15.3.4",
+    "next-sitemap": "^4.2.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-hook-form": "7.59.0",

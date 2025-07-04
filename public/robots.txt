@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Host
+Host: https://www.rem-met.com
+
+# Sitemaps
+Sitemap: https://www.rem-met.com/sitemap.xml
+Sitemap: https://www.rem-met.com/sitemap-products.xml
