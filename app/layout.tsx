@@ -6,6 +6,8 @@ import "./globals.css";
 import Script from "next/script";
 import { organizationSchema, websiteSchema } from "./seo/schemas";
 
+export { metadata } from "./seo/metadata";
+
 const ttOctosquares = localFont({
   src: [
     {
