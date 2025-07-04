@@ -16,6 +16,7 @@ export const Icon: FC<IconProps> = ({ src, alt, size = 24, className }) => {
       width={size}
       height={size}
       className={className}
+      unoptimized={true}
     />
   );
 };

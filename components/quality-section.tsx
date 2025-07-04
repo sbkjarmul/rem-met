@@ -122,6 +122,7 @@ const QualitySection = () => {
             fill
             className="object-contain hidden lg:block"
             id="details"
+            quality={85}
           />
           <Image
             src="/images/rem-met-rhino-details.png"
@@ -129,6 +130,7 @@ const QualitySection = () => {
             fill
             className="object-contain block lg:hidden"
             id="details"
+            quality={85}
           />
         </div>
       </Container>

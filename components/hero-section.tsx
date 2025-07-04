@@ -55,6 +55,7 @@ const HeroSection = () => {
           alt="Hero section background"
           fill
           className="object-cover"
+          quality={85}
         />
       </div>
 
@@ -64,6 +65,7 @@ const HeroSection = () => {
           alt="Hero section background"
           fill
           className="object-cover"
+          quality={85}
         />
       </div>
     </section>
