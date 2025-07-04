@@ -20,4 +20,13 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     type: "website",
   },
+
+  alternates: {
+    canonical: "https://www.rem-met.com",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
