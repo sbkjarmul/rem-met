@@ -86,6 +86,7 @@ export default function ProductDetailsSection({
               src={imageSrc}
               alt={imageAlt}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain"
             />
           </div>

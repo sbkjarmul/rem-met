@@ -13,11 +13,11 @@ const Logo = () => {
         src="/images/logos/rem-met-logo-wordmark-black.svg"
         alt="REM-MET Logo"
         width={320}
-        height={100}
+        height={40}
+        className="aspect-auto w-[320px] h-[40px]"
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
-      <p className="text-[11px] uppercase md:text-sm text-gray-700">
-        {t("tagline")}
-      </p>
+      <p className="text-[11px] uppercase  text-gray-700">{t("tagline")}</p>
     </div>
   );
 };

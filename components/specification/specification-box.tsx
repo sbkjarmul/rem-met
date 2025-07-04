@@ -28,7 +28,13 @@ const SpecificationBox = ({
       })}
     >
       <div className="relative aspect-square w-full md:w-1/2">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-contain" />
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain"
+        />
       </div>
 
       <aside className="flex flex-col gap-16 w-full md:w-1/2 justify-start items-start">

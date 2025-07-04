@@ -21,14 +21,14 @@ const Logo = () => {
         alt="REM-MET Logo"
         width={200}
         height={40}
-        className="block dark:hidden"
+        className="block dark:hidden w-[200px] h-[40px]"
       />
       <Image
         src="/images/logos/rem-met-logo-dark-mode.svg"
         alt="REM-MET Logo"
         width={200}
         height={40}
-        className="hidden dark:block"
+        className="hidden dark:block w-[200px] h-[40px]"
       />
     </Link>
   );
