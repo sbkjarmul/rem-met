@@ -117,16 +117,16 @@ const QualitySection = () => {
         </div>
         <div className="relative w-full aspect-[1/1] lg:absolute lg:inset-y-4 lg:right-12 lg:w-11/24">
           <Image
-            src="/images/rem-met-falcon-details.png"
-            alt="Quality Section"
+            src="/images/rem-met-falcon-details.webp"
+            alt={t("image.alt.desktop")}
             fill
             className="object-contain hidden lg:block"
             id="details"
             quality={85}
           />
           <Image
-            src="/images/rem-met-rhino-details.png"
-            alt="Quality Section"
+            src="/images/rem-met-rhino-details.webp"
+            alt={t("image.alt.mobile")}
             fill
             className="object-contain block lg:hidden"
             id="details"

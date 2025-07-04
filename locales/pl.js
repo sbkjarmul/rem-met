@@ -20,7 +20,7 @@ export default {
     "montaż wygrodzeń",
   ],
   url: "https://rem-met.com",
-  ogImage: "/images/rem-met-og-image.png",
+  ogImage: "/images/rem-met-og-image.webp",
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
   // Product Metadata
   "falcon.metadata.title":
@@ -96,6 +96,8 @@ export default {
     "title.desktop": "Bezpieczne i wytrzymałe wygrodzenia przemysłowe",
     "accent.mobile": "Polski produkt",
     "title.mobile": " wygrodzenia dopasowane pod Twoją Firmę",
+    "image.alt": "Wygrodzenia bezpieczeństwa REM-MET",
+    "lightImage.alt": "Światło padające na wygrodzenia bezpieczeństwa REM-MET",
     "description.desktop":
       "Zabezpiecz swoje miejsce pracy z profesjonalnymi systemami wygrodzeń REM-MET dopasowanymi pod Ciebie.",
     "description.mobile":
@@ -128,6 +130,10 @@ export default {
   quality: {
     accent: "Wytrzymałość i Jakość",
     title: "Niezawodna ochrona dla pracowników i sprzętu.",
+    "image.alt.desktop":
+      "Wygrodzenia bezpieczeństwa FALCON w rzucie izometrycznym z opisem cech technicznych",
+    "image.alt.mobile":
+      "Wygrodzenia bezpieczeństwa RHINO w rzucie izometrycznym z opisem cech technicznych",
     "feature1.title": "Wysoka wytrzymałość stali",
     "feature1.description.desktop":
       "Wygrodzenia REM-MET wykonane są z stali konstrukcyjnej o podwyższonej wytrzymałości, co zapewnia odporność na obciążenia i uszkodzenia mechaniczne.",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: pl.url,
     images: [
       {
-        url: "/images/rem-met-og-image.png",
+        url: "/images/rem-met-og-image.webp",
         width: 1200,
         height: 630,
         alt: pl.ogImageAlt,

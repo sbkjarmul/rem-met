@@ -44,7 +44,7 @@ const AboutUsHeroSection = () => {
       </Container>
 
       <Image
-        src="/images/rem-met-about-us-hero.png"
+        src="/images/rem-met-about-us-hero.webp"
         alt={t("hero.image.alt")}
         fill
         className="absolute inset-0 object-cover hidden md:block"
@@ -52,7 +52,7 @@ const AboutUsHeroSection = () => {
 
       <div className="relative block md:hidden aspect-4/3 w-full">
         <Image
-          src="/images/rem-met-about-us-hero-mobile.png"
+          src="/images/rem-met-about-us-hero-mobile.webp"
           alt={t("hero.image.alt")}
           fill
           className="absolute inset-0 object-contain object-center"

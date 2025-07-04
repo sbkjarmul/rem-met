@@ -57,7 +57,7 @@ const ProductHeroSection = ({
       </div>
       <div className="absolute top-0 left-0 w-full aspect-video z-0 hidden md:block">
         <Image
-          src="/images/rem-met-product-section-light.png"
+          src="/images/rem-met-product-section-light.webp"
           alt={t("lightAlt")}
           fill
           className="object-cover"

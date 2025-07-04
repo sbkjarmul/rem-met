@@ -87,7 +87,6 @@ export default function ProductDetailsSection({
               alt={imageAlt}
               fill
               className="object-contain"
-              quality={85}
             />
           </div>
         </div>
