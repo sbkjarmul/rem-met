@@ -1,3 +1,5 @@
+import { ROUTE_PATHS } from "@/app/constants";
+
 export const getProducts = (t: (key: string) => string) => [
   {
     id: "1",
@@ -6,7 +8,7 @@ export const getProducts = (t: (key: string) => string) => [
     title: t("falcon.title"),
     description: t("falcon.description"),
     cta: t("falcon.cta"),
-    path: "/falcon",
+    path: ROUTE_PATHS.FALCON,
   },
   {
     id: "2",
@@ -15,7 +17,7 @@ export const getProducts = (t: (key: string) => string) => [
     title: t("rhino.title"),
     description: t("rhino.description"),
     cta: t("rhino.cta"),
-    path: "/rhino",
+    path: ROUTE_PATHS.RHINO,
   },
   {
     id: "3",
@@ -24,6 +26,6 @@ export const getProducts = (t: (key: string) => string) => [
     title: t("gecko.title"),
     description: t("gecko.description"),
     cta: t("gecko.cta"),
-    path: "/gecko",
+    path: ROUTE_PATHS.GECKO,
   },
 ];

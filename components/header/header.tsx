@@ -3,6 +3,8 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { ROUTE_PATHS } from "@/app/constants";
 import Container from "@/components/ui/container";
 import Button from "@/components/ui/button";
 
@@ -13,7 +15,7 @@ import { ContactDialog } from "../contact-dialog/contact-dialog";
 
 const Logo = () => {
   return (
-    <Link href="/" className="select-none">
+    <Link href={ROUTE_PATHS.HOME} className="select-none">
       <Image
         src="/images/logos/rem-met-logo-light-mode.svg"
         alt="REM-MET Logo"
