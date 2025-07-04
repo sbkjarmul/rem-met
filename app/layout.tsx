@@ -57,6 +57,28 @@ export default function RootLayout({
   return (
     <html lang="pl" className={`${ttOctosquares.variable}`}>
       <head>
+        <link
+          rel="preload"
+          href="/fonts/TT-Octosquares-Trial-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/TT-Octosquares-Trial-Medium.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/TT-Octosquares-Trial-Bold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
         {/* <!-- Hotjar Tracking Code for REM-MET --> */}

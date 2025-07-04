@@ -30,7 +30,7 @@ const MegaMenu = () => {
       <NavigationMenuList className="h-[100px]">
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink
-            href="/standards"
+            href="/standardy-bezpieczenstwa"
             className={navigationMenuTriggerStyle()}
           >
             {t("standards")}
@@ -38,7 +38,7 @@ const MegaMenu = () => {
         </NavigationMenuItem>
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <NavigationMenuLink
-            href="/about-us"
+            href="/o-firmie"
             className={navigationMenuTriggerStyle()}
           >
             {t("about")}

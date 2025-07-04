@@ -104,19 +104,23 @@ const MobileMenuMainView = ({
           </MobileMenuButton>
         </MobileMenuItem>
         <MobileMenuItem>
-          <MobileMenuLink href="/about-us" onClick={onClose}>
+          <MobileMenuLink href="/o-firmie" onClick={onClose}>
             {t("about")}
           </MobileMenuLink>
         </MobileMenuItem>
         <MobileMenuItem>
-          <MobileMenuLink href="/standards" onClick={onClose}>
+          <MobileMenuLink href="/standardy-bezpieczenstwa" onClick={onClose}>
             {t("standards")}
           </MobileMenuLink>
         </MobileMenuItem>
         <MobileMenuItem>
-          <MobileMenuLink href="/contact" onClick={onClose}>
-            {t("contact")}
-          </MobileMenuLink>
+          <ContactDialog
+            triggerButton={
+              <MobileMenuButton onClick={() => {}}>
+                {t("contact")}
+              </MobileMenuButton>
+            }
+          />
         </MobileMenuItem>
       </MobileMenuList>
 

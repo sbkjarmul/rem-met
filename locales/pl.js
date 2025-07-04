@@ -13,6 +13,19 @@ export default {
   url: "https://rem-met.com",
   ogImage: "/images/rem-met-og-image.png",
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
+  // Product Metadata
+  "falcon.metadata.title":
+    "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+  "falcon.metadata.description":
+    "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
+  "rhino.metadata.title":
+    "System wygrodzeń bezpieczeństwa RHINO - maksymalna ochrona i trwałość",
+  "rhino.metadata.description":
+    "Wygrodzenia bezpieczeństwa RHINO zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+  "gecko.metadata.title":
+    "System wygrodzeń bezpieczeństwa GECKO - nowoczesność i przejrzystość",
+  "gecko.metadata.description":
+    "Wygrodzenia bezpieczeństwa GECKO zapewniają maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. System wygrodzeń poliwęglanowych REM-MET GECKO jest idealny do nowoczesnych zakładów przemysłowych.",
   // Header
   header: {
     home: "Strona główna",
@@ -196,6 +209,10 @@ export default {
       "Siatkowe wygrodzenia zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
     "falcon.cta": "Wybierz FALCON",
     "falcon.alt": "Wygrodzenie REM-MET FALCON",
+    "falcon.metadata.title":
+      "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+    "falcon.metadata.description":
+      "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
     // Rhino
     "rhino.name": "RHINO",
     "rhino.title": "Wygrodzenia metalowe",
