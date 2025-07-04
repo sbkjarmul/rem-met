@@ -2,6 +2,7 @@ import * as React from "react";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 import Image from "next/image";
+import { PRODUCTS_PATHS } from "@/app/wygrodzenia-bezpieczenstwa/constants";
 
 const Logo = () => {
   const t = useTranslations("footer");
@@ -73,13 +74,13 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("systems")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href="/falcon">
+                <FooterLink href={PRODUCTS_PATHS.FALCON}>
                   {t("falcon")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="/gecko">
+                <FooterLink href={PRODUCTS_PATHS.GECKO}>
                   {t("gecko")} <NewBadge />
                 </FooterLink>
-                <FooterLink href="/rhino">
+                <FooterLink href={PRODUCTS_PATHS.RHINO}>
                   {t("rhino")} <NewBadge />
                 </FooterLink>
               </ul>
