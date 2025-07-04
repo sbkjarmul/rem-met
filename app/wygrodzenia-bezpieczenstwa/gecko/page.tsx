@@ -1,26 +1,37 @@
+import Script from "next/script";
+
 import GeckoHeroSection from "./components/gecko-hero-section";
 import GeckoDetailsSection from "./components/gecko-details-section";
 import GeckoVersionsSection from "./components/gecko-versions-section";
 import ColorsSection from "@/components/colors-section";
 import ContactSection from "@/components/contact-section";
 import GeckoSpecificationSection from "./components/gecko-specification-section";
-import { Metadata } from "next";
-import pl from "@/locales/pl";
+import { breadcrumbSchema, productSchema } from "./seo/schemas";
 
-export const metadata: Metadata = {
-  title: pl["gecko.metadata.title"],
-  description: pl["gecko.metadata.description"],
-};
+export { metadata } from "./seo/metadata";
 
 export default function GeckoPage() {
   return (
-    <div>
+    <>
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: productSchema }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: breadcrumbSchema }}
+      />
+
       <GeckoHeroSection />
       <GeckoDetailsSection />
       <GeckoVersionsSection />
       <GeckoSpecificationSection />
       <ColorsSection />
       <ContactSection variant="product" />
-    </div>
+    </>
   );
 }

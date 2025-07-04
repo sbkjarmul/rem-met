@@ -9,6 +9,15 @@ export default {
     "producent wygrodzeń",
     "producent wygrodzeń przemysłowych",
     "producent wygrodzeń bezpieczeństwa",
+    "wygrodzenia bezpieczeństwa",
+    "systemy ochronne przemysłowe",
+    "bariery maszynowe",
+    "normy bezpieczeństwa maszyn",
+    "wygrodzenia siatkowe",
+    "wygrodzenia poliwęglanowe",
+    "wygrodzenia metalowe",
+    "ochrona stref niebezpiecznych",
+    "montaż wygrodzeń",
   ],
   url: "https://rem-met.com",
   ogImage: "/images/rem-met-og-image.png",
@@ -26,6 +35,24 @@ export default {
     "System wygrodzeń bezpieczeństwa GECKO - nowoczesność i przejrzystość",
   "gecko.metadata.description":
     "Wygrodzenia bezpieczeństwa GECKO zapewniają maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. System wygrodzeń poliwęglanowych REM-MET GECKO jest idealny do nowoczesnych zakładów przemysłowych.",
+  "aboutUs.metadata.title":
+    "O firmie REM-MET - Polski producent wygrodzeń przemysłowych",
+  "aboutUs.metadata.description":
+    "Poznaj historię i misję REM-MET. Jesteśmy polskim producentem wygrodzeń przemysłowych, który zapewniają ochronę dla pracowników i maszyn",
+  // SEO Schemas
+  "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
+  "schema.organization": "REM-MET",
+  "schema.organizationDescription":
+    "Polski producent systemów wygrodzeń bezpieczeństwa: FALCON, RHINO, GECKO",
+  "schema.home": "Strona główna",
+  "schema.contactForm": "Wyceń indywidualnie – wypełnij formularz",
+  "schema.falcon": "Wygrodzenia bezpieczeństwa FALCON",
+  "schema.rhino": "Wygrodzenia bezpieczeństwa RHINO",
+  "schema.gecko": "Wygrodzenia bezpieczeństwa GECKO",
+  "schema.streetAddress": "ul. Żytnia 17",
+  "schema.addressLocality": "Stalowa Wola",
+  "schema.postalCode": "37-450",
+  "schema.telephone": "+48 725 724 883",
   // Header
   header: {
     home: "Strona główna",
@@ -153,6 +180,10 @@ export default {
     "button.product": "Skontaktuj się",
   },
   contactDialog: {
+    streetAddress: "ul. Żytnia 17",
+    addressLocality: "Stalowa Wola",
+    postalCode: "37-450",
+    telephone: "+48 725 724 883",
     title: "Zbudujemy system bezpieczeństwa \n dla Twojej Firmy",
     get: "Otrzymaj",
     free: "darmową",

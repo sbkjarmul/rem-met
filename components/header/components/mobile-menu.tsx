@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import MobileMenuProductCard from "./mobile-menu-product-card";
 import { ContactDialog } from "@/components/contact-dialog/contact-dialog";
+import { PRODUCTS_PATHS } from "@/app/wygrodzenia-bezpieczenstwa/constants";
 
 const MobileMenuLink = ({
   href,
@@ -176,7 +177,7 @@ const MobileMenuProductView = ({
           imageSrc="/images/products/rem-met-falcon-hero.png"
           imageAlt={tOurProducts("falcon.alt")}
           buttonText={tOurProducts("falcon.cta")}
-          path="/falcon"
+          path={PRODUCTS_PATHS.FALCON}
           onClick={onClose}
         />
         <MobileMenuProductCard
@@ -185,7 +186,7 @@ const MobileMenuProductView = ({
           imageSrc="/images/products/rem-met-rhino-hero.png"
           imageAlt={tOurProducts("rhino.alt")}
           buttonText={tOurProducts("rhino.cta")}
-          path="/rhino"
+          path={PRODUCTS_PATHS.RHINO}
           onClick={onClose}
         />
         <MobileMenuProductCard
@@ -194,7 +195,7 @@ const MobileMenuProductView = ({
           imageSrc="/images/products/rem-met-gecko-hero.png"
           imageAlt={tOurProducts("gecko.alt")}
           buttonText={tOurProducts("gecko.cta")}
-          path="/gecko"
+          path={PRODUCTS_PATHS.GECKO}
           onClick={onClose}
         />
       </div>
