@@ -6,6 +6,7 @@ import {
   NavigationMenuItem,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
+  NavigationMenuButton,
 } from "@/components/ui/navigation-menu";
 import useTranslations from "@/hooks/useTranslations";
 
@@ -105,9 +106,9 @@ const MegaMenu = () => {
         <NavigationMenuItem className="h-full flex flex-col justify-center">
           <ContactDialog
             triggerButton={
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuButton className={navigationMenuTriggerStyle()}>
                 {t("contact")}
-              </NavigationMenuLink>
+              </NavigationMenuButton>
             }
           ></ContactDialog>
         </NavigationMenuItem>
