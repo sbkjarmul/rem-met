@@ -51,20 +51,21 @@ const HeroSection = () => {
 
       <div className="relative w-full mt-10 md:mt-20 aspect-5/2 md:aspect-7/2">
         <Image
-          src="/images/rem-met-hero-section-background.webp"
+          src="/images/rem-met-hero-no-shadow.webp"
           alt={t("image.alt")}
           fill
-          className="object-cover"
+          className="object-cover z-1"
           priority
         />
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-1/2 z-0">
+      <div className="absolute top-0 left-0 w-full h-[75%] z-0">
         <Image
-          src="/images/rem-met-hero-section-light.svg"
+          src="/images/rem-met-blue-light.webp"
+          style={{ opacity: 0.4 }}
           alt={t("lightImage.alt")}
           fill
-          className="object-cover"
+          className="object-cover object-start"
           priority
           unoptimized
         />
