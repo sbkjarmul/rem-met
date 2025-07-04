@@ -271,6 +271,7 @@ export default {
   },
   // Gecko Page
   gecko: {
+    breadcrumb: "Wygrodzenia bezpieczeństwa",
     name: "GECKO",
     // Hero Section
     accent: "Nowoczesność i przejrzystość",
