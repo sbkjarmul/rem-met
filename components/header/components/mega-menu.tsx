@@ -1,3 +1,6 @@
+import { useCallback, useRef } from "react";
+import dynamic from "next/dynamic";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,9 +14,11 @@ import {
 import useTranslations from "@/hooks/useTranslations";
 
 import NavigationMenuProductCard from "./mega-menu-product-card";
-import { useCallback, useRef } from "react";
-import { ContactDialog } from "@/components/contact-dialog/contact-dialog";
 import { ROUTE_PATHS } from "@/app/constants";
+
+const ContactDialog = dynamic(
+  () => import("@/components/contact-dialog/contact-dialog")
+);
 
 const MegaMenu = () => {
   const t = useTranslations("header");

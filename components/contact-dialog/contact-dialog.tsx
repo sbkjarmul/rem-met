@@ -42,7 +42,7 @@ interface ContactDialogProps {
   triggerButton: ReactNode;
 }
 
-export function ContactDialog({ triggerButton }: ContactDialogProps) {
+function ContactDialog({ triggerButton }: ContactDialogProps) {
   const [open, setOpen] = useState(false);
 
   const t = useTranslations("contactDialog");
@@ -105,3 +105,5 @@ export function ContactDialog({ triggerButton }: ContactDialogProps) {
     </Sheet>
   );
 }
+
+export default ContactDialog;

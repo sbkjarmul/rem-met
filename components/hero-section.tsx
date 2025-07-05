@@ -1,11 +1,13 @@
 import * as React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
 import useTranslations from "@/hooks/useTranslations";
-import { ContactDialog } from "./contact-dialog/contact-dialog";
 import Link from "next/link";
+
+const ContactDialog = dynamic(() => import("./contact-dialog/contact-dialog"));
 
 const HeroSection = () => {
   const t = useTranslations("hero");

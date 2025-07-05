@@ -1,5 +1,6 @@
-import NextLink from "next/link";
 import React, { useState } from "react";
+import NextLink from "next/link";
+import dynamic from "next/dynamic";
 
 import useTranslations from "@/hooks/useTranslations";
 
@@ -22,8 +23,11 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import MobileMenuProductCard from "./mobile-menu-product-card";
-import { ContactDialog } from "@/components/contact-dialog/contact-dialog";
 import { ROUTE_PATHS } from "@/app/constants";
+
+const ContactDialog = dynamic(
+  () => import("@/components/contact-dialog/contact-dialog")
+);
 
 const MobileMenuLink = ({
   href,

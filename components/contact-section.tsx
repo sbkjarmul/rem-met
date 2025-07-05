@@ -1,11 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import useTranslations from "@/hooks/useTranslations";
 import { AccentText } from "@/components/ui/accent-text";
 import Button from "@/components/ui/button";
-import { ContactDialog } from "./contact-dialog/contact-dialog";
+
+const ContactDialog = dynamic(
+  () => import("@/components/contact-dialog/contact-dialog")
+);
 
 interface ContactSectionProps {
   variant?: "product" | "default";

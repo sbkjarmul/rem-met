@@ -3,6 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 import { ROUTE_PATHS } from "@/app/constants";
 import Container from "@/components/ui/container";
@@ -10,8 +11,9 @@ import Button from "@/components/ui/button";
 
 import useTranslations from "@/hooks/useTranslations";
 import MegaMenu from "./components/mega-menu";
-import MobileMenu from "./components/mobile-menu";
-import { ContactDialog } from "../contact-dialog/contact-dialog";
+
+const MobileMenu = dynamic(() => import("./components/mobile-menu"));
+const ContactDialog = dynamic(() => import("../contact-dialog/contact-dialog"));
 
 const Logo = () => {
   return (
