@@ -53,9 +53,9 @@ const ProductCarouselMobile = () => {
                 <Image
                   src={product.image}
                   alt={`Wygrodzenie REM-MET ${product.name}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  width={664}
+                  height={422}
+                  sizes="(max-width: 600px) 100vw, 280px"
                 />
               </CarouselItem>
             ))}
