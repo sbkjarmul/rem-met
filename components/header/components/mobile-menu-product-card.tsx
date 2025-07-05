@@ -36,7 +36,13 @@ const MobileMenuProductCard = ({
         <div className="text-4xl font-medium text-gray-200">{name}</div>
       </div>
       <div className="relative aspect-video w-full">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-contain" />
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-contain"
+          sizes="(max-width: 600px) 500px, 400px"
+        />
       </div>
     </div>
   );

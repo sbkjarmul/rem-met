@@ -10,7 +10,7 @@ const GeckoHeroSection = () => {
     <ProductHeroSection
       accent={t("accent")}
       title={t("title")}
-      imageDesktopSrc="/images/products/rem-met-gecko-hero-shadow.png"
+      imageDesktopSrc="/images/products/rem-met-gecko-hero-shadow.webp"
       imageMobileSrc="/images/products/rem-met-gecko-hero-mobile.webp"
       imageAlt={t("alt")}
       nameSrc="/images/products/rem-met-gecko-name.svg"

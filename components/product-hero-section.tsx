@@ -35,12 +35,14 @@ const ProductHeroSection = ({
             {title}
           </h1>
         </div>
-        <div className="relative w-full z-3 hidden md:block aspect-5/3">
+        <div className="relative w-full z-3 hidden md:block">
           <Image
             src={imageDesktopSrc}
             alt={imageAlt}
-            fill
+            height={1920}
+            width={1200}
             className="object-contain"
+            sizes="1200px"
             priority
           />
         </div>
@@ -60,6 +62,7 @@ const ProductHeroSection = ({
           alt={imageAlt}
           fill
           className="object-cover"
+          sizes="(max-width: 768px) 100vw, 768px"
           priority
         />
       </div>

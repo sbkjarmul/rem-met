@@ -28,7 +28,13 @@ const MegaMenuProductCard = ({
         <div className="text-2xl font-medium">{name}</div>
       </div>
       <div className="relative aspect-video w-full">
-        <Image src={imageSrc} alt={imageAlt} fill className="object-contain" />
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          className="object-contain"
+          sizes="(max-width: 1200px) 400px, 30vw"
+        />
       </div>
       <Button className="w-full" asChild>
         <NextLink href={path} onClick={onClick} className="w-full">
