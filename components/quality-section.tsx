@@ -12,6 +12,19 @@ import {
   SecurityTimeIcon,
 } from "@/components/icons";
 
+const ColorZoom = () => {
+  return (
+    <div className="relative h-20 w-20">
+      <div className="absolute bg-brand-blue-200 z-10 h-20 w-20 flex justify-center items-center rounded-full border border-4 border-gray-200"></div>
+      <div
+        className="absolute inset-[-9] z-1 border-gray-500 skew-x-[-40deg] skew-y-[-15deg] rotate-[-25deg] backdrop-blur-sm bg-gray-600/20 border-2  
+      [clip-path:polygon(0_0,0_100%,100%_100%,100%_100%)]
+      "
+      ></div>
+    </div>
+  );
+};
+
 const IconWrapper = ({ children }: { children: React.ReactNode }) => {
   const shadowStyle = {
     filter: "drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5))",
@@ -116,6 +129,18 @@ const QualitySection = () => {
           </div>
         </div>
         <div className="relative w-full aspect-[1/1] lg:absolute lg:inset-y-4 lg:right-12 lg:w-11/24">
+          <div className="absolute top-[10%] left-[22%] hidden ">
+            <ColorZoom />
+          </div>
+          {/* <div className="absolute top-[60%] left-[0] lg:hidden z-10">
+            <GlassFeatureCard text="Wytrzymała powłoka" />
+          </div>
+          <div className="absolute bottom-[10%] right-[22%] lg:hidden z-10">
+            <GlassFeatureCard text="Ekologiczna produkcja" />
+          </div>
+          <div className="absolute top-[0%] right-[0%] lg:hidden z-10">
+            <GlassFeatureCard text="Stal konstrukcyjna" />
+          </div> */}
           <Image
             src="/images/rem-met-falcon-details.webp"
             alt={t("image.alt.desktop")}
@@ -128,7 +153,7 @@ const QualitySection = () => {
             alt={t("image.alt.mobile")}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain block lg:hidden"
+            className="object-contain block lg:hidden relative"
             id="details"
           />
         </div>

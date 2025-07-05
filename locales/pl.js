@@ -66,6 +66,8 @@ export default {
     // Mobile Menu
     "mobileMenu.cta": "Uzyskaj darmową wycenę",
     "mobileMenu.question": "Jestes zainteresowany?",
+    "mobileMenu.description":
+      "Mobilna nawigacja na stronie REM-MET - Wygrodzenia bezpieczeństwa",
   },
   // Footer
   footer: {

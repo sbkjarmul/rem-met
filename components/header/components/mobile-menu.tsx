@@ -6,6 +6,7 @@ import useTranslations from "@/hooks/useTranslations";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -204,6 +205,8 @@ const MobileMenuProductView = ({
 };
 
 const MobileMenu = () => {
+  const t = useTranslations("header");
+
   const [view, setView] = useState<"main" | "product">("main");
   const [open, setOpen] = useState(false);
 
@@ -231,6 +234,7 @@ const MobileMenu = () => {
       >
         <SheetHeader className="sr-only">
           <SheetTitle>REM-MET</SheetTitle>
+          <SheetDescription>{t("mobileMenu.description")}</SheetDescription>
         </SheetHeader>
 
         {view === "main" ? (
