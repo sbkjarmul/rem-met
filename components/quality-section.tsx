@@ -145,7 +145,8 @@ const QualitySection = () => {
             src="/images/rem-met-falcon-details.webp"
             alt={t("image.alt.desktop")}
             fill
-            className="object-contain hidden lg:block"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="object-contain hidden md:block"
             id="details"
           />
           <Image
@@ -153,7 +154,7 @@ const QualitySection = () => {
             alt={t("image.alt.mobile")}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain block lg:hidden relative"
+            className="object-contain block md:hidden relative"
             id="details"
           />
         </div>
