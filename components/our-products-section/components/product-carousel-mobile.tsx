@@ -55,7 +55,7 @@ const ProductCarouselMobile = () => {
                   alt={`Wygrodzenie REM-MET ${product.name}`}
                   width={664}
                   height={422}
-                  sizes="(max-width: 600px) 100vw, 280px"
+                  sizes="(max-width: 600px) 280px, 600px"
                 />
               </CarouselItem>
             ))}

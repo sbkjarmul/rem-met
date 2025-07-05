@@ -66,6 +66,7 @@ const HeroSection = () => {
           alt={t("lightImage.alt")}
           fill
           className="object-cover object-start"
+          sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1920px"
           priority
         />
       </div>
