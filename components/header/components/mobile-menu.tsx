@@ -218,8 +218,16 @@ const MobileMenu = () => {
     setView(view);
   };
 
+  const handleOpenChange = (open: boolean) => {
+    setOpen(open);
+
+    if (!open) {
+      setView("main");
+    }
+  };
+
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
+    <Sheet open={open} onOpenChange={handleOpenChange}>
       <SheetTrigger asChild>
         <Button
           variant="ghost"
