@@ -29,7 +29,7 @@ const ColorsSection = () => {
         </div>
         <div className="relative w-full aspect-13/6 mx-auto aspect-3/1">
           <Image
-            src="/images/products/rem-met-color-buckets.png"
+            src="/images/products/rem-met-color-buckets.webp"
             alt={t("alt")}
             fill
             className="object-contain select-none"

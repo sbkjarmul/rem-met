@@ -28,7 +28,7 @@ const RhinoDetailsSection = () => {
       title={t("details.title")}
       titleMobile={t("details.title.mobile")}
       description={t("details.description")}
-      imageSrc="/images/products/rem-met-rhino-izo.png"
+      imageSrc="/images/products/rem-met-rhino-izo.webp"
       imageAlt={t("details.alt")}
       features={features}
     />

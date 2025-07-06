@@ -63,7 +63,7 @@ export default function GeckoDetailsSection() {
           </div>
           <div className="relative w-full md:w-1/2 aspect-square">
             <Image
-              src="/images/products/rem-met-gecko-izo.png"
+              src="/images/products/rem-met-gecko-izo.webp"
               alt={t("details.alt")}
               fill
               className="object-contain"

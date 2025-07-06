@@ -9,13 +9,13 @@ const RhinoVersionsSection = () => {
       name: t("name"),
       version: t("solid.name"),
       description: t("solid.description"),
-      imageUrl: "/images/products/rem-met-rhino-solid-panel.png",
+      imageUrl: "/images/products/rem-met-rhino-solid-panel.webp",
     },
     {
       name: t("name"),
       version: t("vision.name"),
       description: t("vision.description"),
-      imageUrl: "/images/products/rem-met-rhino-vision-panel.png",
+      imageUrl: "/images/products/rem-met-rhino-vision-panel.webp",
     },
   ];
 
@@ -33,7 +33,7 @@ const RhinoVersionsSection = () => {
           </span>
         </h2>
       }
-      imageUrl="/images/products/rem-met-rhino-versions.png"
+      imageUrl="/images/products/rem-met-rhino-versions.webp"
       imageAlt={t("versions.alt")}
       productVersions={productVersions}
     />

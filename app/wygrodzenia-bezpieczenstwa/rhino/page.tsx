@@ -6,6 +6,7 @@ import RhinoHeroSection from "./components/rhino-hero-section";
 import RhinoDetailsSection from "./components/rhino-details-section";
 import RhinoVersionsSection from "./components/rhino-versions.section";
 import { breadcrumbSchema, productSchema } from "./seo/schemas";
+import ColorsSection from "@/components/colors-section";
 
 export { metadata } from "./seo/metadata";
 
@@ -28,6 +29,7 @@ export default function RhinoPage() {
       <RhinoDetailsSection />
       <RhinoVersionsSection />
       <RhinoSpecificationSection />
+      <ColorsSection />
       <ContactSection variant="product" />
     </div>
   );

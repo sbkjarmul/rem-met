@@ -28,7 +28,7 @@ const FalconDetailsSection = () => {
       title={t("details.title")}
       titleMobile={t("details.title.mobile")}
       description={t("details.description")}
-      imageSrc="/images/products/rem-met-falcon-izo.png"
+      imageSrc="/images/products/rem-met-falcon-izo.webp"
       imageAlt={t("details.alt")}
       features={features}
     />

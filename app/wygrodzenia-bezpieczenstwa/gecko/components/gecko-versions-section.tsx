@@ -57,7 +57,7 @@ export default function GeckoVersionsSection() {
 
           <div className="relative w-full aspect-[3/1] hidden md:block">
             <Image
-              src="/images/products/rem-met-gecko-versions.png"
+              src="/images/products/rem-met-gecko-versions.webp"
               alt={t("versions.alt")}
               fill
               className="object-contain"
@@ -70,19 +70,19 @@ export default function GeckoVersionsSection() {
           name={t("name")}
           version={t("vision.name")}
           description={t("vision.description")}
-          imageUrl="/images/products/rem-met-gecko-vision-panel.png"
+          imageUrl="/images/products/rem-met-gecko-vision-panel.webp"
         />
         <GeckoVersionCard
           name={t("name")}
           version={t("solid.name")}
           description={t("solid.description")}
-          imageUrl="/images/products/rem-met-gecko-solid-panel.png"
+          imageUrl="/images/products/rem-met-gecko-solid-double-panel.webp"
         />
         <GeckoVersionCard
           name={t("name")}
           version={t("air.name")}
           description={t("air.description")}
-          imageUrl="/images/products/rem-met-gecko-air-panel.png"
+          imageUrl="/images/products/rem-met-gecko-air-panel.webp"
         />
       </div>
     </section>
