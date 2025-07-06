@@ -27,6 +27,7 @@ const NotFound = () => {
         src="/images/rem-met-star-background.svg"
         alt="REM-MET404 page background"
         fill
+        sizes="100vw"
         className="object-cover z-0"
       />
     </div>

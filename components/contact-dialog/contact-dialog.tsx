@@ -96,8 +96,9 @@ function ContactDialog({ triggerButton }: ContactDialogProps) {
 
           <Image
             src="/images/rem-met-contact-dialog-background.svg"
-            alt="REM-MET Logo"
+            alt={t("backgroundAlt")}
             fill
+            sizes="100vw"
             className="absolute top-0 left-0 object-cover z-0 hidden md:block"
           />
         </div>

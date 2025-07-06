@@ -47,6 +47,7 @@ const AboutUsHeroSection = () => {
         src="/images/rem-met-about-us-hero.webp"
         alt={t("hero.image.alt")}
         fill
+        sizes="100vw"
         className="absolute inset-0 object-cover hidden md:block"
       />
 
@@ -55,6 +56,7 @@ const AboutUsHeroSection = () => {
           src="/images/rem-met-about-us-hero-mobile.webp"
           alt={t("hero.image.alt")}
           fill
+          sizes="100vw"
           className="absolute inset-0 object-contain object-center"
         />
       </div>

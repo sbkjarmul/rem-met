@@ -51,6 +51,7 @@ const AboutUsEcologySection = () => {
           src="/icons/rem-met-ecology-icon-outlined.svg"
           alt={t("ecology.icon.alt")}
           fill
+          sizes="640px"
           className="top-0 right-0 object-right z-0 object-contain hidden md:block"
         />
       </Container>

@@ -89,6 +89,7 @@ export default {
     contactPhone: "+48 725 724 883",
     copyrightPrefix: "REM-MET. ",
     copyright: "Wszelkie prawa zastrzeżone.",
+
     // Attribution
     attribution: "Strona stworzona przez ",
   },
@@ -202,6 +203,8 @@ export default {
     "description.mobile":
       "Wypełnij formularz a my skontaktujemy się z Tobą w ciągu kilku dni.",
     now: "teraz",
+    backgroundAlt:
+      "W tle jeden z elementów brandingu marki REM-MET, produkującej wygrodzenia bezpieczeństwa",
   },
   contactForm: {
     "fullName.label": "Imię i nazwisko",

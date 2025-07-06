@@ -45,6 +45,7 @@ const StandardsHeroSection = () => {
         src="/images/rem-met-standards-hero.webp"
         alt={t("hero.image.alt")}
         fill
+        sizes="100vw"
         className="absolute inset-0 object-cover z-0"
       />
     </section>
