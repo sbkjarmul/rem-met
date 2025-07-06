@@ -27,7 +27,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: var(--rem-met-blue-2);
+  --primary: var(--rem-met-blue-1);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: var(--rem-met-gray-8);
   --secondary-foreground: var(--rem-met-gray-1);
