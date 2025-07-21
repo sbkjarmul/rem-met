@@ -4,15 +4,15 @@ export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: pl["schema.website"],
-  url: "https://www.rem-met.com",
+  url: "https://rem-met.com",
 };
 
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: pl["schema.organization"],
-  url: "https://www.rem-met.com",
-  logo: "https://www.rem-met.com/images/logos/rem-met-brandmark.svg",
+  url: "https://rem-met.com",
+  logo: "https://rem-met.com/images/logos/rem-met-brandmark.svg",
   description: pl["schema.organizationDescription"],
   address: {
     "@type": "PostalAddress",

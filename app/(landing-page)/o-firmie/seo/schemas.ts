@@ -8,6 +8,6 @@ export const aboutSchema = JSON.stringify({
   publisher: {
     "@type": "Organization",
     name: pl["schema.organization"],
-    logo: "https://www.rem-met.com/images/logos/rem-met-logo-light-mode.png",
+    logo: "https://rem-met.com/images/logos/rem-met-logo-light-mode.png",
   },
 });

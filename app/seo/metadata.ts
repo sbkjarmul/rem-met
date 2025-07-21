@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.rem-met.com",
+    canonical: "https://rem-met.com",
   },
 
   robots: {

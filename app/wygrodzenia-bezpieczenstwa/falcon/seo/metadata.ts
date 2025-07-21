@@ -21,13 +21,13 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
+    canonical: "https://rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
   },
 
   openGraph: {
     title: pl["falcon.metadata.title"],
     description: pl["falcon.metadata.description"],
-    url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
+    url: "https://rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
     siteName: "REM-MET",
     images: [
       {

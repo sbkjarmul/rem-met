@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: "https://www.rem-met.com",
+  siteUrl: "https://rem-met.com",
   generateRobotsTxt: true,
   exclude: ["/admin", "/private", "/koszyk", "/konto"],
   robotsTxtOptions: {
@@ -11,7 +11,7 @@ module.exports = {
         disallow: ["/private/", "/admin/"],
       },
     ],
-    additionalSitemaps: ["https://www.rem-met.com/sitemap-products.xml"],
+    additionalSitemaps: ["https://rem-met.com/sitemap-products.xml"],
   },
   transform: async (config, path) => {
     const priorities = {

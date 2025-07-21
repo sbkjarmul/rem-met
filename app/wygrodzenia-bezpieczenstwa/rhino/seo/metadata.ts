@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
+    canonical: "https://rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
   },
 
   openGraph: {
     title: pl["rhino.metadata.title"],
     description: pl["rhino.metadata.description"],
-    url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
+    url: "https://rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
     siteName: "REM-MET",
     images: [
       {

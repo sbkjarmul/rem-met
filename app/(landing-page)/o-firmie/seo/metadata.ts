@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.rem-met.com/o-firmie",
+    canonical: "https://rem-met.com/o-firmie",
   },
 
   openGraph: {
     title: "O firmie REM-MET | Lider w produkcji wygrodzeń",
     description: "Ponad 20 lat doświadczenia produkcji przemysłowej",
-    url: "https://www.rem-met.com/o-firmie",
+    url: "https://rem-met.com/o-firmie",
     siteName: "REM-MET",
     images: [
       {

@@ -9,21 +9,21 @@ export const standardsSchema = JSON.stringify({
   author: {
     "@type": "Organization",
     name: "REM-MET",
-    url: "https://www.rem-met.com",
+    url: "https://rem-met.com",
   },
   publisher: {
     "@type": "Organization",
     name: "REM-MET",
     logo: {
       "@type": "ImageObject",
-      url: "https://www.rem-met.com/images/logos/rem-met-logo-light-mode.png",
+      url: "https://rem-met.com/images/logos/rem-met-logo-light-mode.png",
       width: 300,
       height: 60,
     },
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://www.rem-met.com/standardy-bezpieczenstwa",
+    "@id": "https://rem-met.com/standardy-bezpieczenstwa",
   },
   keywords: [
     "normy bezpieczeństwa",
@@ -49,13 +49,13 @@ export const breadcrumbsSchema = JSON.stringify({
       "@type": "ListItem",
       position: 1,
       name: "Strona główna",
-      item: "https://www.rem-met.com",
+      item: "https://rem-met.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Standardy bezpieczeństwa",
-      item: "https://www.rem-met.com/standardy-bezpieczenstwa",
+      item: "https://rem-met.com/standardy-bezpieczenstwa",
     },
   ],
 });

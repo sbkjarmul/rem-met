@@ -14,14 +14,14 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://www.rem-met.com/standardy-bezpieczenstwa",
+    canonical: "https://rem-met.com/standardy-bezpieczenstwa",
   },
 
   openGraph: {
     title: "Normy bezpieczeństwa wygrodzeń | REM-MET",
     description:
       "Zgodność systemów FALCON, RHINO, GECKO z przepisami UE i normami ISO",
-    url: "https://www.rem-met.com/standardy-bezpieczenstwa",
+    url: "https://rem-met.com/standardy-bezpieczenstwa",
     siteName: "REM-MET",
     images: [
       {
