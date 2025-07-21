@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
+    canonical: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
   },
 
   openGraph: {
     title: pl["gecko.metadata.title"],
     description: pl["gecko.metadata.description"],
-    url: "https://rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
+    url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
     siteName: "REM-MET",
     images: [
       {

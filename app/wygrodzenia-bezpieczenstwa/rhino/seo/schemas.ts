@@ -17,7 +17,7 @@ export const productSchema = JSON.stringify({
     priceCurrency: "PLN",
     availability: "https://schema.org/InStock",
     description: pl["schema.contactForm"],
-    url: "https://rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
+    url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
   },
 });
 
@@ -29,13 +29,13 @@ export const breadcrumbSchema = JSON.stringify({
       "@type": "ListItem",
       position: 1,
       name: "Strona główna",
-      item: "https://rem-met.com",
+      item: "https://www.rem-met.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: pl["schema.rhino"], // np. "System RHINO"
-      item: "https://rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
+      item: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
     },
   ],
 });

@@ -19,7 +19,7 @@ export default {
     "ochrona stref niebezpiecznych",
     "montaż wygrodzeń",
   ],
-  url: "https://rem-met.com",
+  url: "https://www.rem-met.com",
   ogImage: "/images/rem-met-og-image.webp",
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
   // Product Metadata

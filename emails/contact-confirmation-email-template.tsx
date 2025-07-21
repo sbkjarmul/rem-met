@@ -49,7 +49,7 @@ export const ContactConfirmationEmailTemplate = ({
             Wkrótce skontaktujemy się z Tobą, aby omówić szczegóły. A tymczasem
             sprawdź naszą ofertę:
           </Text>
-          <Button style={button} href="https://rem-met.com">
+          <Button style={button} href="https://www.rem-met.com">
             Zobacz naszą ofertę
           </Button>
           <Text style={paragraph}>Z poważaniem,</Text>

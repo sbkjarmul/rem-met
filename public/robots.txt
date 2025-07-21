@@ -5,7 +5,7 @@ Disallow: /private/
 Disallow: /admin/
 
 # Host
-Host: https://rem-met.com
+Host: https://www.rem-met.com
 
 # Sitemaps
-Sitemap: https://rem-met.com/sitemap.xml
+Sitemap: https://www.rem-met.com/sitemap.xml
