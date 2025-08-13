@@ -18,6 +18,7 @@ export const productSchema = JSON.stringify({
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
   },
+  image: "https://www.rem-met.com/images/products/rem-met-rhino-izo.webp",
 });
 
 export const breadcrumbSchema = JSON.stringify({
