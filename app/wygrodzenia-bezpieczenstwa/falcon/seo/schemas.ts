@@ -11,6 +11,7 @@ export const productSchema = JSON.stringify({
     availability: "https://schema.org/InStock",
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
+    price: "0",
   },
   image: "https://www.rem-met.com/images/products/rem-met-falcon-izo.webp",
 });
