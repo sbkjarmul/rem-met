@@ -191,6 +191,7 @@ export default {
   contactDialog: {
     streetAddress: "ul. Żytnia 17",
     addressLocality: "Stalowa Wola",
+    email: "biuro@rem-met.com",
     postalCode: "37-450",
     telephone: "+48 725 724 883",
     title: "Zbudujemy system bezpieczeństwa \n dla Twojej Firmy",

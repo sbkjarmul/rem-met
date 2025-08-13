@@ -39,6 +39,7 @@ export default function RootLayout({
     <html lang="pl" className={`${ttOctosquares.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="canonical" href="https://www.rem-met.com" />
 
         {/* <!-- Hotjar Tracking Code for REM-MET --> */}
         <Script
