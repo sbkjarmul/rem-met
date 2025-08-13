@@ -3,12 +3,11 @@ import pl from "@/locales/pl";
 export const productSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Product",
-  name: pl,
+  name: pl["falcon.metadata.title"],
   description: pl["falcon.metadata.description"],
   brand: { "@type": "Brand", name: "REM-MET" },
   offers: {
     "@type": "Offer",
-    priceCurrency: "PLN",
     availability: "https://schema.org/InStock",
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/falcon",
