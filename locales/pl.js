@@ -1,6 +1,6 @@
 export default {
   title:
-    "REM-MET - Wygrodzenia bezpieczeństwa | Producent wygrodzeń przemysłowych",
+    "REM-MET - Wygrodzenia przemysłowe i bezpieczeństwa | Producent wygrodzeń przemysłowych",
   description:
     "REM-MET projektuje i produkuje wygrodzenia bezpieczeństwa dla maszyn i linii przemysłowych. Zapewniamy kompleksową obsługę – od projektu po montaż. Działamy na terenie całej Polski. Siedziba: Stalowa Wola, Podkarpacie.",
   keywords: [
@@ -24,15 +24,15 @@ export default {
   ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
   // Product Metadata
   "falcon.metadata.title":
-    "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+    "Wygrodzenia przemysłowe FALCON - elastyczne i widoczne",
   "falcon.metadata.description":
     "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
   "rhino.metadata.title":
-    "System wygrodzeń bezpieczeństwa RHINO - maksymalna ochrona i trwałość",
+    "Wygrodzenia przemysłowe RHINO - maksymalna ochrona i trwałość",
   "rhino.metadata.description":
     "Wygrodzenia bezpieczeństwa RHINO zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
   "gecko.metadata.title":
-    "System wygrodzeń bezpieczeństwa GECKO - nowoczesność i przejrzystość",
+    "Wygrodzenia przemysłowe GECKO - nowoczesność i przejrzystość",
   "gecko.metadata.description":
     "Wygrodzenia bezpieczeństwa GECKO zapewniają maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. System wygrodzeń poliwęglanowych REM-MET GECKO jest idealny do nowoczesnych zakładów przemysłowych.",
   "aboutUs.metadata.title":
@@ -104,7 +104,7 @@ export default {
     "description.desktop":
       "Zabezpiecz swoje miejsce pracy z profesjonalnymi systemami wygrodzeń REM-MET dopasowanymi pod Ciebie.",
     "description.mobile":
-      "Projektujemy i dostarczamy systemy zabezpieczeń. Sprawdź naszą ofertę.",
+      "Projektujemy i dostarczamy wygrodzenia bezpieczeństwa. Sprawdź naszą ofertę.",
     "primaryButton.desktop": "Zamów projekt",
     "secondaryButton.desktop": "Zobacz ofertę",
     "primaryButton.mobile": "Zamów projekt",
@@ -115,7 +115,7 @@ export default {
     "title.desktop": "Producent wygrodzeń przemysłowych z Polski",
     "title.mobile": "Polski producent wygrodzeń przemysłowych.",
     description:
-      "Specjalizujemy się w projektowaniu i produkcji wygrodzeń przemysłowych, dostosowanych do potrzeb Twojego zakładu. Nasze produkty łączą funkcjonalność, trwałość oraz zgodność z normami bezpieczeństwa.",
+      "Projektujemy i produkujemy wygrodzenia przemysłowe, dostosowane do potrzeb Twojego zakładu. Nasze produkty łączą funkcjonalność, trwałość oraz spełniają normy bezpieczeństwa.",
     feature1: "Jakość i Wytrzymałość",
     feature2: "Gwarancja bezpieczeństwa",
     feature3: "Pełne wsparcie",
@@ -139,12 +139,12 @@ export default {
       "Wygrodzenia bezpieczeństwa RHINO w rzucie izometrycznym z opisem cech technicznych",
     "feature1.title": "Wysoka wytrzymałość stali",
     "feature1.description.desktop":
-      "Wygrodzenia REM-MET wykonane są z stali konstrukcyjnej o podwyższonej wytrzymałości, co zapewnia odporność na obciążenia i uszkodzenia mechaniczne.",
+      "Wygrodzenia przemysłowe REM-MET wykonane są z stali konstrukcyjnej o podwyższonej wytrzymałości, co zapewnia odporność na obciążenia i uszkodzenia mechaniczne.",
     "feature1.description.mobile":
       "Do produkcji wygrodzeń używamy stali konstrukcyjnej o podwyższonej wytrzymałości.",
     "feature2.title": "Odporność na degradację",
     "feature2.description.desktop":
-      "Zastosowanie wysokiej jakości powłok lakierniczych sprawia, że wygrodzenia REM-MET zachowują swoje właściwości estetyczne i użytkowe przez długi czas, nie ulegając degradacji.",
+      "Zastosowanie wysokiej jakości powłok lakierniczych sprawia, że wygrodzenia przemysłowe REM-MET zachowują swoje właściwości estetyczne i użytkowe przez długi czas, nie ulegając degradacji.",
     "feature2.description.mobile":
       "Stosujemy powłoki lakiernicze najwyższej jakości.",
     "feature3.title": "Ochrona środowiska",
@@ -178,7 +178,7 @@ export default {
   // Contact Section
   contactSection: {
     accent: "Skontaktuj się z nami",
-    title: "Potrzebujesz systemu bezpieczeństwa?",
+    title: "Potrzebujesz system bezpieczeństwa?",
     button: "Uzyskaj DARMOWĄ wycenę",
     description:
       "Wypełnij formularz i otrzymaj indywidualną ofertę lub dowiedz się więcej o naszych rozwiązaniach.",
@@ -249,27 +249,27 @@ export default {
     "falcon.name": "FALCON",
     "falcon.title": "Wygrodzenia siatkowe",
     "falcon.description":
-      "Siatkowe wygrodzenia zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
+      "Siatkowe wygrodzenia bezpieczeństwa zapewniają doskonałą widoczność procesów produkcyjnych. Doskonałe do zabezpieczania linii produkcyjnych i maszyn.",
     "falcon.cta": "Wybierz FALCON",
-    "falcon.alt": "Wygrodzenie REM-MET FALCON",
+    "falcon.alt": "Wygrodzenie przemysłowe REM-MET FALCON",
     "falcon.metadata.title":
-      "System wygrodzeń bezpieczeństwa FALCON - elastyczne i widoczne",
+      "Wygrodzenia przemysłowe FALCON - elastyczne i widoczne",
     "falcon.metadata.description":
       "Wygrodzenia bezpieczeństwa FALCON zapewniają doskonałą widoczność procesów produkcyjnych. System wygrodzeń siatkowych REM-MET FALCON jest idealny do zabezpieczania linii produkcyjnych i maszyn.",
     // Rhino
     "rhino.name": "RHINO",
     "rhino.title": "Wygrodzenia metalowe",
     "rhino.description":
-      "Wygrodzenia metalowe zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
+      "Metalowe wygrodzenia bezpieczeństwa zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
     "rhino.cta": "Wybierz RHINO",
-    "rhino.alt": "Wygrodzenie REM-MET RHINO",
+    "rhino.alt": "Wygrodzenia przemysłowe REM-MET RHINO",
     // Gecko
     "gecko.name": "GECKO",
     "gecko.title": "Wygrodzenia poliwęglanowe",
     "gecko.description":
-      "Transparentne wygrodzenia zapewniające maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. Doskonałe do nowoczesnych zakładów przemysłowych.",
+      "Transparentne wygrodzenia bezpieczeństwa zapewniające maksymalną ochronę bez utraty kontroli nad procesami produkcyjnymi. Doskonałe do nowoczesnych zakładów przemysłowych.",
     "gecko.cta": "Wybierz GECKO",
-    "gecko.alt": "Wygrodzenie REM-MET GECKO",
+    "gecko.alt": "Wygrodzenie przemysłowe REM-MET GECKO",
   },
   product: {
     lightAlt: "Światło padające na wygrodzenia REM-MET",
@@ -282,7 +282,7 @@ export default {
     // Hero Section
     accent: "Nowoczesność i przejrzystość",
     title: "Wygrodzenia poliwęglanowe",
-    alt: "Wygrodzenie REM-MET GECKO",
+    alt: "Wygrodzenia przemysłowe REM-MET GECKO",
     lightAlt: "Światło padające na wygrodzenia REM-MET GECKO",
     nameAlt: "GECKO",
     // Details Section
@@ -292,7 +292,8 @@ export default {
     "details.title.mobile": "Transparentna ochrona",
     "details.description":
       "Stworzone z myślą o ochronie w strefach pracy maszyn CNC, robotów przemysłowych i urządzeń wysokiej prędkości.",
-    "details.alt": "Wygrodzenie REM-MET GECKO w rzucie izometrycznym",
+    "details.alt":
+      "Wygrodzenia przemysłowe REM-MET GECKO w rzucie izometrycznym",
     "feature1.title": "Pełna widoczność",
     "feature1.description":
       "Panele z poliwęglanu zapewniają doskonałą widoczność procesów produkcyjnych oraz pozwalają na stałą kontrolę pracy maszyn i robotów.",
@@ -306,7 +307,7 @@ export default {
     versions: "wersje",
     3: "Trzy",
     levels: "poziomy ochrony",
-    "versions.alt": "Trzy wersje wygrodzeń GECKO",
+    "versions.alt": "Trzy wersje wygrodzeń przemysłowych GECKO",
     "vision.name": "Vision",
     "vision.description":
       "Panel z przezroczystego poliwęglanu. Do stref wymagających stałej kontroli wizualnej.",
@@ -338,7 +339,7 @@ export default {
     // Hero Section
     accent: "Nowoczesność i przejrzystość",
     title: "Wygrodzenia siatkowe",
-    alt: "Wygrodzenie REM-MET FALCON",
+    alt: "Wygrodzenia przemysłowe REM-MET FALCON",
     lightAlt: "Światło padające na wygrodzenia REM-MET FALCON",
     nameAlt: "FALCON",
     // Details Section
@@ -348,7 +349,8 @@ export default {
     "details.title.mobile": "Lekka ochrona",
     "details.description":
       "Idealny do zabezpieczania linii produkcyjnych, maszyn, stanowisk zrobotyzowanych oraz stref o intensywnym przepływie ludzi i materiałów.",
-    "details.alt": "Wygrodzenie REM-MET FALCON w rzucie izometrycznym",
+    "details.alt":
+      "Wygrodzenia przemysłowe REM-MET FALCON w rzucie izometrycznym",
     "feature1.title": "Pełna widoczność",
     "feature1.description":
       "Zgrzewana siatka stalowa zapewnia doskonałą widoczność i kontrolę nad pracą maszyn, nie zakłócając nadzoru ani oświetlenia w hali.",
@@ -382,8 +384,8 @@ export default {
     // Hero Section
     accent: "Maksymalna ochrona i trwałość",
     title: "Wygrodzenia metalowe",
-    alt: "Wygrodzenie REM-MET RHINO",
-    lightAlt: "Światło padające na wygrodzenia REM-MET RHINO",
+    alt: "Wygrodzenia przemysłowe REM-MET RHINO",
+    lightAlt: "Światło padające na wygrodzenia przemysłoweREM-MET RHINO",
     nameAlt: "RHINO",
     // Details Section
     "details.accent": "System RHINO",
@@ -392,7 +394,8 @@ export default {
     "details.title.mobile": "Maksymalna ochrona",
     "details.description":
       "Zapewniają maksymalną ochronę wizualną i fizyczną w strefach spawania oraz tam, gdzie występują intensywne rozbłyski, iskry czy odpryski.",
-    "details.alt": "Wygrodzenie REM-MET RHINO w rzucie izometrycznym",
+    "details.alt":
+      "Wygrodzenia przemysłowe REM-MET RHINO w rzucie izometrycznym",
     "feature1.title": "Pełna ochrona",
     "feature1.description":
       "Ochrona przed intensywnym światłem i iskrami. Wersja z szybą filtrującą umożliwia podgląd bez ryzyka uszkodzenia wzroku.",
@@ -407,7 +410,7 @@ export default {
     two: "Dwie",
     versions: "wersje",
     levels: "poziomy ochrony",
-    "versions.alt": "Dwie wersje wygrodzeń RHINO",
+    "versions.alt": "Dwie wersje wygrodzeń przemysłowych RHINO",
     "vision.name": "Vision",
     "vision.description":
       "Panel wykonany z blachy stalowej. \n Przeznaczonny do stref, gdzie nie jest wymagana widoczność.",
@@ -513,7 +516,8 @@ export default {
     "description.accent": "O Nas",
     "description.title":
       "Od ponad 20 lat działamy w branży przemysłowej, wspierając firmy produkcyjne w realizacji ich celów. Do 2022 roku specjalizowaliśmy się w usługach spawalniczych i obróbkowych jako podwykonawcy komponentów. Dziś skupiamy się na tym, co dla naszych klientów najważniejsze – bezpieczeństwie.",
-    "description.image.alt": "Wygrodzenie REM-MET w rzucie izometrycznym",
+    "description.image.alt":
+      "Wygrodzenia bezpieczeństwa REM-MET w rzucie izometrycznym",
     "description.statistics.1": "zadowolonych klientów",
     "description.statistics.2": "lat doświadczenia",
     "description.statistics.2.subtext": "w branży przemysłowej",
