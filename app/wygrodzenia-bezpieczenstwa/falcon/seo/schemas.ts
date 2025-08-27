@@ -14,6 +14,13 @@ export const productSchema = JSON.stringify({
     price: "0",
     priceCurrency: "PLN",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "5",
+  },
   image: "https://www.rem-met.com/images/products/rem-met-falcon-izo.webp",
 });
 

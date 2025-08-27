@@ -17,6 +17,15 @@ export const productSchema = JSON.stringify({
     availability: "https://schema.org/InStock",
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
+    price: "0",
+    priceCurrency: "PLN",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "5",
   },
   image: "https://www.rem-met.com/images/products/rem-met-rhino-izo.webp",
 });

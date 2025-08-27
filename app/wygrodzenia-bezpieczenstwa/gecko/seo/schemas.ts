@@ -18,6 +18,13 @@ export const productSchema = JSON.stringify({
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "3",
+    bestRating: "5",
+    worstRating: "5",
+  },
   image: "https://www.rem-met.com/images/products/rem-met-gecko-izo.webp",
 });
 
