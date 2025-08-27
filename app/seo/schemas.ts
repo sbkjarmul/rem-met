@@ -12,7 +12,7 @@ export const organizationSchema = {
   "@type": "Organization",
   name: pl["schema.organization"],
   url: "https://www.rem-met.com",
-  logo: "https://www.rem-met.com/images/logos/rem-met-brandmark.svg",
+  logo: "https://www.rem-met.com/images/logos/rem-met-brandmark.png",
   description: pl["schema.organizationDescription"],
   address: {
     "@type": "PostalAddress",
