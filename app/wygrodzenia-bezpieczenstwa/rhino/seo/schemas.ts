@@ -14,6 +14,7 @@ export const productSchema = JSON.stringify({
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/rhino",
     price: "0",
     priceCurrency: "PLN",
+    priceValidUntil: "2025-12-31",
   },
   aggregateRating: {
     "@type": "AggregateRating",
