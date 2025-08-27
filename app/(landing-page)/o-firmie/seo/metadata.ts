@@ -2,15 +2,22 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "O firmie REM-MET | Producent wygrodzeń bezpieczeństwa",
+  title: "O firmie REM-MET | Wygrodzenia bezpieczeństwa Stalowa Wola",
   description:
-    "Poznaj historię REM-MET - polskiego producenta systemów wygrodzeń FALCON, RHINO i GECKO. Doświadczenie od ponad 20 lat branży przemysłowej.",
+    "Firma REM-MET - produkujemy wygrodzenia przemysłowe. Doświadczenie od ponad 20 lat branży przemysłowej.",
   keywords: [
     "o firmie rem-met",
     "producent wygrodzeń bezpieczeństwa",
     "historia firmy rem-met",
     "wygrodzenia przemysłowe polska",
-    "systemy ochronne made in poland",
+    "systemy ochronne Stalowa Wola",
+    "ogrodzenia Stalowa Wola",
+    "producent ogrodzeń Stalowa Wola",
+    "wygrodzenia przemysłowe Stalowa Wola",
+    "wygrodzenia bezpieczeństwa Stalowa Wola",
+    "sprawanie Stalowa Wola",
+    "konstrukcje stalowe Stalowa Wola",
+    "konstrukcja Stalowa Wola",
   ],
 
   alternates: {
@@ -18,8 +25,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "O firmie REM-MET | Lider w produkcji wygrodzeń",
-    description: "Ponad 20 lat doświadczenia produkcji przemysłowej",
+    title: "O firmie REM-MET | Wygrodzenia bezpieczeństwa Stalowa Wola",
+    description:
+      "Firma REM-MET - produkujemy wygrodzenia przemysłowe. Doświadczenie od ponad 20 lat branży przemysłowej.",
     url: "https://www.rem-met.com/o-firmie",
     siteName: "REM-MET",
     images: [
@@ -27,7 +35,7 @@ export const metadata: Metadata = {
         url: "/images/rem-met-og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Producent wygrodzeń bezpieczeństwa REM-MET",
+        alt: "Wygrodzenia bezpieczeństwa REM-MET Stalowa Wola",
       },
     ],
     locale: "pl_PL",

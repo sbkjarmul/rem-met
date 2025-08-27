@@ -1,6 +1,6 @@
 export default {
   title:
-    "REM-MET - Wygrodzenia przemysłowe i bezpieczeństwa | Producent wygrodzeń przemysłowych",
+    "REM-MET - Wygrodzenia przemysłowe i bezpieczeństwa | Producent Stalowa Wola",
   description:
     "REM-MET projektuje i produkuje wygrodzenia bezpieczeństwa dla maszyn i linii przemysłowych. Zapewniamy kompleksową obsługę – od projektu po montaż. Działamy na terenie całej Polski. Siedziba: Stalowa Wola, Podkarpacie.",
   keywords: [
@@ -18,10 +18,14 @@ export default {
     "wygrodzenia metalowe",
     "ochrona stref niebezpiecznych",
     "montaż wygrodzeń",
+    "producent wygrodzeń Stalowa Wola",
+    "producent wygrodzeń przemysłowych Stalowa Wola",
+    "producent wygrodzeń bezpieczeństwa Stalowa Wola",
+    "producent wygrodzeń przemysłowych Stalowa Wola",
   ],
   url: "https://www.rem-met.com",
   ogImage: "/images/rem-met-og-image.webp",
-  ogImageAlt: "Producent wygrodzeń bezpieczeństwa REM-MET",
+  ogImageAlt: "Wygrodzenia bezpieczeństwa REM-MET Stalowa Wola",
   // Product Metadata
   "falcon.metadata.title":
     "Wygrodzenia przemysłowe FALCON - elastyczne i widoczne",
@@ -43,7 +47,7 @@ export default {
   "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
   "schema.organization": "REM-MET",
   "schema.organizationDescription":
-    "Polski producent systemów wygrodzeń bezpieczeństwa: FALCON, RHINO, GECKO",
+    "Polski producent systemów wygrodzeń bezpieczeństwa. Wygrodzenia bezpieczeństwa Stalowa Wola. Spawanie Stalowa Wola. Wygrodzenia przemysłowe Stalowa Wola.",
   "schema.home": "Strona główna",
   "schema.contactForm": "Wyceń indywidualnie – wypełnij formularz",
   "schema.falcon": "Wygrodzenia bezpieczeństwa FALCON",
