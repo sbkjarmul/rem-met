@@ -30,14 +30,22 @@ export const metadata: Metadata = {
     siteName: "REM-MET",
     images: [
       {
-        url: "/images/rem-met-og-image.webp",
+        url: "https://www.rem-met.com/images/rem-met-og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Producent wygrodzeń bezpieczeństwa REM-MET",
+        alt: "Wygrodzenia bezpieczeństwa REM-MET | Producent Stalowa Wola",
       },
     ],
     locale: "pl_PL",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    site: "@rem-met",
+    title: pl["gecko.metadata.title"],
+    description: pl["gecko.metadata.description"],
+    images: ["https://www.rem-met.com/images/rem-met-og-image.webp"],
   },
 
   robots: {

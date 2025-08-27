@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     url: pl.url,
     images: [
       {
-        url: "/images/rem-met-og-image.webp",
+        url: "https://www.rem-met.com/images/rem-met-og-image.webp",
         width: 1200,
         height: 630,
         alt: pl.ogImageAlt,
@@ -29,6 +29,14 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: "https://www.rem-met.com",
+  },
+
+  twitter: {
+    card: "summary",
+    site: "@rem-met",
+    title: pl.title,
+    description: pl.description,
+    images: ["https://www.rem-met.com/images/rem-met-og-image.webp"],
   },
 
   robots: {
