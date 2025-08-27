@@ -7,11 +7,6 @@ export const productSchema = JSON.stringify({
   name: pl["rhino.metadata.title"],
   description: pl["rhino.metadata.description"],
   brand: { "@type": "Brand", name: "REM-MET" },
-  additionalProperty: {
-    "@type": "PropertyValue",
-    name: "Wytrzymałość",
-    value: "Odporność na uderzenia",
-  },
   offers: {
     "@type": "Offer",
     availability: "https://schema.org/InStock",
