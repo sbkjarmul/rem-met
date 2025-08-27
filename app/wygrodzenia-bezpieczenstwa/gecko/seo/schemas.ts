@@ -17,6 +17,9 @@ export const productSchema = JSON.stringify({
     availability: "https://schema.org/InStock",
     description: pl["schema.contactForm"],
     url: "https://www.rem-met.com/wygrodzenia-bezpieczenstwa/gecko",
+    price: "0",
+    priceCurrency: "PLN",
+    priceValidUntil: "2025-12-31",
   },
   aggregateRating: {
     "@type": "AggregateRating",
