@@ -56,14 +56,13 @@ const MegaMenu = () => {
             className={navigationMenuTriggerStyle()}
             ref={triggerRef}
           >
-            {t("offer")}
+            {t("machineGuards")}
           </NavigationMenuTrigger>
           <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
             <div className="flex flex-col gap-4 w-full p-10">
               <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
-                {t("megaMenu.title")}
+                {t("megaMenu.machineGuards.title")}
               </h3>
-              <div></div>
               <ul className="grid gap-2 w-full grid-cols-[1fr_1fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
@@ -102,6 +101,28 @@ const MegaMenu = () => {
                       path={ROUTE_PATHS.GECKO}
                       onClick={closeMenu}
                     />
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </div>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="h-full flex flex-col justify-center">
+          <NavigationMenuTrigger
+            className={navigationMenuTriggerStyle()}
+            ref={triggerRef}
+          >
+            {t("services")}
+          </NavigationMenuTrigger>
+          <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
+            <div className="flex flex-col gap-4 w-full p-10">
+              <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
+                {t("megaMenu.services.title")}
+              </h3>
+              <ul className="grid gap-2 w-full grid-cols-[1fr_1fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink href={ROUTE_PATHS.DESIGN_3D}>
+                    {t("megaMenu.services.design3d")}
                   </NavigationMenuLink>
                 </li>
               </ul>

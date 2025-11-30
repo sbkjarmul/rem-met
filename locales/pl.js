@@ -43,6 +43,10 @@ export default {
     "O firmie REM-MET - Polski producent wygrodzeń przemysłowych",
   "aboutUs.metadata.description":
     "Poznaj historię i misję REM-MET. Jesteśmy polskim producentem wygrodzeń przemysłowych, który zapewniają ochronę dla pracowników i maszyn",
+  "design3d.metadata.title":
+    "Projektowanie konstrukcji i urządzeń w SolidWorks - Modelowanie 3d | REM-MET",
+  "design3d.metadata.description":
+    "Projektowanie konstrukcji i urządzeń w SolidWorks - REM-MET. Projektowanie 3d, Modelowanie 3d w SolidWorks, CAD. Pełna dokumentacja 2d. Kompletny model 3d w formatach .stl, .sldasm, .step, .iges. Pliki przygotowane do technologii CNC",
   // SEO Schemas
   "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
   "schema.organization": "REM-MET",
@@ -63,10 +67,14 @@ export default {
     standards: "Normy",
     about: "O nas",
     offer: "Oferta",
+    machineGuards: "Wygrodzenia",
+    services: "Usługi",
     contact: "Kontakt",
     headerButton: "Darmowa wycena",
     // Mega Menu
-    "megaMenu.title": "Systemy wygrodzeń REM-MET",
+    "megaMenu.machineGuards.title": "Systemy wygrodzeń REM-MET",
+    "megaMenu.services.title": "Nasze usługi",
+    "megaMenu.services.design3d": "Projektowanie 3d",
     // Mobile Menu
     "mobileMenu.cta": "Uzyskaj darmową wycenę",
     "mobileMenu.question": "Jestes zainteresowany?",
@@ -86,6 +94,8 @@ export default {
     tiger: "Tiger",
     viper: "Viper",
     new: "Nowość",
+    services: "Usługi",
+    design3d: "Projektowanie 3D",
     contact: "Kontakt",
     contactQuestion: "Masz jakieś pytania?",
     contactEmail: "biuro@rem-met.com",
@@ -247,6 +257,10 @@ export default {
     systems: "Systemy wygrodzeń",
     accent: "Nasze produkty",
     title: "Wygrodzenia przemysłowe",
+    machineGuards: "Wygrodzenia",
+    services: "Usługi",
+    ourServices: "Nasze usługi",
+    menu: "Menu",
     description:
       "Wybierz wygrodzenia bezpieczeństwa dostosowane do Twoich potrzeb!",
     // Falcon
@@ -636,5 +650,106 @@ export default {
     title: "Nie znaleziono strony",
     description: "Przepraszamy, strona, której szukasz, nie istnieje.",
     cta: "Wróć do strony głównej",
+  },
+  // Design 3d Service Page
+  design3d: {
+    name: "Projektowanie 3d",
+    breadcrumb: "Strona główna",
+    offer: "Usługi",
+    // Hero Section
+    "hero.accent": "Projektowanie 3d",
+    "hero.title": "Projektowanie konstrukcji i urządzeń w SolidWorks",
+    "hero.title.mobile": "Projektowanie konstrukcji i urządzeń",
+    "hero.description":
+      "Nasze rozwiązania łączą precyzję inżynierską, funkcjonalność i estetykę, zapewniając Klientom gotowe projekty dopasowane do potrzeb produkcyjnych, montażowych i użytkowych.",
+    "hero.description.mobile":
+      "Nasze rozwiązania łączą precyzję inżynierską, funkcjonalność i estetykę, zapewniając Klientom gotowe projekty dopasowane do potrzeb produkcyjnych, montażowych i użytkowych.",
+
+    "hero.image.alt":
+      "Projekt wygrodzenia bezpieczeństwa REM-MET w programie SolidWorks.",
+
+    "description.accent": "Projektowanie i modelowanie 3D",
+    "description.title": "Projekty dopasowane pod Twoje potrzeby",
+    "description.image.alt":
+      "Logo REM-MET w rzucie izometrycznym 3d, w kolorze niebieskim.",
+
+    "description.feature1.text": "Urządzenia premysłowe",
+    "description.feature1.subtext":
+      "Projektowanie urządzeń technologicznych, stanowisk roboczych i zabudów przemysłowych.",
+
+    "description.feature2.text": "Konstrukcje przemysłowe",
+    "description.feature2.subtext":
+      "Projektowanie regałów magazynowych, stojaków i ram nośnych.",
+
+    "description.feature3.text": "Infrastruktura użytkowa",
+    "description.feature3.subtext": "Projektowanie ogrodzeń, bram, balustrad.",
+
+    "documentation.accent": "Dokumentacja",
+    "documentation.title": "Zero braków w papierach",
+    "documentation.image.alt": "Brandingowa książka z dokumentacją REM-MET",
+
+    "documentation.feature1.text": "Przygotowanie pod obróbkę CNC",
+    "documentation.feature1.subtext":
+      "Przygotowanie plików (DXF/DWG) do cięcia laserowego, gięcia i spawania.",
+
+    "documentation.feature2.text":
+      "Opracowanie dokumentacji technicznej (2D/3D) ",
+    "documentation.feature2.subtext":
+      "Tworzenie kompletnych rysunków wykonawczych i złożeniowych, list materiałowych (BOM) oraz instrukcji montażowych.",
+
+    "support.accent": "Wsparcie i doradztwo techniczne",
+    "support.title": "Nie potrzebujesz własnego specjalisty",
+    "support.description":
+      "Współpracując z REM-MET, nie musisz zatrudniać konstruktora ani inwestować w sprzęt czy oprogramowanie. Zyskujesz dostęp do doświadczonych specjalistów realizujących projekty od prostych elementów po złożone maszyny.",
+    "support.image.alt": "Pracownik REM-MET trzymający dokumentację techniczną",
+
+    "support.feature1.text": "Reverse engineering",
+    "support.feature1.subtext":
+      "Wsparcie przy modernizacji, adaptacjach i poprawkach istniejących projektów.",
+
+    "support.feature2.text": "Współpraca wdrożeniowa",
+    "support.feature2.subtext":
+      "Dobór optymalnych rozwiązań konstrukcyjnych, doradztwo materiałowe i technologiczne.",
+
+    "support.feature3.text": "Wsparcie koncepcyjne",
+    "support.feature3.subtext":
+      "Bieżąca współpraca z działem produkcji, utrzymania ruchu i kontroli jakości Klienta.",
+
+    "support.feature4.text": "Pomoc na miejscu",
+    "support.feature4.subtext":
+      "Pomoc zdalna lub na miejscu u Klienta w zakresie wdrożenia projektu do produkcji i montażu.",
+
+    "why.accent": "Precyzja wspierana doświadczeniem",
+    "why.title": "Dlaczego warto nam zaufać?",
+
+    "why.feature1.text": "Indywidualne podejście",
+    "why.feature1.subtext":
+      "Każdy projekt jest ściśle dopasowany do Twoich potrzeb produkcyjnych, montażowych i użytkowych.",
+
+    "why.feature2.text": "Bezpieczeństwo",
+    "why.feature2.subtext":
+      "Każdy projekt jest zgodny z normami bezpieczeństwa.",
+
+    "why.feature3.text": "Redukcja Kosztów",
+    "why.feature3.subtext":
+      "Wykorzystanie SolidWorks pozwala na dokładne odwzorowanie detali, co minimalizuje kosztowne błędy montażowe. Projekty są od razu zoptymalizowane pod produkcję, co eliminuje przestoje.",
+
+    "what.accent": "Co otrzymujesz?",
+    "what.title": "Pełna gotowość na produkcje",
+    "what.description":
+      "Gotowy projekt przekazujemy w formie plików gotowych pod produkcje.",
+
+    "what.feature1.text": "Kompletny model 3D",
+    "what.feature1.subtext": "Format: .SLDASM, .STEP, .IGES, .STL.",
+
+    "what.feature2.text": "Pełna dokumentacja 2D",
+    "what.feature2.subtext": "Rysunki PDF/DWG/DXF.",
+
+    "what.feature3.text": "Plików przygotowanych do technologii CNC",
+    "what.feature3.subtext":
+      "Modele i pliki (DXF/DWG) przygotowane do technologii obróbki: cięcia laserowego, gięcia i spawania.",
+
+    "what.feature4.text": "Listy materiałowe oraz instrukcje montażowe",
+    "what.feature4.subtext": "Zestawienie materiałowe BOM.",
   },
 };

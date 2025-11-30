@@ -83,7 +83,7 @@ const MobileMenuMainView = ({
   handleViewChange,
   onClose,
 }: {
-  handleViewChange: (view: "main" | "product") => void;
+  handleViewChange: (view: "main" | "product" | "services") => void;
   onClose: () => void;
 }) => {
   const t = useTranslations("header");
@@ -106,7 +106,12 @@ const MobileMenuMainView = ({
         </MobileMenuItem>
         <MobileMenuItem>
           <MobileMenuButton onClick={() => handleViewChange("product")}>
-            {t("offer")}
+            {t("machineGuards")}
+          </MobileMenuButton>
+        </MobileMenuItem>
+        <MobileMenuItem>
+          <MobileMenuButton onClick={() => handleViewChange("services")}>
+            {t("services")}
           </MobileMenuButton>
         </MobileMenuItem>
         <MobileMenuItem>
@@ -159,12 +164,15 @@ const MobileMenuProductView = ({
         <Breadcrumb>
           <BreadcrumbList className="w-full justify-center text-center">
             <BreadcrumbItem className="text-gray-500">
-              <BreadcrumbLink onClick={onBack}>Menu</BreadcrumbLink>
+              <BreadcrumbLink onClick={onBack}>
+                {" "}
+                {tOurProducts("menu")}
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="text-gray-300 font-medium">
-                Oferta
+                {tOurProducts("machineGuards")}
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -208,13 +216,56 @@ const MobileMenuProductView = ({
   );
 };
 
+const MobileMenuServicesView = ({
+  onBack,
+  onClose,
+}: {
+  onBack: () => void;
+  onClose: () => void;
+}) => {
+  const tOurProducts = useTranslations("ourProducts");
+  const tHeader = useTranslations("header");
+
+  return (
+    <div className="flex flex-col h-full justify-center gap-10 overflow-y-auto">
+      <div className="py-10">
+        <Breadcrumb>
+          <BreadcrumbList className="w-full justify-center text-center">
+            <BreadcrumbItem className="text-gray-500">
+              <BreadcrumbLink onClick={onBack}>
+                {tOurProducts("menu")}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-gray-300 font-medium">
+                {tOurProducts("services")}
+              </BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+
+      <h2 className="text-xl uppercase text-center text-gray-300">
+        {tOurProducts("ourServices")}
+      </h2>
+
+      <div className="grid grid-rows-[1fr_1fr_1fr] gap-4 h-full overflow-y-auto text-gray-200">
+        <MobileMenuLink href={ROUTE_PATHS.DESIGN_3D} onClick={onClose}>
+          {tHeader("megaMenu.services.design3d")}
+        </MobileMenuLink>
+      </div>
+    </div>
+  );
+};
+
 const MobileMenu = () => {
   const t = useTranslations("header");
 
-  const [view, setView] = useState<"main" | "product">("main");
+  const [view, setView] = useState<"main" | "product" | "services">("main");
   const [open, setOpen] = useState(false);
 
-  const handleViewChange = (view: "main" | "product") => {
+  const handleViewChange = (view: "main" | "product" | "services") => {
     setView(view);
   };
 
@@ -252,6 +303,11 @@ const MobileMenu = () => {
         {view === "main" ? (
           <MobileMenuMainView
             handleViewChange={handleViewChange}
+            onClose={() => setOpen(false)}
+          />
+        ) : view === "services" ? (
+          <MobileMenuServicesView
+            onBack={() => handleViewChange("main")}
             onClose={() => setOpen(false)}
           />
         ) : (

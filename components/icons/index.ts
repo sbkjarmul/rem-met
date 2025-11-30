@@ -5,3 +5,7 @@ export { default as ClenchedFistIcon } from "./clenched-fist-icon";
 export { default as ProgressIcon } from "./progress-icon";
 export { default as SecurityTimeIcon } from "./security-time-icon";
 export { default as RecycleIcon } from "./recycle-icon";
+export { default as MoleskineIcon } from "./moleskine-icon";
+export { default as FrontViewIcon } from "./front-view-icon";
+export { default as PaperMapIcon } from "./paper-map-icon";
+export { default as VersionsIcon } from "./versions-icon";

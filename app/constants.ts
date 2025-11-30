@@ -6,4 +6,5 @@ export const ROUTE_PATHS = {
   PRIVACY_POLICY: "/polityka-prywatnosci",
   ABOUT_US: "/o-firmie",
   STANDARDS: "/standardy-bezpieczenstwa",
+  DESIGN_3D: "/uslugi/projektowanie-3d",
 };

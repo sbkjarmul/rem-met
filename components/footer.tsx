@@ -86,6 +86,14 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-2">
+              <FooterHeader>{t("services")}</FooterHeader>
+              <ul className="space-y-2">
+                <FooterLink href={ROUTE_PATHS.DESIGN_3D}>
+                  {t("design3d")}
+                </FooterLink>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-2">
               <FooterHeader>{t("contact")}</FooterHeader>
               <div className="text-sm space-y-2 text-gray-700">
                 <p className="text-gray-600">{t("contactQuestion")}</p>
