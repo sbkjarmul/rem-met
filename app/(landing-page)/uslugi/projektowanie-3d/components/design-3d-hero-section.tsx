@@ -36,7 +36,7 @@ const Design3dHeroSection = () => {
         </div>
 
         <Image
-          src="/images/services/rem-met-design-3d-hero.png"
+          src="/images/services/rem-met-design-3d-hero.webp"
           alt={t("hero.image.alt")}
           width={1920}
           height={1080}

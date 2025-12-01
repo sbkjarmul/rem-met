@@ -28,7 +28,7 @@ const Design3dDocumentationSection = () => {
       <Container className="relative z-1 flex flex-col-reverse lg:flex-row justify-center gap-10 md:gap-20 py-16 md:py-20">
         <div className="w-full lg:w-1/2">
           <Image
-            src="/images/services/rem-met-design-3d-documentation.png"
+            src="/images/services/rem-met-design-3d-documentation.webp"
             alt={t("hero.image.alt")}
             width={1920}
             height={1080}

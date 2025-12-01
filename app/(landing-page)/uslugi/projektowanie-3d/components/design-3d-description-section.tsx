@@ -85,7 +85,7 @@ const Design3dDescriptionSection = () => {
 
           <div className="w-full md:w-1/2">
             <Image
-              src="/images/services/rem-met-design-3d-logo-3d.png"
+              src="/images/services/rem-met-design-3d-logo-3d.webp"
               alt={t("hero.image.alt")}
               width={1920}
               height={1080}

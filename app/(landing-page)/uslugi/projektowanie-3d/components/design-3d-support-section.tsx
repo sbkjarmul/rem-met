@@ -70,7 +70,7 @@ const Design3dSupportSection = () => {
         <div className="flex flex-col w-full md:w-1/2 items-start justify-end pt-0 lg:pt-20">
           <div className="w-full">
             <Image
-              src="/images/services/rem-met-design-3d-support.png"
+              src="/images/services/rem-met-design-3d-support.webp"
               alt={t("hero.image.alt")}
               width={1920}
               height={1080}

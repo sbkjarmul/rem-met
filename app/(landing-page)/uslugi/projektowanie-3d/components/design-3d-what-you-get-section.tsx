@@ -9,16 +9,12 @@ import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 
 const IconWrapper = ({ children }: { children: React.ReactNode }) => {
-  const shadowStyle = {
-    filter: "drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5))",
-  };
-
   const clipPathStyle = {
     clipPath: "polygon(0% 65%, 25% 100%, 85% 100%, 100% 35%, 75% 0%, 15% 0%)",
   };
 
   return (
-    <div style={shadowStyle}>
+    <div>
       <div
         style={clipPathStyle}
         className="bg-brand-blue-200 text-white flex justify-center items-center gap-2 w-[75px] h-[60px] md:w-[100px] md:h-[80px]"
