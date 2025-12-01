@@ -1,14 +1,7 @@
 import { AccentText } from "@/components/ui/accent-text";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+
 import Image from "next/image";
 
 interface DocumentationCardProps {
@@ -18,7 +11,7 @@ interface DocumentationCardProps {
 
 const DocumentationCard = ({ text, subtext }: DocumentationCardProps) => {
   return (
-    <div className="flex flex-col gap-1 justify-center items-center text-center md:text-left md:items-start md:justify-start max-w-md">
+    <div className="flex flex-col gap-1 max-w-md">
       <h3 className="text-2xl font-medium text-gray-200">{text}</h3>
       <div>
         <p className="text-gray-500 text-md">{subtext}</p>
@@ -32,8 +25,8 @@ const Design3dDocumentationSection = () => {
 
   return (
     <section className="flex flex-col justify-center items-center relative min-h-[800px] bg-brand-blue-400">
-      <Container className="relative z-1 flex flex-row justify-center gap-10 md:gap-20 py-16 md:py-20">
-        <div className="w-1/2">
+      <Container className="relative z-1 flex flex-col-reverse lg:flex-row justify-center gap-10 md:gap-20 py-16 md:py-20">
+        <div className="w-full lg:w-1/2">
           <Image
             src="/images/services/rem-met-design-3d-documentation.png"
             alt={t("hero.image.alt")}
@@ -43,7 +36,7 @@ const Design3dDocumentationSection = () => {
           />
         </div>
 
-        <div className="flex flex-col w-1/2 gap-10 items-start">
+        <div className="flex flex-col w-full lg:w-1/2 gap-10 items-start">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-2">
               <AccentText className="text-brand-blue-200">
@@ -52,7 +45,7 @@ const Design3dDocumentationSection = () => {
               <h2 className="text-3xl text-gray-200 font-medium md:hidden">
                 {t("documentation.title")}
               </h2>
-              <h2 className="text-4xl text-gray-200 hidden md:block">
+              <h2 className="text-4xl text-gray-200 font-medium hidden md:block">
                 {t("documentation.title")}
               </h2>
             </div>

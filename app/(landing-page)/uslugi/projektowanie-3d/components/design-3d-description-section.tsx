@@ -18,7 +18,7 @@ interface DescriptionCardProps {
 
 const DescriptionCard = ({ text, subtext }: DescriptionCardProps) => {
   return (
-    <div className="flex flex-col gap-1 justify-center items-center text-center md:text-left md:items-start md:justify-start max-w-md">
+    <div className="flex flex-col gap-1 :justify-center items-center items-start md:text-center md:text-left max-w-md">
       <h3 className="text-2xl font-medium text-gray-700">{text}</h3>
       <div>
         <p className="text-gray-500 text-md">{subtext}</p>
@@ -49,8 +49,8 @@ const Design3dDescriptionSection = () => {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <div className="flex flex-row gap-10 items-center">
-          <div className="flex flex-col w-1/2 gap-10 items-start">
+        <div className="flex flex-col lg:flex-row gap-10 items-start md:items-center">
+          <div className="flex flex-col w-full lg:w-1/2 gap-10 items-start">
             <div className="flex flex-col gap-8 w-full">
               <div className="flex flex-col gap-2">
                 <AccentText className="text-brand-blue-200 hidden md:block">
@@ -59,7 +59,7 @@ const Design3dDescriptionSection = () => {
                 <h2 className="text-3xl text-brand-blue-200 font-medium md:hidden">
                   {t("description.title")}
                 </h2>
-                <h2 className="text-4xl text-gray-600 hidden md:block">
+                <h2 className="text-4xl text-gray-600 hidden md:block font-medium">
                   {t("description.title")}
                 </h2>
               </div>
@@ -83,7 +83,7 @@ const Design3dDescriptionSection = () => {
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <Image
               src="/images/services/rem-met-design-3d-logo-3d.png"
               alt={t("hero.image.alt")}

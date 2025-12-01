@@ -15,6 +15,7 @@ import useTranslations from "@/hooks/useTranslations";
 
 import NavigationMenuProductCard from "./mega-menu-product-card";
 import { ROUTE_PATHS } from "@/app/constants";
+import MegaMenuServiceCard from "./mega-menu-service-card";
 
 const ContactDialog = dynamic(
   () => import("@/components/contact-dialog/contact-dialog")
@@ -119,10 +120,14 @@ const MegaMenu = () => {
               <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
                 {t("megaMenu.services.title")}
               </h3>
-              <ul className="grid gap-2 w-full grid-cols-[1fr_1fr_1fr]">
+              <ul className="grid gap-2 w-full grid-cols-1">
                 <li className="row-span-3">
                   <NavigationMenuLink href={ROUTE_PATHS.DESIGN_3D}>
-                    {t("megaMenu.services.design3d")}
+                    <MegaMenuServiceCard
+                      title={t("megaMenu.services.design3d")}
+                      subtitle="Projektowanie, dokumentacja i doradztwo
+                          techniczne"
+                    />
                   </NavigationMenuLink>
                 </li>
               </ul>

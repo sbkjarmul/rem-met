@@ -10,12 +10,12 @@ const Design3dHeroSection = () => {
   return (
     <section className="relative mih-h-[600px] md:min-h-[800px] flex justify-center items-end pt-32 md:pt-40 gap-4 bg-black">
       <Container className="z-1 flex flex-col justify-end items-center h-full gap-20">
-        <div className="gap-6 flex flex-col w-full max-w-4xl">
-          <div className="text-left gap-2 flex flex-col">
+        <div className="gap-6 flex flex-col w-full max-w-md md:max-w-4xl items-center">
+          <div className="text-left gap-2 flex flex-col ">
             <AccentText className="text-brand-blue-200 text-center">
               {t("hero.accent")}
             </AccentText>
-            <h1 className="text-2xl md:text-5xl font-medium text-gray-200">
+            <h1 className="text-3xl md:text-5xl font-medium text-gray-200 ">
               <span className="hidden md:block text-center">
                 {t("hero.title")}
               </span>

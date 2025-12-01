@@ -59,7 +59,7 @@ const Design3dWhatYouGetSection = () => {
         <div className="flex flex-col w-1/2 gap-20 items-center justify-center py-16 md:py-20 flex-1 ">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-2">
-              <AccentText className="text-gray-500 hidden md:block text-center">
+              <AccentText className="text-gray-500 text-center">
                 {t("what.accent")}
               </AccentText>
               <h2 className="text-3xl text-gray-600 font-medium md:hidden text-center">
@@ -71,7 +71,7 @@ const Design3dWhatYouGetSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-[170px_170px] sm:grid-cols-[400px_400px] grid-rows-[56px_56px] sm:grid-rows-[160px_160px] gap-x-20 gap-y-10 sm:gap-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[400px_400px] grid-rows-[auto_auto]  gap-x-20 gap-y-10 sm:gap-y-10">
             <WhatYouGetItem
               icon={<FrontViewIcon size={40} />}
               title={t("what.feature1.text")}

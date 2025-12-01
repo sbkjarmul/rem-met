@@ -663,7 +663,7 @@ export default {
     "hero.description":
       "Nasze rozwiązania łączą precyzję inżynierską, funkcjonalność i estetykę, zapewniając Klientom gotowe projekty dopasowane do potrzeb produkcyjnych, montażowych i użytkowych.",
     "hero.description.mobile":
-      "Nasze rozwiązania łączą precyzję inżynierską, funkcjonalność i estetykę, zapewniając Klientom gotowe projekty dopasowane do potrzeb produkcyjnych, montażowych i użytkowych.",
+      "Zapewniamy Klientom gotowe projekty dopasowane do potrzeb produkcyjnych, montażowych i użytkowych.",
 
     "hero.image.alt":
       "Projekt wygrodzenia bezpieczeństwa REM-MET w programie SolidWorks.",
