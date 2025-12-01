@@ -38,8 +38,8 @@ const CleaningProcessSection = () => {
 
   return (
     <section className="flex flex-col justify-center items-center relative min-h-[800px] bg-brand-blue-400">
-      <Container className="relative z-1 flex flex-col md:flex-row justify-center gap-20 py-16 md:py-20">
-        <div className="flex flex-col gap-8 w-full md:w-2/5">
+      <Container className="relative z-1 flex flex-col lg:flex-row justify-center gap-20 py-16 md:py-20">
+        <div className="flex flex-col gap-8 w-full md:w-3/5 lg:w-2/5">
           <div className="flex flex-col gap-2">
             <AccentText className="text-brand-blue-200">
               {t("process.accent")}
@@ -59,7 +59,7 @@ const CleaningProcessSection = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-3/5 h-full">
+        <div className="w-full lg:w-3/5 h-full">
           <PlanTimeline activeStep={activeStep} steps={steps} />
         </div>
 

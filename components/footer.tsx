@@ -91,6 +91,9 @@ const Footer = () => {
                 <FooterLink href={ROUTE_PATHS.DESIGN_3D}>
                   {t("design3d")}
                 </FooterLink>
+                <FooterLink href={ROUTE_PATHS.CLEANING}>
+                  {t("design3d")}
+                </FooterLink>
               </ul>
             </div>
             <div className="flex flex-col gap-2">
