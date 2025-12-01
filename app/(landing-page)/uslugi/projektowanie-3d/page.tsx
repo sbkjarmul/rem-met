@@ -7,9 +7,9 @@ import Design3dSupportSection from "./components/design-3d-support-section";
 import Design3dDescriptionSection from "./components/design-3d-description-section";
 import Design3dDocumentationSection from "./components/design-3d-documentation-section";
 import Design3dHeroSection from "./components/design-3d-hero-section";
-import { design3dServiceSchema } from "./seo/schemas";
+import { design3dServiceSchema } from "../projektowanie-3d/seo/schemas";
 
-export { metadata } from "./seo/metadata";
+export { metadata } from "../czyszczenie/seo/metadata";
 
 const Design3dServicePage = () => {
   return (

@@ -47,6 +47,11 @@ export default {
     "Projektowanie konstrukcji i urządzeń w SolidWorks - Modelowanie 3d | REM-MET",
   "design3d.metadata.description":
     "Projektowanie konstrukcji i urządzeń w SolidWorks - REM-MET. Projektowanie 3d, Modelowanie 3d w SolidWorks, CAD. Pełna dokumentacja 2d. Kompletny model 3d w formatach .stl, .sldasm, .step, .iges. Pliki przygotowane do technologii CNC",
+  "cleaning.metadata.title":
+    "Czyszczenie i polerowanie spoin konstrukcji stalowych - Usuwanie zabrudzeń i przebarwień | REM-MET",
+  "cleaning.metadata.description":
+    "Oferujemy kompleksowe czyszczenie i polerowanie spoin w konstrukcjach stalowych z wykorzystaniem zaawansowanego urządzenia REUTER Cleanox 3.0. Technologia ta pozwala na skuteczne usuwanie zabrudzeń, tlenków i przebarwień po procesie spawania, a także przygotowanie powierzchni pod malowanie, ocynk, pasywację lub inne obróbki.",
+
   // SEO Schemas
   "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
   "schema.organization": "REM-MET",
@@ -74,7 +79,12 @@ export default {
     // Mega Menu
     "megaMenu.machineGuards.title": "Systemy wygrodzeń REM-MET",
     "megaMenu.services.title": "Nasze usługi",
-    "megaMenu.services.design3d": "Projektowanie 3d",
+    "megaMenu.services.design3d.title": "Projektowanie 3d",
+    "megaMenu.services.design3d.subtitle":
+      "Projektowanie, dokumentacja i doradztwo techniczne",
+    "megaMenu.services.cleaning.title": "Czyszczenie i polerowanie",
+    "megaMenu.services.cleaning.subtitle":
+      "Czyszczenie i polerowanie spoin, usuwanie zabrudzeń, przygotowanie powierzchni",
     // Mobile Menu
     "mobileMenu.cta": "Uzyskaj darmową wycenę",
     "mobileMenu.question": "Jestes zainteresowany?",
@@ -96,6 +106,7 @@ export default {
     new: "Nowość",
     services: "Usługi",
     design3d: "Projektowanie 3D",
+    cleaning: "Czyszczenie spoin",
     contact: "Kontakt",
     contactQuestion: "Masz jakieś pytania?",
     contactEmail: "biuro@rem-met.com",
@@ -751,5 +762,62 @@ export default {
 
     "what.feature4.text": "Listy materiałowe oraz instrukcje montażowe",
     "what.feature4.subtext": "Zestawienie materiałowe BOM.",
+  },
+  // Design 3d Service Page
+  cleaning: {
+    name: "Czyszczenie",
+    breadcrumb: "Strona główna",
+    offer: "Usługi",
+    // Hero Section
+    "hero.accent": "Czyszczenie",
+    "hero.title": "Czyszczenie i polerowanie spoin konstrukcji stalowych",
+    "hero.title.mobile":
+      "Czyszczenie i polerowanie spoin konstrukcji stalowych",
+    "hero.description":
+      "Profesjonalne przygotowanie powierzchni pod kolejny etap prac.",
+    "hero.description.mobile":
+      "Profesjonalne przygotowanie powierzchni pod kolejny etap prac.",
+    "hero.image.alt":
+      "Zdjęcie spoiny po wykonaiu usługi czyszczenia i polerowania przez firmę REM-MET.",
+
+    "description.accent": "Na czym polega ta usługa?",
+    "description.title":
+      "Oferujemy kompleksowe czyszczenie i polerowanie spoin w konstrukcjach stalowych z wykorzystaniem zaawansowanego urządzenia REUTER Cleanox 3.0.",
+    "description.subtitle":
+      "Technologia ta pozwala skutecznie usuwać zabrudzenia, tlenki i przebarwienia po procesie spawania, a także przygotować powierzchnię pod malowanie, ocynk, pasywację lub inne obróbki.",
+
+    "description.feature1.text": "Większa trwałość ",
+    "description.feature1.subtext":
+      "Usuwamy defekty, które mogłyby wpływać na korozję lub osłabienie spoin.",
+
+    "description.feature2.text": "Lepsza estetyka",
+    "description.feature2.subtext":
+      "Idealne rozwiązanie dla konstrukcji widocznych, reprezentacyjnych lub poddawanych inspekcjom.",
+
+    "description.feature3.text": "Szybsza realizacja",
+    "description.feature3.subtext":
+      "Technologia skraca czas prac i zmniejsza ingerencję w otoczenie produkcyjne.",
+
+    "description.feature4.text": "Zgodność z normami",
+    "description.feature4.subtext":
+      "Oczyszczone powierzchnie spełniają wymagania technologiczne, co ułatwia odbiory, przeglądy i dalszą eksploatację.",
+
+    "process.accent": "WYGODA",
+    "process.cta": "Umów usługę",
+    "process.title": "Oszczędzasz czas",
+    "process.description":
+      "Zajmujemy się wszystkim, więc nie musisz angażować własnych zespołów ani martwić się o logistykę.",
+
+    "process.feature1.title": "Przygotowanie",
+    "process.feature1.description":
+      "Zabezpieczenie otoczenia i usunięcie luźnych zanieczyszczeń (żużel, odpryski, pył).",
+
+    "process.feature2.title": "Czyszczenie",
+    "process.feature2.description":
+      "Usuwanie tlenków, przebarwień, odprysków i rdzy oraz precyzyjne czyszczenie także w trudno dostępnych miejscach.",
+
+    "process.feature3.title": "Kontrola jakości",
+    "process.feature3.description":
+      "Wizualna ocena stanu spoin po czyszczeniu oraz dokumentacja zdjęciowa dla inwestora lub nadzoru.",
   },
 };

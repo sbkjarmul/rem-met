@@ -7,4 +7,5 @@ export const ROUTE_PATHS = {
   ABOUT_US: "/o-firmie",
   STANDARDS: "/standardy-bezpieczenstwa",
   DESIGN_3D: "/uslugi/projektowanie-3d",
+  CLEANING: "/uslugi/czyszczenie",
 };

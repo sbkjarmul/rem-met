@@ -7,102 +7,7 @@ import useTranslations from "@/hooks/useTranslations";
 
 import { AccentText } from "@/components/ui/accent-text";
 import Container from "@/components/ui/container";
-import { VerticalTimeline } from "@/components/ui/vertical-timeline";
-
-import { cn } from "@/lib/utils";
-
-interface PlanStepProps {
-  title: string;
-  description: string;
-  index: number;
-  isActive: boolean;
-}
-
-const PlanStep: React.FC<PlanStepProps> = ({
-  title,
-  description,
-  index,
-  isActive,
-}) => {
-  return (
-    <div
-      className={`flex flex-col md:flex-row gap-0 md:gap-6 items-start md:items-center`}
-      style={{
-        animationDelay: `${index * 2000}ms`,
-      }}
-    >
-      <span
-        className={cn(
-          `text-[60px] leading-none md:text-[80px] font-medium w-[124px] transition-all duration-300`,
-          {
-            "text-brand-blue-50": isActive,
-            "text-gray-800": !isActive,
-          }
-        )}
-      >
-        0{index}
-      </span>
-      <div className="flex flex-col gap- flex-1">
-        <h3
-          className={cn(`text-2xl font-medium  transition-all duration-300`, {
-            "text-gray-100": isActive,
-            "text-gray-500": !isActive,
-          })}
-        >
-          {title}
-        </h3>
-        <p
-          className={cn(`text-sm md:text-md transition-all duration-300`, {
-            "text-gray-400": isActive,
-            "text-gray-600": !isActive,
-          })}
-        >
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-interface PlanTimelineProps {
-  activeStep: number;
-}
-
-const PlanTimeline = ({ activeStep }: PlanTimelineProps) => {
-  const t = useTranslations("fullSupport");
-
-  return (
-    <div className="grid grid-cols-[80px_1fr] grid-rows-[1fr] gap-x-0 gap-y-4 w-full h-full">
-      <VerticalTimeline steps={4} activeStep={activeStep} />
-      <div className="flex flex-col justify-between h-full gap-10 md:gap-4">
-        <PlanStep
-          index={1}
-          title={t("feature1.title")}
-          description={t("feature1.description")}
-          isActive={activeStep === 0}
-        />
-        <PlanStep
-          index={2}
-          title={t("feature2.title")}
-          description={t("feature2.description")}
-          isActive={activeStep === 1}
-        />
-        <PlanStep
-          index={3}
-          title={t("feature3.title")}
-          description={t("feature3.description")}
-          isActive={activeStep === 2}
-        />
-        <PlanStep
-          index={4}
-          title={t("feature4.title")}
-          description={t("feature4.description")}
-          isActive={activeStep === 3}
-        />
-      </div>
-    </div>
-  );
-};
+import PlanTimeline from "./plan-timeline";
 
 const FullSupportSection = () => {
   const t = useTranslations("fullSupport");
@@ -160,7 +65,7 @@ const FullSupportSection = () => {
           </p>
         </div>
         <div className="w-full lg:w-1/2 h-full">
-          <PlanTimeline activeStep={activeStep} />
+          <PlanTimeline activeStep={activeStep} steps={steps} />
         </div>
       </Container>
       <div className="absolute inset-0 z-0 left-0">

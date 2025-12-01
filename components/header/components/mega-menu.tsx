@@ -124,9 +124,16 @@ const MegaMenu = () => {
                 <li className="row-span-3">
                   <NavigationMenuLink href={ROUTE_PATHS.DESIGN_3D}>
                     <MegaMenuServiceCard
-                      title={t("megaMenu.services.design3d")}
-                      subtitle="Projektowanie, dokumentacja i doradztwo
-                          techniczne"
+                      title={t("megaMenu.services.design3d.title")}
+                      subtitle={t("megaMenu.services.design3d.subtitle")}
+                    />
+                  </NavigationMenuLink>
+                </li>
+                <li className="row-span-3">
+                  <NavigationMenuLink href={ROUTE_PATHS.CLEANING}>
+                    <MegaMenuServiceCard
+                      title={t("megaMenu.services.cleaning.title")}
+                      subtitle={t("megaMenu.services.cleaning.subtitle")}
                     />
                   </NavigationMenuLink>
                 </li>
