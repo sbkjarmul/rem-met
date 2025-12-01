@@ -9,18 +9,44 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { ClenchedFistIcon } from "@/components/icons";
+import HourGlassIcon from "@/components/icons/hourglass-icon";
+import ProtectIcon from "@/components/icons/protect-icon";
+import EyeIcon from "@/components/icons/eye-icon";
 
-interface DescriptionCardProps {
-  text: string;
-  subtext?: string;
+const IconWrapper = ({ children }: { children: React.ReactNode }) => {
+  const clipPathStyle = {
+    clipPath: "polygon(0% 65%, 25% 100%, 85% 100%, 100% 35%, 75% 0%, 15% 0%)",
+  };
+
+  return (
+    <div>
+      <div
+        style={clipPathStyle}
+        className="bg-brand-blue-200 text-white flex justify-center items-center gap-2 w-[75px] h-[60px] md:w-[100px] md:h-[80px]"
+      >
+        <span className="w-[36px] md:w-[48px]">{children}</span>
+      </div>
+    </div>
+  );
+};
+
+interface FeatureItemProps {
+  title: string;
+  description: React.ReactNode;
+  icon: React.ReactNode;
 }
 
-const DescriptionCard = ({ text, subtext }: DescriptionCardProps) => {
+const FeatureItem = ({ title, description, icon }: FeatureItemProps) => {
   return (
-    <div className="flex flex-col gap-1 :justify-center items-center items-start md:text-center md:text-left max-w-md">
-      <h3 className="text-2xl font-medium text-gray-700">{text}</h3>
-      <div>
-        <p className="text-gray-500 text-md">{subtext}</p>
+    <div className="flex flex-row gap-4 md:gap-10 items-start justify-start">
+      <IconWrapper>{icon}</IconWrapper>
+
+      <div className="flex flex-col w-[320px] gap-1">
+        <h4 className="text-md md:text-xl font-medium text-gray-600">
+          {title}
+        </h4>
+        <p className="text-sm text-gray-500">{description}</p>
       </div>
     </div>
   );
@@ -66,25 +92,29 @@ const CleaningDescriptionSection = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-10">
-              <DescriptionCard
-                text={t("description.feature1.text")}
-                subtext={t("description.feature1.subtext")}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <FeatureItem
+                icon={<ClenchedFistIcon size={40} />}
+                title={t("description.feature1.text")}
+                description={t("description.feature1.subtext")}
               />
 
-              <DescriptionCard
-                text={t("description.feature2.text")}
-                subtext={t("description.feature2.subtext")}
+              <FeatureItem
+                icon={<EyeIcon size={40} />}
+                title={t("description.feature2.text")}
+                description={t("description.feature2.subtext")}
               />
 
-              <DescriptionCard
-                text={t("description.feature3.text")}
-                subtext={t("description.feature3.subtext")}
+              <FeatureItem
+                icon={<HourGlassIcon size={40} />}
+                title={t("description.feature3.text")}
+                description={t("description.feature3.subtext")}
               />
 
-              <DescriptionCard
-                text={t("description.feature4.text")}
-                subtext={t("description.feature4.subtext")}
+              <FeatureItem
+                icon={<ProtectIcon size={40} />}
+                title={t("description.feature4.text")}
+                description={t("description.feature4.subtext")}
               />
             </div>
           </div>
