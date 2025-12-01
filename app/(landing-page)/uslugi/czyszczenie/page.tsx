@@ -6,13 +6,13 @@ import CleaningProcessSection from "./components/cleaning-process-section";
 import CleaningHeroSection from "./components/cleaning-hero-section";
 import { cleaningServiceSchema } from "../czyszczenie/seo/schemas";
 
-export { metadata } from "../projektowanie-3d/seo/metadata";
+export { metadata } from "../projektowanie-cad/seo/metadata";
 
 const CleaningServicePage = () => {
   return (
     <>
       <Script
-        id="design3d-service-schema"
+        id="designCad-service-schema"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: cleaningServiceSchema }}

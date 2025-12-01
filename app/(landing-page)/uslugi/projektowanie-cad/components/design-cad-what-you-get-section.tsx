@@ -46,8 +46,8 @@ const WhatYouGetItem = ({ title, description, icon }: WhatYouGetItemProps) => {
   );
 };
 
-const Design3dWhatYouGetSection = () => {
-  const t = useTranslations("design3d");
+const DesignCadWhatYouGetSection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="flex flex-col relative min-h-[600px] bg-gray-200">
@@ -95,4 +95,4 @@ const Design3dWhatYouGetSection = () => {
   );
 };
 
-export default Design3dWhatYouGetSection;
+export default DesignCadWhatYouGetSection;

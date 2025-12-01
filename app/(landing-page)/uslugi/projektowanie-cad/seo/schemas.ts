@@ -1,10 +1,10 @@
 import pl from "@/locales/pl";
 
-export const design3dServiceSchema = JSON.stringify({
+export const designCadServiceSchema = JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "Design3dServicePage",
-  name: pl["design3d.metadata.title"],
-  description: pl["design3d.metadata.description"],
+  "@type": "DesignCadServicePage",
+  name: pl["designCad.metadata.title"],
+  description: pl["designCad.metadata.description"],
   publisher: {
     "@type": "Organization",
     name: pl["schema.organization"],

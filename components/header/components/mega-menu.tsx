@@ -122,10 +122,10 @@ const MegaMenu = () => {
               </h3>
               <ul className="grid gap-2 w-full grid-cols-1">
                 <li className="row-span-3">
-                  <NavigationMenuLink href={ROUTE_PATHS.DESIGN_3D}>
+                  <NavigationMenuLink href={ROUTE_PATHS.DESIGN_CAD}>
                     <MegaMenuServiceCard
-                      title={t("megaMenu.services.design3d.title")}
-                      subtitle={t("megaMenu.services.design3d.subtitle")}
+                      title={t("megaMenu.services.designCad.title")}
+                      subtitle={t("megaMenu.services.designCad.subtitle")}
                     />
                   </NavigationMenuLink>
                 </li>

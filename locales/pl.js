@@ -43,10 +43,10 @@ export default {
     "O firmie REM-MET - Polski producent wygrodzeń przemysłowych",
   "aboutUs.metadata.description":
     "Poznaj historię i misję REM-MET. Jesteśmy polskim producentem wygrodzeń przemysłowych, który zapewniają ochronę dla pracowników i maszyn",
-  "design3d.metadata.title":
-    "Projektowanie konstrukcji i urządzeń w SolidWorks - Modelowanie 3d | REM-MET",
-  "design3d.metadata.description":
-    "Projektowanie konstrukcji i urządzeń w SolidWorks - REM-MET. Projektowanie 3d, Modelowanie 3d w SolidWorks, CAD. Pełna dokumentacja 2d. Kompletny model 3d w formatach .stl, .sldasm, .step, .iges. Pliki przygotowane do technologii CNC",
+  "designCad.metadata.title":
+    "Projektowanie konstrukcji i urządzeń w SolidWorks - Modelowanie CAD | REM-MET",
+  "designCad.metadata.description":
+    "Projektowanie konstrukcji i urządzeń w SolidWorks - REM-MET. Projektowanie CAD, Modelowanie CAD w SolidWorks, CAD. Pełna dokumentacja 2d. Kompletny model 3D w formatach .stl, .sldasm, .step, .iges. Pliki przygotowane do technologii CNC",
   "cleaning.metadata.title":
     "Czyszczenie i polerowanie spoin konstrukcji stalowych - Usuwanie zabrudzeń i przebarwień | REM-MET",
   "cleaning.metadata.description":
@@ -79,8 +79,8 @@ export default {
     // Mega Menu
     "megaMenu.machineGuards.title": "Systemy wygrodzeń REM-MET",
     "megaMenu.services.title": "Nasze usługi",
-    "megaMenu.services.design3d.title": "Projektowanie 3d",
-    "megaMenu.services.design3d.subtitle":
+    "megaMenu.services.designCad.title": "Projektowanie CAD",
+    "megaMenu.services.designCad.subtitle":
       "Projektowanie, dokumentacja i doradztwo techniczne",
     "megaMenu.services.cleaning.title": "Czyszczenie i polerowanie",
     "megaMenu.services.cleaning.subtitle":
@@ -105,7 +105,7 @@ export default {
     viper: "Viper",
     new: "Nowość",
     services: "Usługi",
-    design3d: "Projektowanie 3D",
+    designCad: "Projektowanie CAD",
     cleaning: "Czyszczenie spoin",
     contact: "Kontakt",
     contactQuestion: "Masz jakieś pytania?",
@@ -662,13 +662,13 @@ export default {
     description: "Przepraszamy, strona, której szukasz, nie istnieje.",
     cta: "Wróć do strony głównej",
   },
-  // Design 3d Service Page
-  design3d: {
-    name: "Projektowanie 3d",
+  // Design CAD Service Page
+  designCad: {
+    name: "Projektowanie CAD",
     breadcrumb: "Strona główna",
     offer: "Usługi",
     // Hero Section
-    "hero.accent": "Projektowanie 3d",
+    "hero.accent": "Projektowanie CAD",
     "hero.title": "Projektowanie konstrukcji i urządzeń w SolidWorks",
     "hero.title.mobile": "Projektowanie konstrukcji i urządzeń",
     "hero.description":
@@ -679,10 +679,10 @@ export default {
     "hero.image.alt":
       "Projekt wygrodzenia bezpieczeństwa REM-MET w programie SolidWorks.",
 
-    "description.accent": "Projektowanie i modelowanie 3D",
+    "description.accent": "Projektowanie i modelowanie CAD",
     "description.title": "Projekty dopasowane pod Twoje potrzeby",
     "description.image.alt":
-      "Logo REM-MET w rzucie izometrycznym 3d, w kolorze niebieskim.",
+      "Logo REM-MET w rzucie izometrycznym CAD, w kolorze niebieskim.",
 
     "description.feature1.text": "Urządzenia przemysłowe",
     "description.feature1.subtext":
@@ -704,7 +704,7 @@ export default {
       "Przygotowanie plików (DXF/DWG) do cięcia laserowego, gięcia i spawania.",
 
     "documentation.feature2.text":
-      "Opracowanie dokumentacji technicznej (2D/3D) ",
+      "Opracowanie dokumentacji technicznej (2D/CAD) ",
     "documentation.feature2.subtext":
       "Tworzenie kompletnych rysunków wykonawczych i złożeniowych, list materiałowych (BOM) oraz instrukcji montażowych.",
 
@@ -763,7 +763,7 @@ export default {
     "what.feature4.text": "Listy materiałowe oraz instrukcje montażowe",
     "what.feature4.subtext": "Zestawienie materiałowe BOM.",
   },
-  // Design 3d Service Page
+  // Design CAD Service Page
   cleaning: {
     name: "Czyszczenie",
     breadcrumb: "Strona główna",
@@ -809,7 +809,7 @@ export default {
       "Zajmujemy się wszystkim, więc nie musisz angażować własnych zespołów ani martwić się o logistykę.",
 
     "process.feature1.title": "Przygotowanie",
-    "process.feature1.description":
+    "process.featKompletny modelure1.description":
       "Zabezpieczenie otoczenia i usunięcie luźnych zanieczyszczeń (żużel, odpryski, pył).",
 
     "process.feature2.title": "Czyszczenie",

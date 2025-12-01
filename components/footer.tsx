@@ -88,8 +88,8 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <FooterHeader>{t("services")}</FooterHeader>
               <ul className="space-y-2">
-                <FooterLink href={ROUTE_PATHS.DESIGN_3D}>
-                  {t("design3d")}
+                <FooterLink href={ROUTE_PATHS.DESIGN_CAD}>
+                  {t("designCad")}
                 </FooterLink>
                 <FooterLink href={ROUTE_PATHS.CLEANING}>
                   {t("cleaning")}

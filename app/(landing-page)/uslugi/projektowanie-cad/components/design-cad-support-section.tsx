@@ -20,8 +20,8 @@ const SupportCard = ({ text, subtext }: SupportCardProps) => {
   );
 };
 
-const Design3dSupportSection = () => {
-  const t = useTranslations("design3d");
+const DesignCadSupportSection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="flex flex-col relative bg-gray-200 md:min-h-[800px]">
@@ -83,4 +83,4 @@ const Design3dSupportSection = () => {
   );
 };
 
-export default Design3dSupportSection;
+export default DesignCadSupportSection;

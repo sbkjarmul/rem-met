@@ -18,8 +18,8 @@ const WhyCard = ({ text, subtext }: WhyCardProps) => {
   );
 };
 
-const Design3dWhySection = () => {
-  const t = useTranslations("design3d");
+const DesignCadWhySection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="flex flex-col relative min-h-[600px] bg-brand-blue-200">
@@ -61,4 +61,4 @@ const Design3dWhySection = () => {
   );
 };
 
-export default Design3dWhySection;
+export default DesignCadWhySection;

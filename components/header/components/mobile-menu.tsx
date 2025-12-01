@@ -251,8 +251,8 @@ const MobileMenuServicesView = ({
       </h2>
 
       <div className="flex flex-col gap-10 h-full overflow-y-auto text-gray-200">
-        <MobileMenuLink href={ROUTE_PATHS.DESIGN_3D} onClick={onClose}>
-          {tHeader("megaMenu.services.design3d.title")}
+        <MobileMenuLink href={ROUTE_PATHS.DESIGN_CAD} onClick={onClose}>
+          {tHeader("megaMenu.services.designCad.title")}
         </MobileMenuLink>
         <MobileMenuLink href={ROUTE_PATHS.CLEANING} onClick={onClose}>
           {tHeader("megaMenu.services.cleaning.title")}

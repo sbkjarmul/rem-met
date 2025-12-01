@@ -20,8 +20,8 @@ const DocumentationCard = ({ text, subtext }: DocumentationCardProps) => {
   );
 };
 
-const Design3dDocumentationSection = () => {
-  const t = useTranslations("design3d");
+const DesignCadDocumentationSection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="flex flex-col justify-center items-center relative min-h-[800px] bg-brand-blue-400">
@@ -68,4 +68,4 @@ const Design3dDocumentationSection = () => {
   );
 };
 
-export default Design3dDocumentationSection;
+export default DesignCadDocumentationSection;

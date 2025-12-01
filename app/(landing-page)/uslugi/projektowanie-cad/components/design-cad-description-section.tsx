@@ -27,8 +27,8 @@ const DescriptionCard = ({ text, subtext }: DescriptionCardProps) => {
   );
 };
 
-const Design3dDescriptionSection = () => {
-  const t = useTranslations("design3d");
+const DesignCadDescriptionSection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="flex flex-col justify-start relative bg-gray-200 min-h-[800px]">
@@ -98,4 +98,4 @@ const Design3dDescriptionSection = () => {
   );
 };
 
-export default Design3dDescriptionSection;
+export default DesignCadDescriptionSection;

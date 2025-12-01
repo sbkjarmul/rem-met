@@ -4,8 +4,8 @@ import { AccentText } from "@/components/ui/accent-text";
 import Container from "@/components/ui/container";
 import useTranslations from "@/hooks/useTranslations";
 
-const Design3dHeroSection = () => {
-  const t = useTranslations("design3d");
+const DesignCadHeroSection = () => {
+  const t = useTranslations("designCad");
 
   return (
     <section className="relative mih-h-[600px] md:min-h-[800px] flex justify-center items-end pt-32 md:pt-40 gap-4 bg-black">
@@ -48,4 +48,4 @@ const Design3dHeroSection = () => {
   );
 };
 
-export default Design3dHeroSection;
+export default DesignCadHeroSection;
