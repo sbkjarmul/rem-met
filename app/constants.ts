@@ -8,4 +8,5 @@ export const ROUTE_PATHS = {
   STANDARDS: "/standardy-bezpieczenstwa",
   DESIGN_CAD: "/uslugi/projektowanie-cad",
   CLEANING: "/uslugi/czyszczenie",
+  WELDING: "/uslugi/spawanie",
 };

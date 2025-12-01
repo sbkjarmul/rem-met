@@ -257,6 +257,9 @@ const MobileMenuServicesView = ({
         <MobileMenuLink href={ROUTE_PATHS.CLEANING} onClick={onClose}>
           {tHeader("megaMenu.services.cleaning.title")}
         </MobileMenuLink>
+        <MobileMenuLink href={ROUTE_PATHS.WELDING} onClick={onClose}>
+          {tHeader("megaMenu.services.welding.title")}
+        </MobileMenuLink>
       </div>
     </div>
   );

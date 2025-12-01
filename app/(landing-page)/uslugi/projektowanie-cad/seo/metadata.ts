@@ -2,39 +2,41 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projektowanie 3d w SolidWorks | REM-MET  Stalowa Wola",
+  title:
+    "Projektowanie CAD w SolidWorks | Zakład Ślusarski REM-MET Stalowa Wola",
   description:
     "Firma REM-MET - produkujemy wygrodzenia przemysłowe. Doświadczenie od ponad 20 lat branży przemysłowej.",
   keywords: [
-    "projektowanie 3d",
-    "projekty 3d",
+    "projektowanie CAD",
+    "projekty CAD",
     "cad",
     "solid works",
-    "projektowanie 3d podkarpacie",
-    "projektowanie 3d maszyn",
+    "projektowanie CAD podkarpacie",
+    "projektowanie CAD maszyn",
     "projektowanie konstrukcji stalowych",
-    "modelowanie 3d",
+    "modelowanie CAD",
     "projektowanie ogrodzeń",
     "modelowanie",
+    "rysunek techniczny",
   ],
 
   alternates: {
-    canonical: "https://www.rem-met.com/uslugi/projektowanie-3d",
+    canonical: "https://www.rem-met.com/uslugi/projektowanie-cad",
   },
 
   openGraph: {
     title:
-      "Projektowanie i modelowanie 3d REM-MET | Projektowanie 3d Podkarpacie",
+      "Projektowanie i modelowanie CAD REM-MET | Projektowanie CAD Podkarpacie",
     description:
-      "Firma REM-MET - projektowanie 3d, modelowanie 3d. Doświadczenie od ponad 20 lat branży przemysłowej.",
-    url: "https://www.rem-met.com/uslugi/projektowanie-3d",
+      "Firma REM-MET - projektowanie CAD, modelowanie CAD. Doświadczenie od ponad 20 lat branży przemysłowej.",
+    url: "https://www.rem-met.com/uslugi/projektowanie-cad",
     siteName: "REM-MET",
     images: [
       {
         url: "/images/rem-met-og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Projektowanie 3d REM-MET Stalowa Wola",
+        alt: "Projektowanie CAD REM-MET Stalowa Wola",
       },
     ],
     locale: "pl_PL",

@@ -137,6 +137,14 @@ const MegaMenu = () => {
                     />
                   </NavigationMenuLink>
                 </li>
+                <li className="row-span-3">
+                  <NavigationMenuLink href={ROUTE_PATHS.WELDING}>
+                    <MegaMenuServiceCard
+                      title={t("megaMenu.services.welding.title")}
+                      subtitle={t("megaMenu.services.welding.subtitle")}
+                    />
+                  </NavigationMenuLink>
+                </li>
               </ul>
             </div>
           </NavigationMenuContent>

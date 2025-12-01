@@ -9,12 +9,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import {
-  ClenchedFistIcon,
-  EyeIcon,
-  HourGlassIcon,
-  ProtectIcon,
-} from "@/components/icons";
+import { EyeIcon, HourGlassIcon, UserIcon } from "@/components/icons";
 
 const IconWrapper = ({ children }: { children: React.ReactNode }) => {
   const clipPathStyle = {
@@ -41,7 +36,7 @@ interface FeatureItemProps {
 
 const FeatureItem = ({ title, description, icon }: FeatureItemProps) => {
   return (
-    <div className="flex flex-row gap-4 md:gap-10 items-start justify-start">
+    <div className="flex flex-row gap-4 md:gap-6 items-start justify-start">
       <IconWrapper>{icon}</IconWrapper>
 
       <div className="flex flex-col w-[320px] gap-1">
@@ -54,8 +49,8 @@ const FeatureItem = ({ title, description, icon }: FeatureItemProps) => {
   );
 };
 
-const CleaningDescriptionSection = () => {
-  const t = useTranslations("cleaning");
+const WeldingDescriptionSection = () => {
+  const t = useTranslations("welding");
 
   return (
     <section className="flex flex-col justify-start relative bg-gray-200 min-h-[800px]">
@@ -84,10 +79,10 @@ const CleaningDescriptionSection = () => {
                   {t("description.accent")}
                 </AccentText>
                 <h2 className="text-xl md:text-3xl">
-                  <span className="text-gray-600 ">
+                  <span className="text-gray-700 font-medium">
                     {t("description.title")}
                   </span>
-                  <span className="ml-1 text-gray-700 font-medium">
+                  <span className="ml-1 text-gray-600">
                     {t("description.subtitle")}
                   </span>
                 </h2>
@@ -96,7 +91,7 @@ const CleaningDescriptionSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <FeatureItem
-                icon={<ClenchedFistIcon size={40} />}
+                icon={<UserIcon size={40} />}
                 title={t("description.feature1.text")}
                 description={t("description.feature1.subtext")}
               />
@@ -112,12 +107,6 @@ const CleaningDescriptionSection = () => {
                 title={t("description.feature3.text")}
                 description={t("description.feature3.subtext")}
               />
-
-              <FeatureItem
-                icon={<ProtectIcon size={40} />}
-                title={t("description.feature4.text")}
-                description={t("description.feature4.subtext")}
-              />
             </div>
           </div>
         </div>
@@ -126,4 +115,4 @@ const CleaningDescriptionSection = () => {
   );
 };
 
-export default CleaningDescriptionSection;
+export default WeldingDescriptionSection;

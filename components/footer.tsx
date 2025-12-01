@@ -94,6 +94,9 @@ const Footer = () => {
                 <FooterLink href={ROUTE_PATHS.CLEANING}>
                   {t("cleaning")}
                 </FooterLink>
+                <FooterLink href={ROUTE_PATHS.WELDING}>
+                  {t("welding")}
+                </FooterLink>
               </ul>
             </div>
             <div className="flex flex-col gap-2">

@@ -51,6 +51,10 @@ export default {
     "Czyszczenie i polerowanie spoin konstrukcji stalowych - Usuwanie zabrudzeń i przebarwień | REM-MET",
   "cleaning.metadata.description":
     "Oferujemy kompleksowe czyszczenie i polerowanie spoin w konstrukcjach stalowych z wykorzystaniem zaawansowanego urządzenia REUTER Cleanox 3.0. Technologia ta pozwala na skuteczne usuwanie zabrudzeń, tlenków i przebarwień po procesie spawania, a także przygotowanie powierzchni pod malowanie, ocynk, pasywację lub inne obróbki.",
+  "welding.metadata.title":
+    "Profesjonalne spawanie stali i metali kolorowych | Zakład Ślusarski REM-MET",
+  "welding.metadata.description":
+    "Oferujemy profesjonalne spawanie stali i metali kolorowych metodami MIG/MAG oraz spawanie laserowe, łącząc doświadczenie z nowoczesną technologią. Proces ten pozwala łączyć elementy metalowe w trwałe, precyzyjne i estetyczne konstrukcje, gotowe do dalszej obróbki lub montażu. Zakład ślusarski REM-MET. Spawanie Stalowa Wola. Podparpacie.",
 
   // SEO Schemas
   "schema.website": "REM-MET - Profesjonalne wygrodzenia bezpieczeństwa",
@@ -85,6 +89,9 @@ export default {
     "megaMenu.services.cleaning.title": "Czyszczenie i polerowanie",
     "megaMenu.services.cleaning.subtitle":
       "Czyszczenie i polerowanie spoin, usuwanie zabrudzeń, przygotowanie powierzchni",
+    "megaMenu.services.welding.title": "Spawanie",
+    "megaMenu.services.welding.subtitle":
+      "Spawanie ogrodzeń i balustrad, regałów oraz konstrukcji metalowych",
     // Mobile Menu
     "mobileMenu.cta": "Uzyskaj darmową wycenę",
     "mobileMenu.question": "Jestes zainteresowany?",
@@ -107,6 +114,7 @@ export default {
     services: "Usługi",
     designCad: "Projektowanie CAD",
     cleaning: "Czyszczenie spoin",
+    welding: "Spawanie",
     contact: "Kontakt",
     contactQuestion: "Masz jakieś pytania?",
     contactEmail: "biuro@rem-met.com",
@@ -763,7 +771,7 @@ export default {
     "what.feature4.text": "Listy materiałowe oraz instrukcje montażowe",
     "what.feature4.subtext": "Zestawienie materiałowe BOM.",
   },
-  // Design CAD Service Page
+  // Cleaning Service Page
   cleaning: {
     name: "Czyszczenie",
     breadcrumb: "Strona główna",
@@ -819,5 +827,56 @@ export default {
     "process.feature3.title": "Kontrola jakości",
     "process.feature3.description":
       "Wizualna ocena stanu spoin po czyszczeniu oraz dokumentacja zdjęciowa dla inwestora lub nadzoru.",
+  },
+
+  // Welding Service Page
+  welding: {
+    name: "Spawanie",
+    breadcrumb: "Strona główna",
+    offer: "Usługi",
+    // Hero Section
+    "hero.accent": "Spawanie",
+    "hero.title": "Profesjonalne spawanie stali i metali kolorowych",
+    "hero.title.mobile": "Profesjonalne spawanie stali i metali kolorowych",
+    "hero.description":
+      "Łączymy wieloletnie doświadczenie z nowoczesną technologią, aby zapewnić najwyższą jakość, trwałość i precyzję każdej spoiny.",
+    "hero.description.mobile":
+      "Łączymy wieloletnie doświadczenie z nowoczesną technologią, aby zapewnić najwyższą jakość, trwałość i precyzję każdej spoiny.",
+    "hero.image.alt":
+      "Zdjęcie pracownika REM-MET podczas spawania wygrodzeń bezpieczeństwa.",
+
+    "description.accent": "Na czym polega ta usługa?",
+    "description.title":
+      "Oferujemy profesjonalne spawanie stali i metali kolorowych metodami MIG/MAG oraz spawanie laserowe, łącząc doświadczenie z nowoczesną technologią.",
+    "description.subtitle":
+      "Proces ten pozwala łączyć elementy metalowe w trwałe, precyzyjne i estetyczne konstrukcje, gotowe do dalszej obróbki lub montażu.",
+
+    "description.feature1.text": "Indywidualne podejście",
+    "description.feature1.subtext":
+      "Realizujemy zlecenia zarówno dla firm, jak i osób prywatnych, dopasowując proces do potrzeb klienta.",
+
+    "description.feature2.text": "Nowoczesne zaplecze techniczne",
+    "description.feature2.subtext":
+      "Zaawansowany park maszynowy i technologie spawalnicze gwarantują solidne i precyzyjne wykonanie każdego zlecenia.",
+
+    "description.feature3.text": "Terminowość i niezawodność",
+    "description.feature3.subtext":
+      "Każde zlecenie realizujemy w ustalonym czasie, bez kompromisów na jakości.",
+
+    "what.accent": "Zakres usługi spawalniczych",
+    "what.cta": "Zakres",
+    "what.title": "Produkcja na wymiar",
+
+    "fences.title": "Ogrodzenia i balustrady",
+    "fences.alt":
+      "Ogrodzenia i balustrady REM-MET. Produkujemy ogrodzenia do domu.",
+    "fences.description":
+      "Każde zlecenie realizujemy w ustalonym czasie, bez kompromisów na jakości.",
+
+    "shelves.title": "Regały i poręcze",
+    "shelves.alt":
+      "Regały i poręcze REM-MET. Produkujemy poręczę i regały do magazynów i firm produkcyjnych.",
+    "shelves.description":
+      "Każde zlecenie realizujemy w ustalonym czasie, bez kompromisów na jakości.",
   },
 };

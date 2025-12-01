@@ -9,3 +9,6 @@ export { default as MoleskineIcon } from "./moleskine-icon";
 export { default as FrontViewIcon } from "./front-view-icon";
 export { default as PaperMapIcon } from "./paper-map-icon";
 export { default as VersionsIcon } from "./versions-icon";
+export { default as EyeIcon } from "./eye-icon";
+export { default as ProtectIcon } from "./protect-icon";
+export { default as HourGlassIcon } from "./hourglass-icon";
