@@ -32,7 +32,7 @@ export const ContactFormLabel = ({
   className?: string;
 }) => {
   return (
-    <FormLabel className={cn("text-gray-500 font-normal", className)}>
+    <FormLabel className={cn("text-gray-700 font-normal", className)}>
       {children}
       <span className="text-gray-500">*</span>
     </FormLabel>
