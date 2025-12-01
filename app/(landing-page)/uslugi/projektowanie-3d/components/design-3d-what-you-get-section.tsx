@@ -61,7 +61,7 @@ const Design3dWhatYouGetSection = () => {
               <h2 className="text-3xl text-gray-600 font-medium md:hidden text-center">
                 {t("what.title")}
               </h2>
-              <h2 className="text-5xl text-gray-600 hidden md:block text-center">
+              <h2 className="text-5xl text-gray-600 hidden md:block text-center font-medium">
                 {t("what.title")}
               </h2>
             </div>
