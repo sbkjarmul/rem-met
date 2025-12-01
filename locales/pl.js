@@ -684,7 +684,7 @@ export default {
     "description.image.alt":
       "Logo REM-MET w rzucie izometrycznym 3d, w kolorze niebieskim.",
 
-    "description.feature1.text": "Urządzenia premysłowe",
+    "description.feature1.text": "Urządzenia przemysłowe",
     "description.feature1.subtext":
       "Projektowanie urządzeń technologicznych, stanowisk roboczych i zabudów przemysłowych.",
 

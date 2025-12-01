@@ -92,7 +92,7 @@ const Footer = () => {
                   {t("design3d")}
                 </FooterLink>
                 <FooterLink href={ROUTE_PATHS.CLEANING}>
-                  {t("design3d")}
+                  {t("cleaning")}
                 </FooterLink>
               </ul>
             </div>
