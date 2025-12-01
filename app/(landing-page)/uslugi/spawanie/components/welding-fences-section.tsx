@@ -24,7 +24,7 @@ const WeldingFencesSection = () => {
           </div>
         </div>
 
-        <div className="w-full xl:hidden">
+        {/* <div className="w-full xl:hidden ">
           <Image
             src="/images/services/rem-met-welding-fences.webp"
             alt={t("fences.alt")}
@@ -32,7 +32,7 @@ const WeldingFencesSection = () => {
             height={1080}
             sizes="100vw"
           />
-        </div>
+        </div> */}
       </Container>
 
       {/* <div className="absolute top-0 right-0 h-full w-2/5 z-0"> */}
