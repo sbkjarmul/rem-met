@@ -4,7 +4,6 @@ import ContactSection from "@/components/contact-section";
 import WeldingDescriptionSection from "./components/welding-description-section";
 import WeldingWhatSection from "./components/welding-what-section";
 import WeldingHeroSection from "./components/welding-hero-section";
-import WeldingFencesSection from "./components/welding-fences-section";
 import { weldingServiceSchema } from "../spawanie/seo/schemas";
 
 export { metadata } from "../projektowanie-cad/seo/metadata";
@@ -22,7 +21,7 @@ const WeldingServicePage = () => {
       <WeldingHeroSection />
       <WeldingDescriptionSection />
       <WeldingWhatSection />
-      <WeldingFencesSection />
+      {/* <WeldingFencesSection /> */}
       {/* <WeldingShelvesSection /> */}
 
       <ContactSection />

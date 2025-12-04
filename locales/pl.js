@@ -871,12 +871,24 @@ export default {
     "fences.alt":
       "Ogrodzenia i balustrady REM-MET. Produkujemy ogrodzenia do domu.",
     "fences.description":
-      "Każde zlecenie realizujemy w ustalonym czasie, bez kompromisów na jakości.",
+      "Nowoczesne systemy ogrodzeń i balustrad z precyzyjnie wykończonej stali, zaprojektowane do intensywnego użytkowania i pełnego bezpieczeństwa.",
 
     "shelves.title": "Regały i poręcze",
     "shelves.alt":
       "Regały i poręcze REM-MET. Produkujemy poręczę i regały do magazynów i firm produkcyjnych.",
     "shelves.description":
-      "Każde zlecenie realizujemy w ustalonym czasie, bez kompromisów na jakości.",
+      "Stalowe regały i poręcze o wysokiej nośności, tworzone pod wymiar stanowisk roboczych, magazynów i przestrzeni szkoleniowych.",
+
+    "construction.title": "Konstrukcje stalowe",
+    "construction.alt":
+      "Konstrukcje stalowe REM-MET. Produkujemy indywidulane konstrukcje na zamówienie ze stali.",
+    "construction.description":
+      "Wytrzymałe konstrukcje stalowe dopasowane do specyfiki instalacji przemysłowych, hal, stanowisk nadzorowanych i technicznych.",
+
+    "elements.title": "Elementy użytkowe na indywidualne zamówienie",
+    "elements.alt":
+      "Elementy użytkowe na indywidualne zamówienie REM-MET. Realizujemy indywidualne zamówienie.",
+    "elements.description":
+      "Dedykowane elementy stalowe projektowane pod konkretne zastosowania.",
   },
 };

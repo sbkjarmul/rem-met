@@ -61,7 +61,7 @@ const MegaMenu = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
             <div className="flex flex-col gap-4 w-full p-10">
-              <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
+              <h3 className="text-xl font-medium text-center text-gray-600 dark:text-gray-100 uppercase">
                 {t("megaMenu.machineGuards.title")}
               </h3>
               <ul className="grid gap-2 w-full grid-cols-[1fr_1fr_1fr]">
@@ -117,7 +117,7 @@ const MegaMenu = () => {
           </NavigationMenuTrigger>
           <NavigationMenuContent className="dark:bg-brand-blue-400 bg-gray-100 absolute top-0 left-0 md:w-screen h-[calc(100vh-100px)] overflow-y-auto">
             <div className="flex flex-col gap-4 w-full p-10">
-              <h3 className="text-xl font-medium text-center text-gray-100 uppercase">
+              <h3 className="text-xl font-medium text-center text-gray-600 dark:text-gray-100 uppercase">
                 {t("megaMenu.services.title")}
               </h3>
               <ul className="grid gap-2 w-full grid-cols-1">
