@@ -6,7 +6,7 @@ import WeldingWhatSection from "./components/welding-what-section";
 import WeldingHeroSection from "./components/welding-hero-section";
 import { weldingServiceSchema } from "../spawanie/seo/schemas";
 
-export { metadata } from "../projektowanie-cad/seo/metadata";
+export { metadata } from "./seo/metadata";
 
 const WeldingServicePage = () => {
   return (

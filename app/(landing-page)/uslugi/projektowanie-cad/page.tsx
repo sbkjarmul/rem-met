@@ -9,7 +9,7 @@ import DesignCadDocumentationSection from "./components/design-cad-documentation
 import DesignCadHeroSection from "./components/design-cad-hero-section";
 import { designCadServiceSchema } from "./seo/schemas";
 
-export { metadata } from "../czyszczenie/seo/metadata";
+export { metadata } from "./seo/metadata";
 
 const DesignCadServicePage = () => {
   return (

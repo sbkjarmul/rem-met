@@ -6,7 +6,7 @@ import CleaningProcessSection from "./components/cleaning-process-section";
 import CleaningHeroSection from "./components/cleaning-hero-section";
 import { cleaningServiceSchema } from "../czyszczenie/seo/schemas";
 
-export { metadata } from "../projektowanie-cad/seo/metadata";
+export { metadata } from "./seo/metadata";
 
 const CleaningServicePage = () => {
   return (
