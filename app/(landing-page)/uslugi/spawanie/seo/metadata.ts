@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title:
       "Profesjonalne spawanie stali i metali kolorowych REM-MET | Spawanie konstrukcji stalowych Stalowa Wola",
     description:
-      "Oferujemy kompleksowe spawanie stali i metali kolorowych. Spawanie konstrukcji stalowych. Projektujemy ogrodzenia i balustrady, bramy wjazdowe oraz regały i poręcze. Doświadczenie od ponad 20 lat branży spawalniczej.",
+      "Oferujemy kompleksowe spawanie stali i metali kolorowych. Projektujemy ogrodzenia i balustrady, bramy wjazdowe oraz regały i poręcze. Doświadczenie od ponad 20 lat branży spawalniczej.",
     url: "https://www.rem-met.com/uslugi/spawanie",
     siteName: "REM-MET",
     images: [
