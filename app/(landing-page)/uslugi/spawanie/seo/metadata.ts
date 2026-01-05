@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Spawanie stali i metali kolorowych | REM-MET Stalowa Wola",
   description:
-    "Oferujemy kompleksowe czyszczenie i polerowanie spoin w konstrukcjach stalowych z wykorzystaniem zaawansowanego urządzenia REUTER Cleanox 3.0. Technologia ta pozwala skutecznie usuwać zabrudzenia, tlenki i przebarwienia po procesie spawania, a także przygotować powierzchnię pod malowanie, ocynk, pasywację lub inne obróbki. Firma REM-MET - produkujemy wygrodzenia przemysłowe. Doświadczenie od ponad 20 lat branży przemysłowej.",
+    "Oferujemy kompleksowe spawanie stali i metali kolorowych. Spawanie konstrukcji stalowych. Projektujemy ogrodzenia i balustrady, bramy wjazdowe oraz regały i poręcze. Doświadczenie od ponad 20 lat branży spawalniczej. Doświadczenie od ponad 20 lat branży przemysłowej.",
   keywords: [
     "spawanie stalowa wola",
     "spawanie konstrukcji stalowych",
