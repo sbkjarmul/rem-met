@@ -442,18 +442,18 @@ export default {
     "feature3.title": "Uniwersalność",
     "feature3.description":
       "Dzięki wielu wymiarom i opcjom konfiguracji, RHINO można łatwo zintegrować zarówno z pojedynczymi celami, jak i zautomatyzowanymi liniami produkcyjnymi.",
-    // Gecko Versions Section
-    2: "Dwa",
-    two: "Dwie",
+    // Rhino Versions Section
+    2: "Dwie",
+    two: "Dwa",
     versions: "wersje",
     levels: "poziomy ochrony",
     "versions.alt": "Dwie wersje wygrodzeń przemysłowych RHINO",
     "vision.name": "Vision",
     "vision.description":
-      "Panel wykonany z blachy stalowej. \n Przeznaczonny do stref, gdzie nie jest wymagana widoczność.",
+      "Panel z pełnej blachy stalowej zintegrowany z oknem rewizyjnym. \n Do stanowisk nadzorowanych lub szkoleniowych.",
     "solid.name": "Solid",
     "solid.description":
-      "Panel z pełnej blachy stalowej zintegrowany z oknem rewizyjnym. \n Do stanowisk nadzorowanych lub szkoleniowych.",
+      "Panel wykonany z blachy stalowej. \n Przeznaczonny do stref, gdzie nie jest wymagana widoczność.",
 
     // Rhino Specification Section
     // Panels
